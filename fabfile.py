@@ -17,7 +17,8 @@ DEPLOY_HOSTS = {
     'prod': 'kkbdeploy@hiri.dbc.dk',
 }
 
-# Simple logging for actions.
+# Simple logging for actions. Use the WARNING level to tune out paramiko
+# noise which is logged as "INFO".
 LOG_FILENAME = '/var/log/deploy.log'
 logging.basicConfig(filename=LOG_FILENAME,level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
 
@@ -57,6 +58,10 @@ def aakb_prod():
 def kolding_prod():
     env.hosts = [DEPLOY_HOSTS['prod']]
     env.webroot = '/data/www/kolding.prod.gnit.dk'
+
+def kbhlyd_prod():
+    env.hosts = [DEPLOY_HOSTS['prod']]
+    env.webroot = '/data/www/kbhlyd.prod.gnit.dk'
 
 def version():
     'Get the currently deployed version'
