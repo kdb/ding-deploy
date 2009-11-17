@@ -86,6 +86,7 @@ def deploy():
         run('git checkout %s' % commit)
         run('git submodule init')
         run('git submodule update')
+        run('git show > version.txt')
 
     run('curl -s http://localhost/apc_clear_cache.php')
 
