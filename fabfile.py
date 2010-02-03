@@ -7,7 +7,7 @@ http://docs.fabfile.org/0.9/
 from __future__ import with_statement
 import logging
 import logging.handlers
-from fabric.api import cd, env, prompt, require, run
+from fabric.api import cd, env, prompt, require, run, abort
 from fabric.state import _get_system_username
 
 # Hostnames to the different servers.
@@ -24,42 +24,62 @@ logging.basicConfig(filename=LOG_FILENAME,level=logging.WARNING, format="%(ascti
 
 def kkb_dev():
     'Initialize development environment'
+    env.project = 'kkb'
+    env.environment = 'dev'
     env.hosts = [DEPLOY_HOSTS['dev']]
     env.webroot = '/data/www/kkb.dev.gnit.dk'
 
 def aakb_dev():
+    env.project = 'aakb'
+    env.environment = 'dev'
     env.hosts = [DEPLOY_HOSTS['dev']]
     env.webroot = '/data/www/aakb.dev.gnit.dk'
 
 def kolding_dev():
+    env.project = 'kolding'
+    env.environment = 'dev'
     env.hosts = [DEPLOY_HOSTS['dev']]
     env.webroot = '/data/www/kolding.dev.gnit.dk'
 
 def kkb_stg():
+    env.project = 'kkb'
+    env.environment = 'stg'
     env.hosts = [DEPLOY_HOSTS['stg']]
     env.webroot = '/data/www/kkb.stg.gnit.dk'
 
 def aakb_stg():
+    env.project = 'aakb'
+    env.environment = 'stg'
     env.hosts = [DEPLOY_HOSTS['stg']]
     env.webroot = '/data/www/aakb.stg.gnit.dk'
 
 def kolding_stg():
+    env.project = 'kolding'
+    env.environment = 'stg'
     env.hosts = [DEPLOY_HOSTS['stg']]
     env.webroot = '/data/www/kolding.stg.gnit.dk'
 
 def kkb_prod():
+    env.project = 'kkb'
+    env.environment = 'prod'
     env.hosts = [DEPLOY_HOSTS['prod']]
     env.webroot = '/data/www/kkb.prod.gnit.dk'
 
 def aakb_prod():
+    env.project = 'aakb'
+    env.environment = 'prod'
     env.hosts = [DEPLOY_HOSTS['prod']]
     env.webroot = '/data/www/aakb.prod.gnit.dk'
 
 def kolding_prod():
+    env.project = 'kolding'
+    env.environment = 'prod'
     env.hosts = [DEPLOY_HOSTS['prod']]
     env.webroot = '/data/www/kolding.prod.gnit.dk'
 
 def kbhlyd_prod():
+    env.project = 'kbhlyd'
+    env.environment = 'prod'
     env.hosts = [DEPLOY_HOSTS['prod']]
     env.webroot = '/data/www/kbhlyd.prod.gnit.dk'
 
@@ -74,6 +94,13 @@ def version():
 def reload_apache():
     'Reload Apache on the remote machine'
     run('sudo /usr/sbin/apache2ctl graceful')
+
+def sync_from_prod():
+    'Copies the production database to the staging database'
+    if env.environment != 'stg' :
+        abort('sync_from_prod should only be run on stg environment.')
+    run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
+    run('rsync -av --delete /data/www/%s.prod.gnit.dk/files/ /data/www/%s.stg.gnit.dk/files/' % (env.project, env.project))
 
 def deploy():
     'Push a specific version to the specified environment'
