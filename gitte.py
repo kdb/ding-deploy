@@ -86,7 +86,10 @@ def update_git_checkout(dirname):
     logger = logging.getLogger('gitte')
     for command in GIT_COMMANDS:
         proc = Popen(command, cwd=dirname, stdout=PIPE, stderr=STDOUT)
-        logger.info('Git command output: %s' % proc.communicate()[0])
+        message = proc.communicate()[0]
+
+        if message:
+            logger.info('%s: %s' % (dirname, message)
 
 def wait_for_change():
     """
