@@ -1,5 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+"""
+Git checkout updating script.
+
+Works together with a PHP script to update Git repositories based on pings
+from github.com or similar git hosting services.
+
+This is currently accomplished by way of the PHP script touch'ing files
+when it receives a ping and this script looking for these pings via
+inotify. This will be refactored to use named pipes instead when time permits.
+"""
+
 from os import chdir
 from sys import stdout, stderr
 import logging
