@@ -53,6 +53,8 @@ def configure_logging():
             "%(asctime)s | %(levelname)s | %(message)s"
         ))
         log_instance.addHandler(trfh)
+    else:
+        log_instance.error('Log dir does not exist: %s' % log_path)
 
     return log_instance
 
