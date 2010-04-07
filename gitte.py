@@ -11,13 +11,14 @@ when it receives a ping and this script looking for these pings via
 inotify. This will be refactored to use named pipes instead when time permits.
 """
 
+import os.path
 import logging
 import logging.handlers
 from subprocess import Popen, PIPE, STDOUT
 from pyinotify import WatchManager, Notifier, ProcessEvent, IN_ATTRIB
 
 # Configure a little bit of logging so we can see what's going on.
-LOG_FILENAME = '~/log/gitte.log'
+LOG_PATH = '~/log/gitte.log'
 
 DIRNAMES = {
     'kkb': '/home/kkbdeploy/sites/kkb.dev.gnit.dk',
@@ -39,14 +40,20 @@ def get_logger():
     """
     Set up a an instance of Python's standard logging utility.
     """
-    trfh = logging.handlers.TimedRotatingFileHandler(LOG_FILENAME, 'D', 1, 5)
-    trfh.setFormatter(logging.Formatter(
-        "%(asctime)s | %(levelname)s | %(message)s"
-    ))
-
     log_instance = logging.getLogger('logger')
     log_instance.setLevel(logging.INFO)
-    log_instance.addHandler(trfh)
+
+    # The logging handler does not resolve the path, so we do it
+    # manually before setting the handler up.
+    log_path = os.path.abspath(os.path.expanduser(LOG_PATH))
+    if os.path.isdir(log_path):
+        log_file = os.path.join(log_path, 'gitte.log')
+        trfh = logging.handlers.TimedRotatingFileHandler(log_file, 'D', 1, 5)
+        trfh.setFormatter(logging.Formatter(
+            "%(asctime)s | %(levelname)s | %(message)s"
+        ))
+        log_instance.addHandler(trfh)
+
     return log_instance
 
 
