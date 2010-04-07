@@ -89,7 +89,7 @@ def update_git_checkout(dirname):
         message = proc.communicate()[0]
 
         if message:
-            logger.info('%s: %s' % (dirname, message)
+            logger.info('%s: %s' % (dirname, message))
 
 def wait_for_change():
     """
