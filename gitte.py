@@ -84,13 +84,19 @@ def update_git_checkout(dirname):
         proc = Popen(command, cwd=dirname, stdout=PIPE, stderr=STDOUT)
         logger.info('Git command output: %s' % proc.communicate()[0])
 
-if __name__ == '__main__':
-    logger = get_logger()
-    wm = WatchManager()
-    notifier = Notifier(wm, ProcessGitUpdates())
+def wait_for_change():
+    """
+    Start watching a dir for changes and process them when they occur.
+    """
+    wtchmmgr = WatchManager()
+    notifier = Notifier(wtchmmgr, ProcessGitUpdates())
 
     # Watch for when writable file is closed.
-    wm.add_watch('/data/www/default/github', IN_ATTRIB)
+    wtchmmgr.add_watch('/data/www/default/github', IN_ATTRIB)
 
     notifier.loop(daemonize=True, pid_file='/tmp/gitte.pid', force_kill=True)
+
+if __name__ == '__main__':
+    logger = get_logger()
+    wait_for_change()
 
