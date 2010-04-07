@@ -36,11 +36,11 @@ GIT_COMMANDS = (
     ('git', 'submodule', 'update'),
 )
 
-def get_logger():
+def configure_logging():
     """
     Set up a an instance of Python's standard logging utility.
     """
-    log_instance = logging.getLogger('logger')
+    log_instance = logging.getLogger('gitte')
     log_instance.setLevel(logging.INFO)
 
     # The logging handler does not resolve the path, so we do it
@@ -65,6 +65,7 @@ class ProcessGitUpdates(ProcessEvent):
 
         This happen every time the file is touched.
         """
+        logger = logging.getLogger('gitte')
         logger.info('%s was touched.' % event.name)
         name = event.name.split('-')[0]
 
@@ -80,6 +81,7 @@ class ProcessGitUpdates(ProcessEvent):
 
 def update_git_checkout(dirname):
     """ Performs git update on given dirname """
+    logger = logging.getLogger('gitte')
     for command in GIT_COMMANDS:
         proc = Popen(command, cwd=dirname, stdout=PIPE, stderr=STDOUT)
         logger.info('Git command output: %s' % proc.communicate()[0])
@@ -97,6 +99,6 @@ def wait_for_change():
     notifier.loop(daemonize=True, pid_file='/tmp/gitte.pid', force_kill=True)
 
 if __name__ == '__main__':
-    logger = get_logger()
+    configure_logging()
     wait_for_change()
 
