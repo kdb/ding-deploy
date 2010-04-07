@@ -18,7 +18,7 @@ from subprocess import Popen, PIPE, STDOUT
 from pyinotify import WatchManager, Notifier, ProcessEvent, IN_ATTRIB
 
 # Configure a little bit of logging so we can see what's going on.
-LOG_PATH = '~/log/gitte.log'
+LOG_PATH = '~/log'
 
 DIRNAMES = {
     'kkb': '/home/kkbdeploy/sites/kkb.dev.gnit.dk',
