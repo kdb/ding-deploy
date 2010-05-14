@@ -1,4 +1,3 @@
-Deploy script for the Ding project
-==================================
-
+Build and deploy tools for the Ding project
+===========================================
 
