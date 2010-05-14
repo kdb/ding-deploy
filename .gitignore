@@ -1,3 +1,6 @@
 *.py[co]
 settings.py
 
+# Ignore the product of a make.
+build/ding
+
