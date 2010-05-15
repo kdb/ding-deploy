@@ -18,6 +18,7 @@ import os
 import re
 import socket
 import stat
+import sys
 from subprocess import Popen, PIPE, STDOUT
 from SocketServer import StreamRequestHandler, ThreadingUnixStreamServer
 
@@ -84,6 +85,22 @@ def run_command(command, path):
     if message:
         logger.info('%s: %s' % (path, message))
 
+def make_service():
+    """ Fork our process to make it run indepedent from the shell. """
+    if os.fork(): exit(0)
+    os.umask(0)
+    os.setsid()
+    if os.fork(): exit(0)
+
+    sys.stdout.flush()
+    sys.stderr.flush()
+    si = file('/dev/null', 'r')
+    so = file('/dev/null', 'a+')
+    se = file('/dev/null', 'a+', 0)
+    os.dup2(si.fileno(), sys.stdin.fileno())
+    os.dup2(so.fileno(), sys.stdout.fileno())
+    os.dup2(se.fileno(), sys.stderr.fileno())
+
 if __name__ == '__main__':
     logger = configure_logging()
 
@@ -92,11 +109,12 @@ if __name__ == '__main__':
         logger.warning('Unlinking existing socket: %s' % SOCKET_FILENAME)
         os.unlink(SOCKET_FILENAME)
 
-    logger.info('Starting Gitte socket server for: %s' % SOCKET_FILENAME)
     server = ThreadingUnixStreamServer(SOCKET_FILENAME, GitPingHandler)
 
     os.chmod(SOCKET_FILENAME, 0777)
     try:
+        logger.info('Starting Gitte socket server at: %s' % SOCKET_FILENAME)
+        make_service()
         server.serve_forever()
     except KeyboardInterrupt:
         os.unlink(SOCKET_FILENAME)
