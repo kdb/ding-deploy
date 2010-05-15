@@ -13,6 +13,7 @@ inotify. This will be refactored to use named pipes instead when time permits.
 """
 
 import logging
+import logging.handlers
 import os
 import re
 import socket
@@ -22,7 +23,7 @@ from SocketServer import StreamRequestHandler, ThreadingUnixStreamServer
 
 # Configure a little bit of logging so we can see what's going on.
 HOME_PATH = os.path.abspath(os.path.expanduser('~'))
-LOG_PATH = os.path.join(HOME_PATH, '/log')
+LOG_PATH = os.path.join(HOME_PATH, 'log')
 SOCKET_FILENAME = '/tmp/gitte.sock'
 INPUT_FILTER = re.compile('[^A-Za-z0-9_-]')
 
@@ -69,23 +70,20 @@ def configure_logging():
     """
     Set up a an instance of Python's standard logging utility.
     """
-    log_instance = logging.getLogger('gitte')
-    log_instance.setLevel(logging.INFO)
+    logger = logging.getLogger('gitte')
+    logger.setLevel(logging.INFO)
 
-    # The logging handler does not resolve the path, so we do it
-    # manually before setting the handler up.
-    log_path = os.path.abspath(os.path.expanduser(LOG_PATH))
-    if os.path.isdir(log_path):
-        log_file = os.path.join(log_path, 'gitte.log')
+    if os.path.isdir(LOG_PATH):
+        log_file = os.path.join(LOG_PATH, 'gitte.log')
         trfh = logging.handlers.TimedRotatingFileHandler(log_file, 'D', 1, 5)
         trfh.setFormatter(logging.Formatter(
             "%(asctime)s | %(levelname)s | %(message)s"
         ))
-        log_instance.addHandler(trfh)
+        logger.addHandler(trfh)
     else:
-        log_instance.error('Log dir does not exist: %s' % log_path)
+        logger.error('Log dir does not exist: %s' % log_path)
 
-    return log_instance
+    return logger
 
 def update_git_checkout(dirname):
     """ Performs git update on given dirname """
