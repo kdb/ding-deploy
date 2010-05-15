@@ -92,6 +92,7 @@ if __name__ == '__main__':
         logger.warning('Unlinking existing socket: %s' % SOCKET_FILENAME)
         os.unlink(SOCKET_FILENAME)
 
+    logger.info('Starting Gitte socket server for: %s' % SOCKET_FILENAME)
     server = ThreadingUnixStreamServer(SOCKET_FILENAME, GitPingHandler)
 
     os.chmod(SOCKET_FILENAME, 0777)
