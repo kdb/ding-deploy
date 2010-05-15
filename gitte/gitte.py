@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+
 """
 Git checkout updating script.
 
@@ -11,14 +12,19 @@ when it receives a ping and this script looking for these pings via
 inotify. This will be refactored to use named pipes instead when time permits.
 """
 
-import os.path
 import logging
-import logging.handlers
+import os
+import re
+import socket
+import stat
 from subprocess import Popen, PIPE, STDOUT
-from pyinotify import WatchManager, Notifier, ProcessEvent, IN_ATTRIB
+from SocketServer import StreamRequestHandler, ThreadingUnixStreamServer
 
 # Configure a little bit of logging so we can see what's going on.
-LOG_PATH = '~/log'
+HOME_PATH = os.path.abspath(os.path.expanduser('~'))
+LOG_PATH = os.path.join(HOME_PATH, '/log')
+SOCKET_FILENAME = '/tmp/gitte.sock'
+INPUT_FILTER = re.compile('[^A-Za-z0-9_-]')
 
 DIRNAMES = {
     'kkb': '/home/kkbdeploy/sites/kkb.dev.gnit.dk',
@@ -35,6 +41,29 @@ GIT_COMMANDS = (
     ('git', 'submodule', 'init'),
     ('git', 'submodule', 'update'),
 )
+
+class GitPingHandler(StreamRequestHandler):
+    """
+    Handles requests to the socket server.
+
+    Recieves messages via socket from the PHP script that handles Github
+    ping requests.
+    """
+    def handle(self):
+        self.data = INPUT_FILTER.sub('', self.request.recv(256).strip())
+        logger.info('Got message: %s' % self.data)
+
+        if self.data in DIRNAMES:
+            # Single dir for name, value is just a string.
+            if isinstance(DIRNAMES[self.data], basestring):
+                update_git_checkout(DIRNAMES[self.data])
+            # If value is iterable, get each dirname and update it.
+            elif hasattr(DIRNAMES[self.data], '__iter__'):
+                for dirname in DIRNAMES[self.data]:
+                    update_git_checkout(dirname)
+
+        self.request.send('OK: %s' % self.data)
+
 
 def configure_logging():
     """
@@ -58,29 +87,6 @@ def configure_logging():
 
     return log_instance
 
-
-class ProcessGitUpdates(ProcessEvent):
-    """ pyinotify event processor. """
-    def process_IN_ATTRIB(self, event):
-        """
-        Process when file attributes are changed.
-
-        This happen every time the file is touched.
-        """
-        logger = logging.getLogger('gitte')
-        logger.info('%s was touched.' % event.name)
-        name = event.name.split('-')[0]
-
-        if name in DIRNAMES:
-            # Single dir for name, value is just a string.
-            if isinstance(DIRNAMES[name], basestring):
-                update_git_checkout(DIRNAMES[name])
-            # If value is iterable, get each dirname and update it.
-            elif hasattr(DIRNAMES[name], '__iter__'):
-                for dirname in DIRNAMES[name]:
-                    update_git_checkout(dirname)
-
-
 def update_git_checkout(dirname):
     """ Performs git update on given dirname """
     logger = logging.getLogger('gitte')
@@ -91,19 +97,20 @@ def update_git_checkout(dirname):
         if message:
             logger.info('%s: %s' % (dirname, message))
 
-def wait_for_change():
-    """
-    Start watching a dir for changes and process them when they occur.
-    """
-    wtchmmgr = WatchManager()
-    notifier = Notifier(wtchmmgr, ProcessGitUpdates())
-
-    # Watch for when writable file is closed.
-    wtchmmgr.add_watch('/data/www/default/github', IN_ATTRIB)
-
-    notifier.loop(daemonize=True, pid_file='/tmp/gitte.pid', force_kill=True)
-
 if __name__ == '__main__':
-    configure_logging()
-    wait_for_change()
+    logger = configure_logging()
+
+    # Socket server creates its own socket file. Delete if it exists already.
+    if os.path.exists(SOCKET_FILENAME):
+        logger.warning('Unlinking existing socket: %s' % SOCKET_FILENAME)
+        os.unlink(SOCKET_FILENAME)
+
+    server = ThreadingUnixStreamServer(SOCKET_FILENAME, GitPingHandler)
+
+    os.chmod(SOCKET_FILENAME, 0777)
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        os.unlink(SOCKET_FILENAME)
+        print "\nKeyboard interupt recieved, Gitte server stopping..."
 
