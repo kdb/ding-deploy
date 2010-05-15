@@ -24,24 +24,18 @@ from SocketServer import StreamRequestHandler, ThreadingUnixStreamServer
 # Configure a little bit of logging so we can see what's going on.
 HOME_PATH = os.path.abspath(os.path.expanduser('~'))
 LOG_PATH = os.path.join(HOME_PATH, 'log')
+BUILD_PATH = os.path.join(HOME_PATH, 'build')
 SOCKET_FILENAME = '/tmp/gitte.sock'
 INPUT_FILTER = re.compile('[^A-Za-z0-9_-]')
 
-DIRNAMES = {
-    'kkb': '/home/kkbdeploy/sites/kkb.dev.gnit.dk',
-    'aakb': '/home/kkbdeploy/sites/aakb.dev.gnit.dk',
-    'kolding': '/home/kkbdeploy/sites/kolding.dev.gnit.dk',
-    'kbhlyd': '/home/kkbdeploy/sites/kbhlyd.dev.gnit.dk',
-    'ding': ('/home/kkbdeploy/sites/ding6_api',
-             '/home/kkbdeploy/sites/ding.dev.ting.dk',
-             '/home/kkbdeploy/sites/ting012.dev.ting.dk'),
+BUILD_PATHS = {
+    'kkb': ('kkb',),
+    'aakb': ('aakb',),
+    'kolding': ('kolding',),
+    'kbhlyd': ('kbhlyd',),
+    'ding': ('ding.api', 'ding.dev', 'ding.ting012'),
 }
 
-GIT_COMMANDS = (
-    ('git', 'pull'),
-    ('git', 'submodule', 'init'),
-    ('git', 'submodule', 'update'),
-)
 
 class GitPingHandler(StreamRequestHandler):
     """
@@ -53,18 +47,14 @@ class GitPingHandler(StreamRequestHandler):
     def handle(self):
         self.data = INPUT_FILTER.sub('', self.request.recv(256).strip())
         logger.info('Got message: %s' % self.data)
-
-        if self.data in DIRNAMES:
-            # Single dir for name, value is just a string.
-            if isinstance(DIRNAMES[self.data], basestring):
-                update_git_checkout(DIRNAMES[self.data])
-            # If value is iterable, get each dirname and update it.
-            elif hasattr(DIRNAMES[self.data], '__iter__'):
-                for dirname in DIRNAMES[self.data]:
-                    update_git_checkout(dirname)
-
         self.request.send('OK: %s' % self.data)
 
+        if self.data in BUILD_PATHS:
+            for name in BUILD_PATHS[self.data]:
+                path = os.path.join(BUILD_PATH, name)
+                run_command(('git', 'pull'), path)
+                run_command(('./ding_build.py', '-q'),
+                            os.path.join(path, 'build'))
 
 def configure_logging():
     """
@@ -85,15 +75,14 @@ def configure_logging():
 
     return logger
 
-def update_git_checkout(dirname):
-    """ Performs git update on given dirname """
+def run_command(command, path):
+    """ Runs an arbitrary command in a specific folder. """
     logger = logging.getLogger('gitte')
-    for command in GIT_COMMANDS:
-        proc = Popen(command, cwd=dirname, stdout=PIPE, stderr=STDOUT)
-        message = proc.communicate()[0]
+    proc = Popen(command, cwd=path, stdout=PIPE, stderr=STDOUT)
+    message = proc.communicate()[0]
 
-        if message:
-            logger.info('%s: %s' % (dirname, message))
+    if message:
+        logger.info('%s: %s' % (path, message))
 
 if __name__ == '__main__':
     logger = configure_logging()
