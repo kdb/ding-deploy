@@ -14,7 +14,7 @@ import sys
 
 def parse_args():
     """ Configure and run optparse to parse commandline parameters """
-    parser = OptionParser(usage='usage: %prog [-Dhqv -m MODE]')
+    parser = OptionParser(usage='usage: %prog [-dDhqv -m MODE] [MAKE_PATH]')
     parser.add_option("-d", "--debug",
                       action="store_true", dest="debug", default=False,
                       help="run script in debug mode, very verbose output.")
@@ -48,13 +48,13 @@ def configure_logging(options):
     logging.basicConfig(level=level, datefmt="%H:%M%:%S",
                         format='%(levelname)s: %(message)s (%(asctime)s)')
 
-def make_command(options):
+def make_command(options, make_path):
     """ Generate the make command based on current options. """
     # Set command based on mode.
     if options.mode == 'site':
-        command = ['drush.php', 'make', '--contrib-destination=profiles/ding', 'ding.make', 'ding']
+        command = ['drush.php', 'make', '--contrib-destination=profiles/ding', 'ding.make', make_path]
     elif options.mode == 'profile':
-        command = ['drush.php', 'make', '--no-core', '--contrib-destination=.', 'ding.make', 'ding']
+        command = ['drush.php', 'make', '--no-core', '--contrib-destination=.', 'ding.make', make_path]
     else:
         sys.exit('Unknown mode "%s", aborting.' % options.mode)
 
@@ -79,16 +79,16 @@ def start_make(command):
         logging.info('Finished Drush make sucessfully')
         return True
 
-def setup_profile(options):
+def setup_profile(options, make_path):
     """
     Setup the make product as a Drupal install profile.
 
     Handles copying the profile file into the correct folder.
     """
     if options.mode == 'site':
-        path = 'ding/profiles/ding/'
+        path = os.path.join(make_path, 'profiles', 'ding')
     else:
-        path = 'ding/'
+        path = make_path
 
     shutil.copy('ding.profile', path)
 
@@ -97,11 +97,16 @@ def main():
     (options, args) = parse_args()
     configure_logging(options)
 
-    logging.info('Starting make for mode %s' % options.mode)
-    success = start_make(make_command(options))
+    if args:
+        make_path = args[-1]
+    else:
+        make_path = 'ding'
+
+    logging.info('Starting make for mode "%s" in folder "%s"' % (options.mode, make_path))
+    success = start_make(make_command(options, make_path))
 
     if success:
-        setup_profile(options)
+        setup_profile(options, make_path)
 
 
 if __name__ == '__main__':
