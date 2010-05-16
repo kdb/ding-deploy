@@ -45,7 +45,7 @@ def configure_logging(options):
     else:
         level = logging.WARNING
 
-    logging.basicConfig(level=level, datefmt="%H:%M%:%S",
+    logging.basicConfig(level=level, datefmt="%H:%M:%S",
                         format='%(levelname)s: %(message)s (%(asctime)s)')
 
 def make_command(options, make_path):
