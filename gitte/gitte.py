@@ -19,6 +19,7 @@ import re
 import socket
 import stat
 import sys
+import time
 from subprocess import Popen, PIPE, STDOUT
 from SocketServer import StreamRequestHandler, ThreadingUnixStreamServer
 
@@ -51,11 +52,12 @@ class GitPingHandler(StreamRequestHandler):
         self.request.send('OK: %s' % self.data)
 
         if self.data in BUILD_PATHS:
+            # Name of the folder to use for the end result.
+            # Shave the last digit off the minute, throttling the build
+            # process to once every 10 minutes.
+            make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
             for name in BUILD_PATHS[self.data]:
-                path = os.path.join(BUILD_PATH, name)
-                run_command(('git', 'pull'), path)
-                run_command(('./ding_build.py', '-q'),
-                            os.path.join(path, 'build'))
+                make_build(name, make_path)
 
 def configure_logging():
     """
@@ -75,6 +77,21 @@ def configure_logging():
         logger.error('Log dir does not exist: %s' % log_path)
 
     return logger
+
+def make_build(name, make_path):
+    """ Perform an actual build via Drush make. """
+    # cwd for the build tools.
+    cwd = os.path.join(BUILD_PATH, name, 'build')
+    abs_make_path = os.path.join(cwd, make_path)
+
+    if os.path.exists(abs_make_path):
+        # Don’t do build if folder exists.
+        logger.error('Build path %s exists, aborting.' % abs_make_path)
+        return
+
+    run_command(('git', 'pull'), cwd)
+    logger.info('Starting build in %s' % abs_make_path)
+    run_command(('./ding_build.py', make_path), cwd)
 
 def run_command(command, path):
     """ Runs an arbitrary command in a specific folder. """
