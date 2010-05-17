@@ -182,9 +182,24 @@ projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
 
+; Copenhagen specific
+
 projects[copenhagen][type] = "theme"
 projects[copenhagen][download][type] = "git"
 projects[copenhagen][download][url] = "git://github.com/kdb/copenhagen.git"
+
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][version] = "2.2"
+
+projects[memcache][subdir] = "contrib"
+projects[memcache][version] = "1.x-dev"
+
+projects[scheduler][subdir] = "contrib"
+projects[scheduler][version] = "2.1"
+
+projects[securepages][subdir] = "contrib"
+projects[securepages][version] = "1.8"
+
 
 ; Ding modules
 
