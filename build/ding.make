@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-beta3"
+projects[admin][version] = "1.0-beta3"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -167,11 +167,12 @@ projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
 
 ; Themes
-projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "1.10"
 
-projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "1.0-beta8" 
+;projects[tao][location] = "http://code.developmentseed.org/fserver"
+;projects[tao][version] = "1.10"
+
+;projects[rubik][location] = "http://code.developmentseed.org/fserver"
+;projects[rubik][version] = "1.0-beta8"
 
 projects[mothership][version] = "1.1" 
 
@@ -180,6 +181,10 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
+
+projects[copenhagen][type] = "theme"
+projects[copenhagen][download][type] = "git"
+projects[copenhagen][download][url] = "git://github.com/kdb/copenhagen.git"
 
 ; Ding modules
 
