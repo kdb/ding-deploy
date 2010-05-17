@@ -195,11 +195,10 @@ projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.x-dev"
 
 projects[scheduler][subdir] = "contrib"
-projects[scheduler][version] = "2.1"
+projects[scheduler][version] = "1.6"
 
 projects[securepages][subdir] = "contrib"
 projects[securepages][version] = "1.8"
-
 
 ; Ding modules
 
