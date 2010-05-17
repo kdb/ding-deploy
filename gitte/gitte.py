@@ -35,7 +35,7 @@ BUILD_PATHS = {
     'aakb': ('aakb',),
     'kolding': ('kolding',),
     'kbhlyd': ('kbhlyd',),
-    'ding': ('ding.api', 'ding.dev', 'ding.ting012'),
+    'ding': ('ding.dev', 'ding.ting012'),
 }
 
 
