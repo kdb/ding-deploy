@@ -6,7 +6,7 @@ http://docs.fabfile.org/0.9/
 """
 from __future__ import with_statement
 import logging
-import logging.handlers
+import os.path
 from fabric.api import cd, env, prompt, require, run, abort
 from fabric.state import _get_system_username
 
@@ -16,6 +16,8 @@ DEPLOY_HOSTS = {
     'stg': 'kkbdeploy@hiri.dbc.dk',
     'prod': 'kkbdeploy@hiri.dbc.dk',
 }
+
+BUILD_PATH = os.path.abspath(os.path.expanduser('~/build'))
 
 # Simple logging for actions. Use the WARNING level to tune out paramiko
 # noise which is logged as "INFO".
@@ -106,14 +108,28 @@ def deploy():
     'Push a specific version to the specified environment'
     version()
     commit = prompt('Enter commit to deploy (40 character SHA1)',
-        validate=r'^[0-9a-fA-F]{40}$')
+        validate=r'^[0-9a-fA-F]{6,40}$')
 
-    with (cd(env.webroot)):
+    make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
+    cwd = os.path.join(BUILD_PATH, env.project, 'build')
+    abs_make_path = os.path.join(cwd, make_path)
+
+    with cd(cwd):
+        # Update git checkout.
         run('git fetch')
         run('git checkout %s' % commit)
-        run('git submodule init')
-        run('git submodule update')
-        run('git show > version.txt')
+
+        # Run the build process via drush make.
+        logger.info('Starting build in %s' % abs_make_path)
+        run('./ding_build.py %s' % make_path)
+
+        # If there is already a latest symlink, rename it to previous.
+        latest_path = os.path.join(cwd, '%s-latest' % env.environment)
+        if os.path.lexists(latest_path):
+            os.rename(latest_path, os.path.join(cwd, '%s-latest' % env.environment))
+
+        # Set up a link from our completed build to the new one.
+        os.symlink(abs_make_path, latest_path)
 
     run('curl -s http://localhost/apc_clear_cache.php')
 
