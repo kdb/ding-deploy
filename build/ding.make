@@ -94,8 +94,8 @@ projects[jquery_ui][version] = "1.3"
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
 
-projects[keys][subdir] = "contrib"
-projects[keys][version] = "2.0"
+projects[keys_api][subdir] = "contrib"
+projects[keys_api][version] = "1.1"
 
 projects[link][subdir] = "contrib"
 projects[link][version] = "2.8"
