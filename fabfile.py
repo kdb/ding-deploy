@@ -100,7 +100,7 @@ def sync_from_prod():
     if env.environment != 'stg' :
         abort('sync_from_prod should only be run on stg environment.')
     run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
-    run('rsync -avmCF --delete /data/www/%(name)s.prod.gnit.dk/files/ /data/www/%(name)s.stg.gnit.dk/files/' % {'name': env.project})
+    run('sudo rsync -avmCF --delete /data/www/%(name)s.prod.gnit.dk/files/ /data/www/%(name)s.stg.gnit.dk/files/' % {'name': env.project})
 
 def deploy():
     'Push a specific version to the specified environment'
