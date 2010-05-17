@@ -18,7 +18,7 @@ DEPLOY_HOSTS = {
     'prod': 'kkbdeploy@hiri.dbc.dk',
 }
 
-BUILD_PATH = os.path.abspath(os.path.expanduser('~/build'))
+BUILD_PATH = '/home/kkbdeploy/build'
 
 # Simple logging for actions. Use the WARNING level to tune out paramiko
 # noise which is logged as "INFO".
