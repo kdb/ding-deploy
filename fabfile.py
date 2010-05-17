@@ -7,6 +7,7 @@ http://docs.fabfile.org/0.9/
 from __future__ import with_statement
 import logging
 import os.path
+import time
 from fabric.api import cd, env, prompt, require, run, abort
 from fabric.state import _get_system_username
 
@@ -90,7 +91,7 @@ def version():
     require('user', 'hosts', 'webroot',
         used_for='These variables are used for finding the target deployment environment.',
     )
-    with (cd(env.webroot)):
+    with cd(os.path.join(BUILD_PATH, env.project, 'build')):
         run('git show | head -5')
 
 def reload_apache():
@@ -120,7 +121,7 @@ def deploy():
         run('git checkout %s' % commit)
 
         # Run the build process via drush make.
-        logger.info('Starting build in %s' % abs_make_path)
+        logging.info('Starting build in %s' % abs_make_path)
         run('./ding_build.py %s' % make_path)
 
         # If there is already a latest symlink, rename it to previous.
