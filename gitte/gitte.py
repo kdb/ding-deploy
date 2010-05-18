@@ -94,15 +94,7 @@ def make_build(name, make_path):
 
     # Run the build process via drush make.
     logger.info('Starting build in %s' % abs_make_path)
-    run_command(('./ding_build.py', make_path), cwd)
-
-    # If there is already a latest symlink, rename it to previous.
-    latest_path = os.path.join(cwd, 'latest')
-    if os.path.lexists(latest_path):
-        os.rename(latest_path, os.path.join(cwd, 'previous'))
-
-    # Set up a link from our completed build to the new one.
-    os.symlink(abs_make_path, latest_path)
+    run_command(('./ding_build.py', '-l', make_path), cwd)
 
 def run_command(command, path):
     """ Runs an arbitrary command in a specific folder. """

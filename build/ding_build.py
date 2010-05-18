@@ -14,13 +14,19 @@ import sys
 
 def parse_args():
     """ Configure and run optparse to parse commandline parameters """
-    parser = OptionParser(usage='usage: %prog [-dDhqv -m MODE] [MAKE_PATH]')
+    parser = OptionParser(usage='usage: %prog [-dDhlqv -L prefix -m MODE] [MAKE_PATH]')
     parser.add_option("-d", "--debug",
                       action="store_true", dest="debug", default=False,
                       help="run script in debug mode, very verbose output.")
     parser.add_option("-D", "--developer",
                       action="store_true", dest="developer", default=False,
                       help="build developer copy, using authenticated Git repositories.")
+    parser.add_option("-l", "--create_symlinks",
+                      action="store_true", dest="create_symlinks", default=False,
+                      help="create symlinks - latest pointing to the build performing to, and previous pointing to whatever latest was pointing to before.")
+    parser.add_option("-L", "--symlink-prefix",
+                      action="store", dest="symlink_prefix", default='',
+                      help="prefix the symlinks provided by -l with this string")
     parser.add_option("-m", "--mode",
                       action="store", dest="mode", default='site',
                       help="what build mode to use. 'site' for full Drupal site, 'profile' for just the installation profile. Default is 'site'.")
@@ -96,6 +102,24 @@ def setup_profile(options, make_path):
 
     shutil.copy('ding.profile', path)
 
+def create_symlinks(options, make_path):
+    """
+    Set up symlinks to latest and previous build.
+    """
+    if options.symlink_prefix:
+        latest = '%s-latest' % symlink_prefix
+        previous = '%s-previous' % symlink_prefix
+    else:
+        latest = 'latest'
+        previous = 'previous'
+
+    # If there is already a latest symlink, rename it to previous.
+    if os.path.lexists(latest):
+        os.rename(latest, previous)
+
+    # Set up a link from our completed build to the new one.
+    os.symlink(make_path, latest)
+
 def main():
     """ Main function, run when the script is run stand-alone. """
     (options, args) = parse_args()
@@ -111,7 +135,8 @@ def main():
 
     if success:
         setup_profile(options, make_path)
-
+        if options.create_symlinks:
+            create_symlinks(options, make_path)
 
 if __name__ == '__main__':
     main()

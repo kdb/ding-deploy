@@ -122,15 +122,7 @@ def deploy():
 
         # Run the build process via drush make.
         logging.info('Starting build in %s' % abs_make_path)
-        run('./ding_build.py %s' % make_path)
-
-        # If there is already a latest symlink, rename it to previous.
-        latest_path = os.path.join(cwd, '%s-latest' % env.environment)
-        if os.path.lexists(latest_path):
-            os.rename(latest_path, os.path.join(cwd, '%s-latest' % env.environment))
-
-        # Set up a link from our completed build to the new one.
-        os.symlink(abs_make_path, latest_path)
+        run('./ding_build.py -lL %s %s' % (env.environment, make_path))
 
     run('curl -s http://localhost/apc_clear_cache.php')
 
