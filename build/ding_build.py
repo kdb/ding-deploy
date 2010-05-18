@@ -107,8 +107,8 @@ def create_symlinks(options, make_path):
     Set up symlinks to latest and previous build.
     """
     if options.symlink_prefix:
-        latest = '%s-latest' % symlink_prefix
-        previous = '%s-previous' % symlink_prefix
+        latest = '%s-latest' % options.symlink_prefix
+        previous = '%s-previous' % options.symlink_prefix
     else:
         latest = 'latest'
         previous = 'previous'
