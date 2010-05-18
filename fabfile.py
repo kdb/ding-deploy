@@ -122,7 +122,7 @@ def deploy():
 
         # Run the build process via drush make.
         logging.info('Starting build in %s' % abs_make_path)
-        run('./ding_build.py -lL %s %s' % (env.environment, make_path))
+        run('./ding_build.py -lL %s -m profile %s' % (env.environment, make_path))
 
     run('curl -s http://localhost/apc_clear_cache.php')
 
