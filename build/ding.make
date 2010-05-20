@@ -38,7 +38,7 @@ projects[ctm][subdir] = "contrib"
 projects[ctm][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.3"
+projects[ctools][version] = "1.4"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
@@ -51,6 +51,9 @@ projects[email][version] = "1.2"
 
 projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
+
+projects[features][subdir] = "contrib"
+projects[features][version] = "1.0-beta6"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.3"
@@ -74,7 +77,7 @@ projects[htmLawed][subdir] = "contrib"
 projects[htmLawed][version] = "2.7"
 
 projects[image_resize_filter][subdir] = "contrib"
-projects[image_resize_filter][version] = "1.8"
+projects[image_resize_filter][version] = "1.9"
 
 projects[imageapi][subdir] = "contrib"
 projects[imageapi][version] = "1.8"
@@ -119,7 +122,7 @@ projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hou
 projects[office_hours][download][revision] = "aec264ee81d9cfe111e7a47443b8814f043b9360"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.3"
+projects[panels][version] = "3.4"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-beta6"
@@ -138,6 +141,9 @@ projects[similarterms][version] = "1.18"
 
 projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.4"
+
+projects[strongarm][subdir] = "contrib"
+projects[strongarm][version] = "2.0-rc1"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
