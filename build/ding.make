@@ -105,6 +105,7 @@ projects[link][version] = "2.8"
 
 projects[location][subdir] = "contrib"
 projects[location][version] = "3.1-rc1"
+projects[location][patch][] = "http://d.ooh.dk/ding/2010-05-26-locations-danish.patch"
 
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
