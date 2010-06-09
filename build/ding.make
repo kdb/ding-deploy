@@ -197,6 +197,7 @@ projects[alma][download][url] = "git://github.com/dingproject/alma.git"
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
 projects[ding][download][url] = "git://github.com/dingproject/ding.git"
+projects[ding][download][revision] = "v1.1"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
@@ -205,11 +206,12 @@ projects[ding_campaign][download][url] = "git://github.com/dingproject/ding-camp
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
 projects[ting][download][url] = "git://github.com/dingproject/ting.git"
+projects[ting][download][revision] = "v1.1"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "git://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "ec0be7efd22fad7d4c8ae0fbe2cf72b41b347841"
+libraries[ting-client][download][revision] = "v0.10"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
