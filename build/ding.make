@@ -202,6 +202,7 @@ projects[ting][download][url] = "git://github.com/dingproject/ting.git"
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "git://github.com/dingproject/ting-client.git"
+libraries[ting-client][download][revision] = "ec0be7efd22fad7d4c8ae0fbe2cf72b41b347841"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
