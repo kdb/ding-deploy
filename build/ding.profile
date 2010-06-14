@@ -444,6 +444,33 @@ function _ding_configure_second() {
   // Delete our temporary variables
   variable_del('ding_profile_ting_form_finished');
   variable_del('ding_profile_alma_form_finished');
+
+  // Set up our default taxonomy vocabularies.
+  db_query("INSERT INTO {vocabulary} (vid, name, help, relations, hierarchy, multiple, required, tags, module, weight) VALUES
+    (1, '" . st('Post category') . "', '" . st('Pick a topic for the post') . " . ', 1, 1, 0, 1, 0, 'taxonomy', -9),
+    (2, '" . st('Tags') . "', '" . st('A comma-separated list of keywords') . " . ', 1, 0, 1, 0, 1, 'taxonomy', 9),
+    (4, '" . st('Event category') . "', '', 1, 0, 0, 0, 0, 'taxonomy', 0),
+    (5, '" . st('Event target') . "', '', 1, 1, 0, 0, 0, 'taxonomy', 0)
+  ");
+
+  // Bind vocabularies to node types.
+  db_query("INSERT INTO {vocabulary_node_types} (vid, type) VALUES
+    (1, 'article'),
+    (2, 'article'),
+    (2, 'campaign'),
+    (2, 'event'),
+    (2, 'feature'),
+    (2, 'library'),
+    (2, 'page'),
+    (2, 'profile'),
+    (2, 'topic'),
+    (4, 'event'),
+    (5, 'event')
+  ");
+
+  // Add a term to the required vocabulary.
+  db_query("INSERT INTO {term_data} (tid, vid, name) VALUES (1, 1, 'Test')");
+  db_query("INSERT INTO {term_hierarchy} (tid, parent) VALUES (1, 0)");
 }
 
 /**
