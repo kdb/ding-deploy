@@ -41,3 +41,5 @@ Building a local installation
   1. Select the Ding! installation profile
   2. Create a copy of `sites/default/default.settings.php` and name it `settings.php`
   3. Enter your database configuration
+
+**Work in progress!**
