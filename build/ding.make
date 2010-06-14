@@ -216,3 +216,7 @@ libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jqu
 libraries[jquery_ui][directory_name] = "jquery.ui"
 libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 
+libraries[jquery_ui][download][type] = "get"
+libraries[jquery_ui][download][url] = "http://sunet.dl.sourceforge.net/project/tinymce/TinyMCE/3.3.7/tinymce_3_3_7.zip"
+libraries[jquery_ui][directory_name] = "tinymce"
+libraries[jquery_ui][destination] = "libraries"
