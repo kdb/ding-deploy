@@ -53,7 +53,7 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta6"
+projects[features][version] = "1.0-beta7"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.3"
