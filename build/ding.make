@@ -38,7 +38,7 @@ projects[ctm][subdir] = "contrib"
 projects[ctm][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.4"
+projects[ctools][version] = "1.6"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
@@ -101,7 +101,7 @@ projects[keys_api][subdir] = "contrib"
 projects[keys_api][version] = "1.1"
 
 projects[link][subdir] = "contrib"
-projects[link][version] = "2.8"
+projects[link][version] = "2.9"
 
 projects[location][subdir] = "contrib"
 projects[location][version] = "3.1-rc1"
@@ -114,7 +114,7 @@ projects[masquerade][subdir] = "contrib"
 projects[masquerade][version] = "1.3"
 
 projects[oembed][subdir] = "contrib"
-projects[oembed][version] = "0.5"
+projects[oembed][version] = "0.6"
 
 projects[office_hours][type] = "module" 
 projects[office_hours][subdir] = "contrib"
@@ -123,7 +123,7 @@ projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hou
 projects[office_hours][download][revision] = "aec264ee81d9cfe111e7a47443b8814f043b9360"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.4"
+projects[panels][version] = "3.5"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-beta6"
@@ -156,7 +156,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.12"
+projects[token][version] = "1.13"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0-rc1"
