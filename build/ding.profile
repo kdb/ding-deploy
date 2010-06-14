@@ -157,8 +157,6 @@ function ding_profile_task_list() {
 function ding_profile_tasks(&$task, $url) {
   global $profile, $install_locale;
 
-  drupal_set_message($task);
-  
   // Just in case some of the future tasks adds some output
   $output = '';
 
