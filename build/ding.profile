@@ -26,6 +26,7 @@ function ding_profile_modules() {
     'admin_theme',
     'advanced_help',
     'ahah_response',
+    'atom_api',
     'auto_nodetitle',
     'better_formats',
     'content',
@@ -61,7 +62,6 @@ function ding_profile_modules() {
     'imagecache_canvasactions',
     'imagefield',
     'image_resize_filter',
-    'jquery_ui',
     'jquery_update',
     'keys_api',
     'link',
@@ -123,12 +123,16 @@ function _ding_profile_modules() {
     'ding_user',
     'draggable_checkboxes',
     'flexifield',
+    'jquery_ui',
     'jquery_ui_theme',
     'office_hours',
     'ting',
     'ting_covers',
     'ting_recommendation_panes',
     'ting_reference',
+    'ting_search',
+    'ting_search_autocomplete',
+    'ting_search_carousel',
     'dynamo',
   );
 }
@@ -157,8 +161,6 @@ function ding_profile_task_list() {
 function ding_profile_tasks(&$task, $url) {
   global $profile, $install_locale;
 
-  drupal_set_message($task);
-  
   // Just in case some of the future tasks adds some output
   $output = '';
 
@@ -446,6 +448,33 @@ function _ding_configure_second() {
   // Delete our temporary variables
   variable_del('ding_profile_ting_form_finished');
   variable_del('ding_profile_alma_form_finished');
+
+  // Set up our default taxonomy vocabularies.
+  db_query("INSERT INTO {vocabulary} (vid, name, help, relations, hierarchy, multiple, required, tags, module, weight) VALUES
+    (1, '" . st('Post category') . "', '" . st('Pick a topic for the post') . " . ', 1, 1, 0, 1, 0, 'taxonomy', -9),
+    (2, '" . st('Tags') . "', '" . st('A comma-separated list of keywords') . " . ', 1, 0, 1, 0, 1, 'taxonomy', 9),
+    (4, '" . st('Event category') . "', '', 1, 0, 0, 0, 0, 'taxonomy', 0),
+    (5, '" . st('Event target') . "', '', 1, 1, 0, 0, 0, 'taxonomy', 0)
+  ");
+
+  // Bind vocabularies to node types.
+  db_query("INSERT INTO {vocabulary_node_types} (vid, type) VALUES
+    (1, 'article'),
+    (2, 'article'),
+    (2, 'campaign'),
+    (2, 'event'),
+    (2, 'feature'),
+    (2, 'library'),
+    (2, 'page'),
+    (2, 'profile'),
+    (2, 'topic'),
+    (4, 'event'),
+    (5, 'event')
+  ");
+
+  // Add a term to the required vocabulary.
+  db_query("INSERT INTO {term_data} (tid, vid, name) VALUES (1, 1, 'Test')");
+  db_query("INSERT INTO {term_hierarchy} (tid, parent) VALUES (1, 0)");
 }
 
 /**
