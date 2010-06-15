@@ -26,6 +26,7 @@ function ding_profile_modules() {
     'admin_theme',
     'advanced_help',
     'ahah_response',
+    'atom_api',
     'auto_nodetitle',
     'better_formats',
     'content',
@@ -129,6 +130,9 @@ function _ding_profile_modules() {
     'ting_covers',
     'ting_recommendation_panes',
     'ting_reference',
+    'ting_search',
+    'ting_search_autocomplete',
+    'ting_search_carousel',
     'dynamo',
   );
 }
