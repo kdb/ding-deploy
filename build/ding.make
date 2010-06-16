@@ -202,7 +202,7 @@ projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.x-dev"
 
 projects[scheduler][subdir] = "contrib"
-projects[scheduler][version] = "1.6"
+projects[scheduler][version] = "1.7"
 
 projects[securepages][subdir] = "contrib"
 projects[securepages][version] = "1.8"
