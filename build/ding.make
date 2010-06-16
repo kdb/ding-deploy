@@ -188,6 +188,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
+projects[dynamo][download][branch] = "v2.0"
 
 ; Copenhagen specific
 
@@ -212,6 +213,7 @@ projects[securepages][version] = "1.8"
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
 projects[alma][download][url] = "git://github.com/dingproject/alma.git"
+projects[ding][download][branch] = "v1.1"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
