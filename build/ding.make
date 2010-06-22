@@ -194,7 +194,7 @@ projects[dynamo][download][branch] = "v2.0"
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
 projects[alma][download][url] = "git://github.com/dingproject/alma.git"
-projects[ding][download][branch] = "v1.1"
+projects[alma][download][branch] = "v1.1"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
