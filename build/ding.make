@@ -219,12 +219,10 @@ projects[securepages][version] = "1.8"
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
 projects[alma][download][url] = "git://github.com/dingproject/alma.git"
-projects[ding][download][branch] = "v1.1"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
 projects[ding][download][url] = "git://github.com/dingproject/ding.git"
-projects[ding][download][branch] = "v1.1"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
@@ -233,7 +231,6 @@ projects[ding_campaign][download][url] = "git://github.com/dingproject/ding-camp
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
 projects[ting][download][url] = "git://github.com/dingproject/ting.git"
-projects[ting][download][branch] = "v1.1"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
