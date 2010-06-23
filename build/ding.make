@@ -25,6 +25,9 @@ projects[auto_nodetitle][version] = "1.2"
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
+projects[cache_actions][subdir] = "contrib"
+projects[cache_actions][version] = "1.0-alpha2"
+
 projects[cck][subdir] = "contrib"
 projects[cck][version] = "2.7"
 
@@ -136,6 +139,9 @@ projects[potx][version] = "3.2"
 
 projects[remember_me][subdir] = "contrib"
 projects[remember_me][version] = "2.1"
+
+projects[rules][subdir] = "contrib"
+projects[rules][version] = "1.2"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
