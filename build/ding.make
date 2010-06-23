@@ -26,7 +26,7 @@ projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
 projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.6"
+projects[cck][version] = "2.7"
 
 projects[comment_notify][subdir] = "contrib"
 projects[comment_notify][version] = "1.4"
@@ -53,10 +53,10 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta7"
+projects[features][version] = "1.0-beta8"
 
 projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.3"
+projects[filefield][version] = "3.5"
 
 projects[insert][subdir] = "contrib"
 projects[insert][version] = "1.0-beta4"
@@ -86,7 +86,7 @@ projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2.0-beta10"
 
 projects[imagecache_actions][subdir] = "contrib"
-projects[imagecache_actions][version] = "1.6"
+projects[imagecache_actions][version] = "1.7"
 
 projects[imagefield][subdir] = "contrib"
 projects[imagefield][version] = "3.3"
@@ -165,7 +165,7 @@ projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc1"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "2.10"
+projects[views][version] = "2.11"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.9"
