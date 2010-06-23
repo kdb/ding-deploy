@@ -195,6 +195,7 @@ projects[dynamo][download][revision] = "0da5f3743634d4ab691aac090fb798f29bb7c7e9
 projects[copenhagen][type] = "theme"
 projects[copenhagen][download][type] = "git"
 projects[copenhagen][download][url] = "git://github.com/kdb/copenhagen.git"
+projects[copenhagen][download][revision] = "67bc92fcaaccd765b2dec474ab55f4434e2e4338"
 
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
