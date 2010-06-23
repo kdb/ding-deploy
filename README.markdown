@@ -9,22 +9,24 @@ To get your own installation of the Ding project you should use the ding_build t
 Prerequisites
 -------------
 
-The following utilities should be accessible from the command line:
-
-*  A working version of [Python](http://www.python.org/download/)
-*  The latest version of [Drush](http://drupal.org/project/drush_make) and [Drush Make](http://drupal.org/project/drush_make)
-*  A working version of Git ([Installation guide](http://book.git-scm.com/2_installing_git.html))
-
 The required server software for running Ding:
 
 * Apache 2.x with mod_rewrite
 * PHP 5.2.X with 128 MB RAM allocated and APC or XCache
 * MySQL 5.X
 
-If the installation is to integrate with the library systems access to OpenSearch, ADDI and Alma services is a must.
+If the installation is to integrate with the library systems access to [Open Search](http://oss.dbc.dk/plone/services), [ADDI](http://www.danbib.dk/index.php?doc=forsideservice) and Alma services from [Axiell](http://www.axiell.dk/) is a must.
 
 Building a local installation
 -----------------------------
+
+The following utilities should be accessible from the command line:
+
+*  A working version of [Python](http://www.python.org/download/)
+*  The latest version of [Drush](http://drupal.org/project/drush_make) and [Drush Make](http://drupal.org/project/drush_make)
+*  A working version of Git ([Installation guide](http://book.git-scm.com/2_installing_git.html))
+
+Go through the following steps:
 
 1. Get a version of the ding-deploy package by either
   *  Cloning the repository from GitHub
@@ -40,6 +42,17 @@ Building a local installation
 7. Follow the installation instructions
   1. Select the Ding! installation profile
   2. Create a copy of `sites/default/default.settings.php` and name it `settings.php`
-  3. Enter your database configuration
+  3. Enter your database configuration (if needed)
+  4. Configure your site
+  5. Enter the Ting configuration. The values needed here should be provided by [DBC](http://oss.dbc.dk/plone/services). Ting service settings are required for accessing the Ting database. Additional information settings are required to display cover images.
+  6. Enter the Alma configuration. The values needed here should be provided by [Axiell](http://www.axiell.dk/). Alma configuration is required for accessing the library system to enable user login through CPR/PIN, check material availability, make reservations etc.
+8. Access your new Ding site!
 
-**Work in progress!**
+Downloading a local installation
+--------------------------------
+
+If you want to get a local installation up and running quickly or do not have access to the developer tools mentioned above you can [download a build of Ding from GitHub](http://github.com/dingproject/ding-deploy/downloads). 
+
+If you choose to download a release you can skip straight to step 5 in the walkthrough above.
+
+The list of downloads should contain builds of all our releases since 1.1.0.
