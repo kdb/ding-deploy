@@ -187,33 +187,34 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
-projects[dynamo][download][branch] = "v2.0"
+projects[dynamo][download][revision] = "0da5f3743634d4ab691aac090fb798f29bb7c7e9"
 
 ; Ding modules
 
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
 projects[alma][download][url] = "git://github.com/dingproject/alma.git"
-projects[alma][download][branch] = "v1.1"
+projects[alma][download][revision] = "47ea32e5e390de6a9d1059ae0af084216a1e102a"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
 projects[ding][download][url] = "git://github.com/dingproject/ding.git"
-projects[ding][download][branch] = "v1.1"
+projects[ding][download][revision] = "9b88e9a3ca141a298a9e72c91a4d1f063e6424c8"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
 projects[ding_campaign][download][url] = "git://github.com/dingproject/ding-campaign.git"
+projects[ding_campaign][download][revision] = "6c3cb76a344c7de2fe8a53e15aedd1ebedb16b79"
 
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
 projects[ting][download][url] = "git://github.com/dingproject/ting.git"
-projects[ting][download][branch] = "v1.1"
+projects[ting][download][revision] = "cac8acba56572b6bef8965250aedb5e856e3292e"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "git://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][branch] = "v0.10"
+libraries[ting-client][download][revision] = "526eddb2973e406d4c8e8c408a6056e30a9be0b3"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
