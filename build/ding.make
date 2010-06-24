@@ -114,7 +114,7 @@ projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
 
 projects[masquerade][subdir] = "contrib"
-projects[masquerade][version] = "1.3"
+projects[masquerade][version] = "1.4"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.6"
