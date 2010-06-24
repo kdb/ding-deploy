@@ -55,4 +55,4 @@ If you want to get a local installation up and running quickly or do not have ac
 
 If you choose to download a release you can skip straight to step 5 in the walkthrough above.
 
-The list of downloads should contain builds of all our releases since 1.1.0.
+The list of downloads should contain builds of all our releases since 1.1.1.
