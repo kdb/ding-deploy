@@ -26,7 +26,7 @@ projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
 projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.6"
+projects[cck][version] = "2.7"
 
 projects[comment_notify][subdir] = "contrib"
 projects[comment_notify][version] = "1.4"
@@ -38,7 +38,7 @@ projects[ctm][subdir] = "contrib"
 projects[ctm][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.4"
+projects[ctools][version] = "1.6"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
@@ -53,10 +53,10 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta7"
+projects[features][version] = "1.0-beta8"
 
 projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.3"
+projects[filefield][version] = "3.5"
 
 projects[insert][subdir] = "contrib"
 projects[insert][version] = "1.0-beta4"
@@ -86,7 +86,7 @@ projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2.0-beta10"
 
 projects[imagecache_actions][subdir] = "contrib"
-projects[imagecache_actions][version] = "1.6"
+projects[imagecache_actions][version] = "1.7"
 
 projects[imagefield][subdir] = "contrib"
 projects[imagefield][version] = "3.3"
@@ -101,7 +101,7 @@ projects[keys_api][subdir] = "contrib"
 projects[keys_api][version] = "1.1"
 
 projects[link][subdir] = "contrib"
-projects[link][version] = "2.8"
+projects[link][version] = "2.9"
 
 projects[location][subdir] = "contrib"
 projects[location][version] = "3.1-rc1"
@@ -111,10 +111,10 @@ projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
 
 projects[masquerade][subdir] = "contrib"
-projects[masquerade][version] = "1.3"
+projects[masquerade][version] = "1.4"
 
 projects[oembed][subdir] = "contrib"
-projects[oembed][version] = "0.5"
+projects[oembed][version] = "0.6"
 
 projects[office_hours][type] = "module" 
 projects[office_hours][subdir] = "contrib"
@@ -123,7 +123,7 @@ projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hou
 projects[office_hours][download][revision] = "aec264ee81d9cfe111e7a47443b8814f043b9360"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.4"
+projects[panels][version] = "3.5"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-beta6"
@@ -156,7 +156,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.12"
+projects[token][version] = "1.13"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0-rc1"
@@ -165,7 +165,7 @@ projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc1"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "2.10"
+projects[views][version] = "2.11"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.9"
