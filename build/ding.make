@@ -26,7 +26,7 @@ projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
 projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.6"
+projects[cck][version] = "2.7"
 
 projects[comment_notify][subdir] = "contrib"
 projects[comment_notify][version] = "1.4"
@@ -38,7 +38,7 @@ projects[ctm][subdir] = "contrib"
 projects[ctm][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.4"
+projects[ctools][version] = "1.6"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
@@ -53,10 +53,10 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta7"
+projects[features][version] = "1.0-beta8"
 
 projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.3"
+projects[filefield][version] = "3.5"
 
 projects[insert][subdir] = "contrib"
 projects[insert][version] = "1.0-beta4"
@@ -86,7 +86,7 @@ projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2.0-beta10"
 
 projects[imagecache_actions][subdir] = "contrib"
-projects[imagecache_actions][version] = "1.6"
+projects[imagecache_actions][version] = "1.7"
 
 projects[imagefield][subdir] = "contrib"
 projects[imagefield][version] = "3.3"
@@ -101,7 +101,7 @@ projects[keys_api][subdir] = "contrib"
 projects[keys_api][version] = "1.1"
 
 projects[link][subdir] = "contrib"
-projects[link][version] = "2.8"
+projects[link][version] = "2.9"
 
 projects[location][subdir] = "contrib"
 projects[location][version] = "3.1-rc1"
@@ -111,10 +111,10 @@ projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
 
 projects[masquerade][subdir] = "contrib"
-projects[masquerade][version] = "1.3"
+projects[masquerade][version] = "1.4"
 
 projects[oembed][subdir] = "contrib"
-projects[oembed][version] = "0.5"
+projects[oembed][version] = "0.6"
 
 projects[office_hours][type] = "module" 
 projects[office_hours][subdir] = "contrib"
@@ -123,7 +123,7 @@ projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hou
 projects[office_hours][download][revision] = "aec264ee81d9cfe111e7a47443b8814f043b9360"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.4"
+projects[panels][version] = "3.5"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-beta6"
@@ -156,7 +156,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.12"
+projects[token][version] = "1.13"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0-rc1"
@@ -165,7 +165,7 @@ projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc1"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "2.10"
+projects[views][version] = "2.11"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.9"
@@ -188,7 +188,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "0da5f3743634d4ab691aac090fb798f29bb7c7e9"
+projects[dynamo][download][branch] = "v2.0"
 
 ; Copenhagen specific
 
@@ -214,27 +214,25 @@ projects[securepages][version] = "1.8"
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
 projects[alma][download][url] = "git://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "47ea32e5e390de6a9d1059ae0af084216a1e102a"
+projects[alma][download][branch] = "v1.1"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
 projects[ding][download][url] = "git://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "9b88e9a3ca141a298a9e72c91a4d1f063e6424c8"
+projects[ding][download][branch] = "v1.1"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
 projects[ding_campaign][download][url] = "git://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "6c3cb76a344c7de2fe8a53e15aedd1ebedb16b79"
 
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
 projects[ting][download][url] = "git://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "cac8acba56572b6bef8965250aedb5e856e3292e"
+projects[ting][download][branch] = "v1.1"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "git://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "526eddb2973e406d4c8e8c408a6056e30a9be0b3"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
