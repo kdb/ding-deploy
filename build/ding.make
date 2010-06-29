@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-beta3"
+projects[admin][version] = "2.0-beta4"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -224,3 +224,4 @@ libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "http://sunet.dl.sourceforge.net/project/tinymce/TinyMCE/3.3.7/tinymce_3_3_7.zip"
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
+
