@@ -416,6 +416,8 @@ function _ding_configure_first() {
  * Configuration. Second stage.
  */
 function _ding_configure_second() {
+  global $theme_key;
+  
   // Rebuild key tables/caches
   drupal_flush_all_caches();
 
@@ -423,6 +425,17 @@ function _ding_configure_second() {
   db_query("UPDATE {system} SET status = 0 WHERE type = 'theme' and name ='%s'", 'garland');
   db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' and name ='%s'", 'dynamo');
   variable_set('theme_default', 'dynamo');
+
+  // Rebuild our blocks and place them at default positions
+  // as they may have lost their position during the install
+  //
+  // _block_rehash() uses the global $theme_key variable which has 
+  // not been set to dynamo yet so do this manually during the rehash.
+  // TODO: Is there a more clean way to achieve this?
+  $temp_theme_key = $theme_key;
+  $theme_key = 'dynamo';
+  _block_rehash();
+  $theme_key = $temp_theme_key;
 
   // In Aegir install processes, we need to init strongarm manually as a
   // separate page load isn't available to do this for us.
