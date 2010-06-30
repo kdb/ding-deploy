@@ -67,6 +67,8 @@ def make_command(options, make_path):
     # Add debug or quiet flag based on our debug setting.
     if options.debug:
         command.insert(1, '-d')
+    elif options.verbose:
+        command.insert(1, '-v')
     else:
         command.insert(1, '-q')
 

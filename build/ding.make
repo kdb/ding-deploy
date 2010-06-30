@@ -59,7 +59,7 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "1.0-beta8"
 
 projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.5"
+projects[filefield][version] = "3.6"
 
 projects[insert][subdir] = "contrib"
 projects[insert][version] = "1.0-beta4"
@@ -92,7 +92,7 @@ projects[imagecache_actions][subdir] = "contrib"
 projects[imagecache_actions][version] = "1.7"
 
 projects[imagefield][subdir] = "contrib"
-projects[imagefield][version] = "3.3"
+projects[imagefield][version] = "3.6"
 
 projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.3"
