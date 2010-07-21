@@ -12,8 +12,15 @@ Prerequisites
 The required server software for running Ding:
 
 * Apache 2.x with mod_rewrite
-* PHP 5.2.X with 128 MB RAM allocated and APC or XCache
+* PHP 5.2.X and APC or XCache
 * MySQL 5.X
+
+The configuration must adhere to [the default system requirements for Drupal](http://drupal.org/requirements).
+
+In addition the default configuration the following settings must be configured as follows:
+
+* PHP `memory_limit` must be at least `128M` (128MB)
+* PHP `max_execution_time` must be at least `60` (1 minute)
 
 If the installation is to integrate with the library systems access to [Open Search](http://oss.dbc.dk/plone/services), [ADDI](http://www.danbib.dk/index.php?doc=forsideservice) and Alma services from [Axiell](http://www.axiell.dk/) is a must.
 
@@ -36,23 +43,27 @@ Go through the following steps:
     *  `-d`: **Debug**. Required if you want to track the build progress
     *  `-D`: **Developer copy**. Build developer copy, using authenticated Git repositories.
     *  `-m MODE`: **Build mode**. Use 'site' for full Drupal site, 'profile' for just the installation profile. Default is 'site'.
-4. The build process should take ~5 minutes
-5. Make your ding installation is accessible from your web server and create a corresponding database in MySQL
-6. Open a browser and navigate to the web path for your Ding installation. This should display the Drupal installer with the option of using the Ding! installation profile.
-7. Follow the installation instructions
+4. Wait. The build process should take ~5 minutes.
+5. *Optional* - download a translation:
+    1. Navigate to your installation path
+    2. Run `drush dl [language code]`. `drush dl da` downloads the Danish translation
+    3. NB: This step should be obsolete once drush make supports translations.
+6. Make your ding installation is accessible from your web server and create a corresponding database in MySQL
+7. Open a browser and navigate to the web path for your Ding installation. This should display the Drupal installer with the option of using the Ding! installation profile.
+8. Follow the installation instructions
     1. Select the Ding! installation profile
     2. Create a copy of `sites/default/default.settings.php` and name it `settings.php`
     3. Enter your database configuration (if needed)
     4. Configure your site
     5. Enter the Ting configuration. The values needed here should be provided by [DBC](http://oss.dbc.dk/plone/services). Ting service settings are required for accessing the Ting database. Additional information settings are required to display cover images.
     6. Enter the Alma configuration. The values needed here should be provided by [Axiell](http://www.axiell.dk/). Alma configuration is required for accessing the library system to enable user login through CPR/PIN, check material availability, make reservations etc.
-8. Access your new Ding site!
+9. Access your new Ding site!
 
 Downloading a local installation
 --------------------------------
 
 If you want to get a local installation up and running quickly or do not have access to the developer tools mentioned above you can [download a build of Ding from GitHub](http://github.com/dingproject/ding-deploy/downloads). 
 
-If you choose to download a release you can skip straight to step 5 in the walkthrough above.
+If you choose to download a release you can skip straight to step 6 in the walkthrough above.
 
 The list of downloads should contain builds of all our releases since 1.1.1.
