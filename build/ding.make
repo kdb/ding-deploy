@@ -176,6 +176,9 @@ projects[views][version] = "2.11"
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.9"
 
+projects[webform][subdir] = "contrib"
+projects[webform][version] = "3.0-beta6"
+
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
 

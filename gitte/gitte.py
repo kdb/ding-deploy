@@ -35,6 +35,7 @@ BUILD_PATHS = {
     'aakb': ('aakb',),
     'kolding': ('kolding',),
     'kbhlyd': ('kbhlyd',),
+    'helbib': ('helbib',),
     'ding': ('ding.dev', 'ding.ting012'),
 }
 
@@ -74,7 +75,9 @@ def configure_logging():
         ))
         logger.addHandler(trfh)
     else:
-        logger.error('Log dir does not exist: %s' % log_path)
+        stderr_handler = logging.StreamHandler()
+        logger.addHandler(stderr_handler)
+        logger.error('Log dir does not exist: %s' % LOG_PATH)
 
     return logger
 
