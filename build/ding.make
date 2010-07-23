@@ -59,7 +59,7 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "1.0-beta8"
 
 projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.6"
+projects[filefield][version] = "3.7"
 
 projects[insert][subdir] = "contrib"
 projects[insert][version] = "1.0-beta4"
@@ -71,7 +71,7 @@ projects[globalredirect][subdir] = "contrib"
 projects[globalredirect][version] = "1.2"
 
 projects[gmap][subdir] = "contrib"
-projects[gmap][version] = "1.1-rc1"
+projects[gmap][version] = "1.1"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "2.2"
@@ -92,7 +92,7 @@ projects[imagecache_actions][subdir] = "contrib"
 projects[imagecache_actions][version] = "1.7"
 
 projects[imagefield][subdir] = "contrib"
-projects[imagefield][version] = "3.6"
+projects[imagefield][version] = "3.7"
 
 projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.3"
@@ -107,8 +107,7 @@ projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
 
 projects[location][subdir] = "contrib"
-projects[location][version] = "3.1-rc1"
-projects[location][patch][] = "http://d.ooh.dk/ding/2010-05-26-locations-danish.patch"
+projects[location][version] = "3.1"
 
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
