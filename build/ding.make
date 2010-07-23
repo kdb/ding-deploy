@@ -196,7 +196,6 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
-projects[dynamo][download][branch] = "v2.0"
 
 ; Copenhagen specific
 
