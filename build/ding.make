@@ -136,6 +136,9 @@ projects[pathauto][version] = "2.x-dev"
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.2"
 
+projects[purl][subdir] = "contrib"
+projects[purl][version] = "1.0-beta12"
+
 projects[remember_me][subdir] = "contrib"
 projects[remember_me][version] = "2.1"
 
