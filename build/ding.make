@@ -139,9 +139,6 @@ projects[potx][version] = "3.2"
 projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta12"
 
-projects[remember_me][subdir] = "contrib"
-projects[remember_me][version] = "2.1"
-
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.2"
 
