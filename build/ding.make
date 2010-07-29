@@ -198,24 +198,29 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
+projects[dynamo][download][revision] = "v2.0.2"
 
 ; Ding modules
 
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
 projects[alma][download][url] = "git://github.com/dingproject/alma.git"
+projects[alma][download][revision] = "v1.3.0"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
 projects[ding][download][url] = "git://github.com/dingproject/ding.git"
+projects[ding][download][revision] = "v1.3.0"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
 projects[ding_campaign][download][url] = "git://github.com/dingproject/ding-campaign.git"
+projects[ding_campaign][download][revision] = "v1.2.0"
 
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
 projects[ting][download][url] = "git://github.com/dingproject/ting.git"
+projects[ting][download][revision] = "v1.3.0"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
