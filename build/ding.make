@@ -122,7 +122,7 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git" 
 projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hours.git"
-projects[office_hours][download][revision] = "aec264ee81d9cfe111e7a47443b8814f043b9360"
+projects[office_hours][download][revision] = "d94a35081bcccb8abc859358c3b5b3230774b5ed"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.5"
