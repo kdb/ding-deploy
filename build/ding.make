@@ -206,6 +206,7 @@ projects[dynamo][download][revision] = "v2.0.2"
 projects[copenhagen][type] = "theme"
 projects[copenhagen][download][type] = "git"
 projects[copenhagen][download][url] = "git://github.com/kdb/copenhagen.git"
+projects[copenhagen][download][revision] = "v2.0.2"
 
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
