@@ -76,6 +76,7 @@ class GitHubPingHandler(StreamRequestHandler):
         finally:
             # Release the lock when we stop running, no matter what happens.
             EXEC_LOCKS[self.data].release()
+            logger.info('Released lock for: %s' % self.data)
 
 
 def configure_logging():
@@ -115,7 +116,7 @@ def make_build(name, make_path):
 
     # Run the build process via drush make.
     logger.info('Starting build in %s' % abs_make_path)
-    run_command(('./ding_build.py', '-l', make_path), cwd)
+    run_command(('./ding_build.py', '-lq', make_path), cwd)
 
 def run_command(command, path):
     """ Runs an arbitrary command in a specific folder. """
