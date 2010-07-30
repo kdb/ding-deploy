@@ -115,6 +115,10 @@ def create_symlinks(options, make_path):
         latest = 'latest'
         previous = 'previous'
 
+    # Revome previous symlink, if it exists.
+    if os.path.lexists(previous):
+        os.unlink(previous)
+
     # If there is already a latest symlink, rename it to previous.
     if os.path.lexists(latest):
         os.rename(latest, previous)
