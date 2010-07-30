@@ -110,10 +110,12 @@ def run_command(command, path):
 
 def make_service():
     """ Fork our process to make it run indepedent from the shell. """
-    if os.fork(): exit(0)
+    if os.fork():
+        sys.exit()
     os.umask(0)
     os.setsid()
-    if os.fork(): exit(0)
+    if os.fork():
+        sys.exit()
 
     sys.stdout.flush()
     sys.stderr.flush()
