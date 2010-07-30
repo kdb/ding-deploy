@@ -40,7 +40,7 @@ BUILD_PATHS = {
 }
 
 
-class GitPingHandler(StreamRequestHandler):
+class GitHubPingHandler(StreamRequestHandler):
     """
     Handles requests to the socket server.
 
@@ -132,7 +132,7 @@ if __name__ == '__main__':
         logger.warning('Unlinking existing socket: %s' % SOCKET_FILENAME)
         os.unlink(SOCKET_FILENAME)
 
-    server = ThreadingUnixStreamServer(SOCKET_FILENAME, GitPingHandler)
+    server = ThreadingUnixStreamServer(SOCKET_FILENAME, GitHubPingHandler)
 
     os.chmod(SOCKET_FILENAME, 0777)
     try:
