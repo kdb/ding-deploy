@@ -19,6 +19,7 @@ import re
 import socket
 import stat
 import sys
+import threading
 import time
 from subprocess import Popen, PIPE, STDOUT
 from SocketServer import StreamRequestHandler, ThreadingUnixStreamServer
@@ -29,6 +30,7 @@ LOG_PATH = os.path.join(HOME_PATH, 'log')
 BUILD_PATH = os.path.join(HOME_PATH, 'build')
 SOCKET_FILENAME = '/tmp/gitte.sock'
 INPUT_FILTER = re.compile('[^A-Za-z0-9_-]')
+EXEC_LOCKS = {}
 
 BUILD_PATHS = {
     'kkb': ('kkb',),
@@ -52,13 +54,29 @@ class GitHubPingHandler(StreamRequestHandler):
         logger.info('Got message: %s' % self.data)
         self.request.send('OK: %s' % self.data)
 
-        if self.data in BUILD_PATHS:
-            # Name of the folder to use for the end result.
-            # Shave the last digit off the minute, throttling the build
-            # process to once every 10 minutes.
-            make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
+        if not self.data in BUILD_PATHS:
+            return
+
+        # Check if there's a threading.Lock instance for a name.
+        if not EXEC_LOCKS.has_key(self.data):
+            EXEC_LOCKS[self.data] = threading.Lock()
+
+        # Try to acquire the lock without blocking. If a build is
+        # already in the works, log the failure and return immidiately,
+        # instead of waiting for the other build to finish.
+        if not EXEC_LOCKS[self.data].acquire(False):
+            logger.warning('Failed to acquire lock for: %s' % self.data)
+            return
+
+        try:
+            # Generate a folder name for the build.
+            make_path = time.strftime('ding-%Y%m%d%H%M')
             for name in BUILD_PATHS[self.data]:
                 make_build(name, make_path)
+        finally:
+            # Release the lock when we stop running, no matter what happens.
+            EXEC_LOCKS[self.data].release()
+
 
 def configure_logging():
     """
