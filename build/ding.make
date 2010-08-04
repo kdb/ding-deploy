@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-beta4"
+projects[admin][version] = "2.0-beta5"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -41,7 +41,7 @@ projects[ctm][subdir] = "contrib"
 projects[ctm][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.6"
+projects[ctools][version] = "1.7"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.4"
@@ -56,7 +56,7 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta8"
+projects[features][version] = "1.0-beta11"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.7"
@@ -125,7 +125,7 @@ projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hou
 projects[office_hours][download][revision] = "DRUPAL-6--2-0-UNOFFICIAL4"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.5"
+projects[panels][version] = "3.7"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-beta6"
@@ -138,9 +138,6 @@ projects[potx][version] = "3.2"
 
 projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta12"
-
-projects[remember_me][subdir] = "contrib"
-projects[remember_me][version] = "2.1"
 
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.2"
@@ -167,7 +164,7 @@ projects[token][subdir] = "contrib"
 projects[token][version] = "1.13"
 
 projects[transliteration][subdir] = "contrib"
-projects[transliteration][version] = "3.0-rc1"
+projects[transliteration][version] = "3.0"
 
 projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc1"
