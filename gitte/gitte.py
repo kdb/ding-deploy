@@ -31,7 +31,7 @@ INPUT_FILTER = re.compile('[^A-Za-z0-9_-]')
 EXEC_LOCKS = {}
 
 BUILD_PATHS = {
-    'ding': ('ding.dev'),
+    'ding': ('ding.dev',),
 }
 
 
