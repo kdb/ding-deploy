@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-beta5"
+projects[admin][version] = "2.0-beta6"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -29,7 +29,7 @@ projects[cache_actions][subdir] = "contrib"
 projects[cache_actions][version] = "1.0-alpha2"
 
 projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.7"
+projects[cck][version] = "2.8"
 
 projects[comment_notify][subdir] = "contrib"
 projects[comment_notify][version] = "1.4"
@@ -56,13 +56,13 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta11"
+projects[features][version] = "1.0-beta12"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.7"
 
 projects[insert][subdir] = "contrib"
-projects[insert][version] = "1.0-beta4"
+projects[insert][version] = "1.0-beta6"
 
 projects[flexifield][subdir] = "contrib"
 projects[flexifield][version] = "1.0-alpha5"
@@ -128,16 +128,16 @@ projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.7"
 
 projects[path_redirect][subdir] = "contrib"
-projects[path_redirect][version] = "1.0-beta6"
+projects[path_redirect][version] = "1.0-beta7"
 
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "2.x-dev"
+projects[pathauto][version] = "2.0-alpha2"
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.2"
 
 projects[purl][subdir] = "contrib"
-projects[purl][version] = "1.0-beta12"
+projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.2"
@@ -149,7 +149,7 @@ projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.4"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.0-rc1"
+projects[strongarm][version] = "2.0"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
@@ -161,7 +161,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.13"
+projects[token][version] = "1.14"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
@@ -183,10 +183,10 @@ projects[wysiwyg][version] = "2.1"
 
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "1.10"
+projects[tao][version] = "2.2"
 
 projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "1.0-beta8" 
+projects[rubik][version] = "2.0-beta4"
 
 projects[mothership][version] = "1.1" 
 
