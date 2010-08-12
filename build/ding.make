@@ -125,7 +125,7 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git" 
 projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hours.git"
-projects[office_hours][download][revision] = "DRUPAL-6--2-0-UNOFFICIAL4"
+projects[office_hours][download][branch] = "DRUPAL-6--2"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.7"
