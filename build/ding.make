@@ -13,6 +13,9 @@ projects[admin_language][version] = "1.4"
 projects[admin_theme][subdir] = "contrib"
 projects[admin_theme][version] = "1.3"
 
+projects[adminrole][subdir] = "contrib"
+projects[adminrole][version] = "1.2"
+
 projects[advanced_help][subdir] = "contrib"
 projects[advanced_help][version] = "1.2"
 

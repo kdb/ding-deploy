@@ -24,6 +24,7 @@ function ding_profile_modules() {
     'admin',
     'admin_language',
     'admin_theme',
+    'adminrole',
     'advanced_help',
     'ahah_response',
     'atom_api',
