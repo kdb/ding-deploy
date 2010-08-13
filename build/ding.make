@@ -224,12 +224,12 @@ projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
 projects[alma][download][url] = "git://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.3.2"
+projects[alma][download][revision] = "v1.3.3"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
 projects[ding][download][url] = "git://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.3.2"
+projects[ding][download][revision] = "v1.3.3"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
