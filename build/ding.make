@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-beta6"
+projects[admin][version] = "2.0-rc1"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -59,7 +59,7 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta12"
+projects[features][version] = "1.0-rc1"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.7"
@@ -125,7 +125,7 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git" 
 projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hours.git"
-projects[office_hours][download][branch] = "DRUPAL-6--2"
+projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f4f71e5"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.7"
