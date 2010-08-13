@@ -16,9 +16,8 @@ import logging
 import logging.handlers
 import os
 import re
-import socket
-import stat
 import sys
+import threading
 import time
 from subprocess import Popen, PIPE, STDOUT
 from SocketServer import StreamRequestHandler, ThreadingUnixStreamServer
@@ -29,18 +28,14 @@ LOG_PATH = os.path.join(HOME_PATH, 'log')
 BUILD_PATH = os.path.join(HOME_PATH, 'build')
 SOCKET_FILENAME = '/tmp/gitte.sock'
 INPUT_FILTER = re.compile('[^A-Za-z0-9_-]')
+EXEC_LOCKS = {}
 
 BUILD_PATHS = {
-    'kkb': ('kkb',),
-    'aakb': ('aakb',),
-    'kolding': ('kolding',),
-    'kbhlyd': ('kbhlyd',),
-    'helbib': ('helbib',),
-    'ding': ('ding.dev', 'ding.ting012'),
+    'ding': ('ding.dev',),
 }
 
 
-class GitPingHandler(StreamRequestHandler):
+class GitHubPingHandler(StreamRequestHandler):
     """
     Handles requests to the socket server.
 
@@ -52,13 +47,31 @@ class GitPingHandler(StreamRequestHandler):
         logger.info('Got message: %s' % self.data)
         self.request.send('OK: %s' % self.data)
 
-        if self.data in BUILD_PATHS:
-            # Name of the folder to use for the end result.
-            # Shave the last digit off the minute, throttling the build
-            # process to once every 10 minutes.
-            make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
-            for name in BUILD_PATHS[self.data]:
+        # Check the BUILD_PATHS dict for a path for this site name.
+        # If none is found, just assume the site name itself.
+        build_paths = BUILD_PATHS.get(self.data, [self.data])
+
+        # Check if there's a threading.Lock instance for a name.
+        if not EXEC_LOCKS.has_key(self.data):
+            EXEC_LOCKS[self.data] = threading.Lock()
+
+        # Try to acquire the lock without blocking. If a build is
+        # already in the works, log the failure and return immidiately,
+        # instead of waiting for the other build to finish.
+        if not EXEC_LOCKS[self.data].acquire(False):
+            logger.warning('Failed to acquire lock for: %s' % self.data)
+            return
+
+        try:
+            # Generate a folder name for the build.
+            make_path = time.strftime('ding-%Y%m%d%H%M')
+            for name in build_paths:
                 make_build(name, make_path)
+        finally:
+            # Release the lock when we stop running, no matter what happens.
+            EXEC_LOCKS[self.data].release()
+            logger.info('Released lock for: %s' % self.data)
+
 
 def configure_logging():
     """
@@ -85,8 +98,11 @@ def make_build(name, make_path):
     """ Perform an actual build via Drush make. """
     # cwd for the build tools.
     cwd = os.path.join(BUILD_PATH, name, 'build')
-    abs_make_path = os.path.join(cwd, make_path)
+    if not os.path.exists(cwd):
+        logger.error('There is no build folder at %s, aborting.' % cwd)
+        return
 
+    abs_make_path = os.path.join(cwd, make_path)
     if os.path.exists(abs_make_path):
         # Don’t do build if folder exists.
         logger.error('Build path %s exists, aborting.' % abs_make_path)
@@ -97,7 +113,7 @@ def make_build(name, make_path):
 
     # Run the build process via drush make.
     logger.info('Starting build in %s' % abs_make_path)
-    run_command(('./ding_build.py', '-l', make_path), cwd)
+    run_command(('./ding_build.py', '-lq', make_path), cwd)
 
 def run_command(command, path):
     """ Runs an arbitrary command in a specific folder. """
@@ -110,10 +126,12 @@ def run_command(command, path):
 
 def make_service():
     """ Fork our process to make it run indepedent from the shell. """
-    if os.fork(): exit(0)
+    if os.fork():
+        sys.exit()
     os.umask(0)
     os.setsid()
-    if os.fork(): exit(0)
+    if os.fork():
+        sys.exit()
 
     sys.stdout.flush()
     sys.stderr.flush()
@@ -132,7 +150,7 @@ if __name__ == '__main__':
         logger.warning('Unlinking existing socket: %s' % SOCKET_FILENAME)
         os.unlink(SOCKET_FILENAME)
 
-    server = ThreadingUnixStreamServer(SOCKET_FILENAME, GitPingHandler)
+    server = ThreadingUnixStreamServer(SOCKET_FILENAME, GitHubPingHandler)
 
     os.chmod(SOCKET_FILENAME, 0777)
     try:
