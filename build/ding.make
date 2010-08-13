@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "1.0-beta3"
+projects[admin][version] = "1.0-beta5"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
