@@ -515,6 +515,13 @@ function _ding_configure_second() {
   // Add a term to the required vocabulary.
   db_query("INSERT INTO {term_data} (tid, vid, name) VALUES (1, 1, 'Test')");
   db_query("INSERT INTO {term_hierarchy} (tid, parent) VALUES (1, 0)");
+
+  // Initialise the carousel with a test search.
+  variable_set('ting_search_carousel_searches', array(array(
+    'title' => 'Test',
+    'subtitle' => 'Lorem ipsum dolor amet',
+    'query' => 'test',
+  )));
 }
 
 /**
