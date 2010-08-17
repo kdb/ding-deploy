@@ -522,6 +522,14 @@ function _ding_configure_second() {
     'subtitle' => 'Lorem ipsum dolor amet',
     'query' => 'test',
   )));
+
+  // Mark all the non-default roles as secure.
+  $query = db_query("SELECT rid FROM role WHERE rid > 2");
+  $rid_list = array();
+  while ($rid = db_result($query)) {
+    $rid_list[$rid] = $rid;
+  }
+  variable_set('ding_user_secure_roles', $rid_list);
 }
 
 /**
