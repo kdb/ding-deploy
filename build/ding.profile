@@ -44,11 +44,13 @@ function ding_profile_modules() {
     'ctools',
     'page_manager',
     'views_content',
+    'd7backports',
     'date_api',
     'date_locale',
     'date_popup',
     'date_timezone',
     'date',
+    'ding_user',
     'email',
     'environment_indicator',
     'features',
@@ -111,7 +113,6 @@ function _ding_profile_modules() {
     'alma_cart',
     'alma_dibs',
     'alma_user',
-    'd7backports',
     'dibs',
     'ding_admin',
     'ding_base',
@@ -124,7 +125,6 @@ function _ding_profile_modules() {
     'ding_library_map',
     'ding_page',
     'ding_panels',
-    'ding_user',
     'draggable_checkboxes',
     'flexifield',
     'jquery_ui',
@@ -252,6 +252,29 @@ function ding_profile_tasks(&$task, $url) {
 
   return $output;
 }
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function ding_form_alter(&$form, $form_state, $form_id) {
+  if ($form_id == 'install_configure') {
+    $form['submit']['#submit'] = array('ding_form_install_configure_submit');
+  }
+}
+
+/**
+ * Submit handler for configure form.
+ *
+ * Takes the entered password and saves it in our own table.
+ */
+function ding_form_install_configure_submit($form, &$form_state) {
+  db_query("INSERT INTO {ding_user} (uid, pass, display_name) VALUES (1, '%s', 'Systemadministrator');", user_hash_password($form_state['values']['account']['pass']));
+
+  // For some reason, adding our own submit handler seems to prevent the
+  // standard one from running. To work around this, we run it manually.
+  install_configure_form_submit($form, $form_state);
+}
+
 
 /**
  * Ting configuration form.
