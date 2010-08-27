@@ -14,7 +14,7 @@ projects[admin_theme][subdir] = "contrib"
 projects[admin_theme][version] = "1.3"
 
 projects[adminrole][subdir] = "contrib"
-projects[adminrole][version] = "1.2"
+projects[adminrole][version] = "1.3"
 
 projects[advanced_help][subdir] = "contrib"
 projects[advanced_help][version] = "1.2"
@@ -47,7 +47,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.7"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.4"
+projects[date][version] = "2.6"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][version] = "1.x-dev"
