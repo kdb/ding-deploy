@@ -11,11 +11,11 @@ import time
 from fabric.api import cd, env, prompt, require, run, abort
 from fabric.state import _get_system_username
 
-# Hostnames to the different servers.
-DEPLOY_HOSTS = {
-    'dev': 'kkbdeploy@halla.dbc.dk',
-    'stg': 'kkbdeploy@hiri.dbc.dk',
-    'prod': 'kkbdeploy@hiri.dbc.dk',
+# Hostname for each role.
+env.roledefs = {
+    'dev': ['kkbdeploy@halla.dbc.dk'],
+    'stg': ['kkbdeploy@hiri.dbc.dk'],
+    'prod': ['kkbdeploy@hiri.dbc.dk'],
 }
 
 BUILD_PATH = '/home/kkbdeploy/build'
@@ -25,91 +25,51 @@ BUILD_PATH = '/home/kkbdeploy/build'
 LOG_FILENAME = '/var/log/deploy.log'
 logging.basicConfig(filename=LOG_FILENAME,level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
 
-def kkb_dev():
-    'Initialize development environment'
-    env.project = 'kkb'
-    env.environment = 'dev'
-    env.hosts = [DEPLOY_HOSTS['dev']]
-    env.webroot = '/data/www/kkb.dev.gnit.dk'
+def _env_settings(project):
+    """ Set global environment settings base on CLI args. """
+    env.role = env.get('roles', ['dev'])[0]
+    env.project = project
+    env.webroot = '/data/www/%s.%s.ting.dk' % (project, env.role)
 
-def aakb_dev():
-    env.project = 'aakb'
-    env.environment = 'dev'
-    env.hosts = [DEPLOY_HOSTS['dev']]
-    env.webroot = '/data/www/aakb.dev.gnit.dk'
-
-def kolding_dev():
-    env.project = 'kolding'
-    env.environment = 'dev'
-    env.hosts = [DEPLOY_HOSTS['dev']]
-    env.webroot = '/data/www/kolding.dev.gnit.dk'
-
-def kkb_stg():
-    env.project = 'kkb'
-    env.environment = 'stg'
-    env.hosts = [DEPLOY_HOSTS['stg']]
-    env.webroot = '/data/www/kkb.stg.gnit.dk'
-
-def aakb_stg():
-    env.project = 'aakb'
-    env.environment = 'stg'
-    env.hosts = [DEPLOY_HOSTS['stg']]
-    env.webroot = '/data/www/aakb.stg.gnit.dk'
-
-def kolding_stg():
-    env.project = 'kolding'
-    env.environment = 'stg'
-    env.hosts = [DEPLOY_HOSTS['stg']]
-    env.webroot = '/data/www/kolding.stg.gnit.dk'
-
-def kkb_prod():
-    env.project = 'kkb'
-    env.environment = 'prod'
-    env.hosts = [DEPLOY_HOSTS['prod']]
-    env.webroot = '/data/www/kkb.prod.gnit.dk'
-
-def aakb_prod():
-    env.project = 'aakb'
-    env.environment = 'prod'
-    env.hosts = [DEPLOY_HOSTS['prod']]
-    env.webroot = '/data/www/aakb.prod.gnit.dk'
-
-def kolding_prod():
-    env.project = 'kolding'
-    env.environment = 'prod'
-    env.hosts = [DEPLOY_HOSTS['prod']]
-    env.webroot = '/data/www/kolding.prod.gnit.dk'
-
-def kbhlyd_prod():
-    env.project = 'kbhlyd'
-    env.environment = 'prod'
-    env.hosts = [DEPLOY_HOSTS['prod']]
-    env.webroot = '/data/www/kbhlyd.prod.gnit.dk'
-
-def version():
+def version(project):
     'Get the currently deployed version'
+    _env_settings(project)
     require('user', 'hosts', 'webroot',
         used_for='These variables are used for finding the target deployment environment.',
     )
     with cd(os.path.join(BUILD_PATH, env.project, 'build')):
-        run('git show | head -5')
+        run('git show | head -10')
 
 def reload_apache():
     'Reload Apache on the remote machine'
     run('sudo /usr/sbin/apache2ctl graceful')
 
-def sync_from_prod():
-    'Copies the production database to the staging database'
-    if env.environment != 'stg' :
-        abort('sync_from_prod should only be run on stg environment.')
-    run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
-    run('sudo rsync -avmCF --delete /data/www/%(name)s.prod.gnit.dk/files/ /data/www/%(name)s.stg.gnit.dk/files/' % {'name': env.project})
+def sync_from_prod(project):
+    """
+    Sync the staging environment from production.
 
-def deploy():
-    'Push a specific version to the specified environment'
-    version()
-    commit = prompt('Enter commit to deploy (40 character SHA1)',
-        validate=r'^[0-9a-fA-F]{6,40}$')
+    Copies the production database and files to the staging site
+    """
+    _env_settings(project)
+
+    if env.get('roles') != ['stg']:
+        abort('sync_from_prod is not supported for non-stg roles.')
+
+    run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
+    run('sudo rsync -avmCF --delete /data/www/%(name)s.prod.ting.dk/files/ /data/www/%(name)s.stg.ting.dk/files/' % {'name': env.project})
+
+def deploy(project, commit=None):
+    """ Deploy a specific version in the specified environment. """
+    version(project)
+
+    # Prompt for the commit ID if not given as a parameter.
+    if not commit:
+        commit = prompt('Enter commit to deploy (40 character SHA1)',
+            validate=r'^[0-9a-fA-F]{6,40}$')
+
+    require('user', 'hosts', 'webroot', 'role',
+        used_for='These variables are used for finding the target deployment environment.',
+    )
 
     make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
     cwd = os.path.join(BUILD_PATH, env.project, 'build')
@@ -122,7 +82,7 @@ def deploy():
 
         # Run the build process via drush make.
         logging.info('Starting build in %s' % abs_make_path)
-        run('./ding_build.py -lL %s -m profile %s' % (env.environment, make_path))
+        run('./ding_build.py -lL %s -m profile %s' % (env.role, make_path))
 
     run('curl -s http://localhost/apc_clear_cache.php')
 
