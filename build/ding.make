@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-rc1"
+projects[admin][version] = "2.0"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -14,7 +14,7 @@ projects[admin_theme][subdir] = "contrib"
 projects[admin_theme][version] = "1.3"
 
 projects[adminrole][subdir] = "contrib"
-projects[adminrole][version] = "1.2"
+projects[adminrole][version] = "1.3"
 
 projects[advanced_help][subdir] = "contrib"
 projects[advanced_help][version] = "1.2"
@@ -47,7 +47,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.7"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.4"
+projects[date][version] = "2.6"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][version] = "1.x-dev"
@@ -59,7 +59,7 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-rc1"
+projects[features][version] = "1.0"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.7"
@@ -117,6 +117,9 @@ projects[markdown][version] = "1.2"
 
 projects[masquerade][subdir] = "contrib"
 projects[masquerade][version] = "1.4"
+
+projects[menu_breadcrumb][subdir] = "contrib"
+projects[menu_breadcrumb][version] = "1.3"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.6"
@@ -179,7 +182,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.9"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.0-beta6"
+projects[webform][version] = "3.2"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
