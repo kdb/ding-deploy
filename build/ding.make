@@ -118,6 +118,9 @@ projects[markdown][version] = "1.2"
 projects[masquerade][subdir] = "contrib"
 projects[masquerade][version] = "1.4"
 
+projects[menu_breadcrumb][subdir] = "contrib"
+projects[menu_breadcrumb][version] = "1.3"
+
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.6"
 
