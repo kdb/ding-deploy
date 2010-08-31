@@ -232,7 +232,7 @@ projects[alma][download][revision] = "v1.3.4rc1"
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
 projects[ding][download][url] = "git://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.3.4rc1"
+projects[ding][download][revision] = "v1.3.4rc2"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
