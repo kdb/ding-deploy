@@ -127,7 +127,7 @@ projects[oembed][version] = "0.6"
 projects[office_hours][type] = "module" 
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git" 
-projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hours.git"
+projects[office_hours][download][url] = "https://github.com/mikl/drupal-office_hours.git"
 projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f4f71e5"
 
 projects[panels][subdir] = "contrib"
@@ -200,29 +200,29 @@ projects[mothership][version] = "1.1"
 
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
-projects[dynamo][download][url] = "git://github.com/dingproject/dynamo.git"
+projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
 
 ; Ding modules
 
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
-projects[alma][download][url] = "git://github.com/dingproject/alma.git"
+projects[alma][download][url] = "https://github.com/dingproject/alma.git"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
-projects[ding][download][url] = "git://github.com/dingproject/ding.git"
+projects[ding][download][url] = "https://github.com/dingproject/ding.git"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
-projects[ding_campaign][download][url] = "git://github.com/dingproject/ding-campaign.git"
+projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
 
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
-projects[ting][download][url] = "git://github.com/dingproject/ting.git"
+projects[ting][download][url] = "https://github.com/dingproject/ting.git"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
-libraries[ting-client][download][url] = "git://github.com/dingproject/ting-client.git"
+libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
