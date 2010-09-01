@@ -115,6 +115,10 @@ def create_symlinks(options, make_path):
         latest = 'latest'
         previous = 'previous'
 
+    # Revome previous symlink, if it exists.
+    if os.path.lexists(previous):
+        os.unlink(previous)
+
     # If there is already a latest symlink, rename it to previous.
     if os.path.lexists(latest):
         os.rename(latest, previous)
@@ -139,6 +143,8 @@ def main():
         setup_profile(options, make_path)
         if options.create_symlinks:
             create_symlinks(options, make_path)
+    else:
+        logging.error('Build FAILED for mode "%s" in folder "%s"' % (options.mode, make_path))
 
 if __name__ == '__main__':
     main()

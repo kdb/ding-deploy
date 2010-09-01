@@ -5,13 +5,16 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0-beta4"
+projects[admin][version] = "2.0"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
 
 projects[admin_theme][subdir] = "contrib"
 projects[admin_theme][version] = "1.3"
+
+projects[adminrole][subdir] = "contrib"
+projects[adminrole][version] = "1.3"
 
 projects[advanced_help][subdir] = "contrib"
 projects[advanced_help][version] = "1.2"
@@ -29,7 +32,7 @@ projects[cache_actions][subdir] = "contrib"
 projects[cache_actions][version] = "1.0-alpha2"
 
 projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.7"
+projects[cck][version] = "2.8"
 
 projects[comment_notify][subdir] = "contrib"
 projects[comment_notify][version] = "1.4"
@@ -44,7 +47,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.7"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.4"
+projects[date][version] = "2.6"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][version] = "1.x-dev"
@@ -56,13 +59,13 @@ projects[environment_indicator][subdir] = "contrib"
 projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0-beta10"
+projects[features][version] = "1.0"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.7"
 
 projects[insert][subdir] = "contrib"
-projects[insert][version] = "1.0-beta4"
+projects[insert][version] = "1.0-beta6"
 
 projects[flexifield][subdir] = "contrib"
 projects[flexifield][version] = "1.0-alpha5"
@@ -100,8 +103,8 @@ projects[jquery_ui][version] = "1.3"
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
 
-projects[keys_api][subdir] = "contrib"
-projects[keys_api][version] = "1.1"
+projects[keys][subdir] = "contrib"
+projects[keys][version] = "2.0"
 
 projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
@@ -115,6 +118,9 @@ projects[markdown][version] = "1.2"
 projects[masquerade][subdir] = "contrib"
 projects[masquerade][version] = "1.4"
 
+projects[menu_breadcrumb][subdir] = "contrib"
+projects[menu_breadcrumb][version] = "1.3"
+
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.6"
 
@@ -122,22 +128,22 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git" 
 projects[office_hours][download][url] = "git://github.com/mikl/drupal-office_hours.git"
-projects[office_hours][download][revision] = "DRUPAL-6--2-0-UNOFFICIAL4"
+projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f4f71e5"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.7"
 
 projects[path_redirect][subdir] = "contrib"
-projects[path_redirect][version] = "1.0-beta6"
+projects[path_redirect][version] = "1.0-beta7"
 
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "2.x-dev"
+projects[pathauto][version] = "2.0-alpha2"
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.2"
 
 projects[purl][subdir] = "contrib"
-projects[purl][version] = "1.0-beta12"
+projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.2"
@@ -149,7 +155,7 @@ projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.4"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.0-rc1"
+projects[strongarm][version] = "2.0"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
@@ -161,7 +167,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.13"
+projects[token][version] = "1.14"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
@@ -176,17 +182,17 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.9"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.0-beta6"
+projects[webform][version] = "3.2"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
 
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "1.10"
+projects[tao][version] = "2.2"
 
 projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "1.0-beta8" 
+projects[rubik][version] = "2.0-beta4"
 
 projects[mothership][version] = "1.1" 
 
