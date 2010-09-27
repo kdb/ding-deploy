@@ -77,7 +77,7 @@ projects[gmap][subdir] = "contrib"
 projects[gmap][version] = "1.1"
 
 projects[google_analytics][subdir] = "contrib"
-projects[google_analytics][version] = "2.2"
+projects[google_analytics][version] = "3.0"
 
 projects[htmLawed][subdir] = "contrib"
 projects[htmLawed][version] = "2.7"
@@ -98,7 +98,7 @@ projects[imagefield][subdir] = "contrib"
 projects[imagefield][version] = "3.7"
 
 projects[jquery_ui][subdir] = "contrib"
-projects[jquery_ui][version] = "1.3"
+projects[jquery_ui][version] = "1.4"
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
@@ -146,7 +146,7 @@ projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "1.2"
+projects[rules][version] = "1.3"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
@@ -189,10 +189,10 @@ projects[wysiwyg][version] = "2.1"
 
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "2.2"
+projects[tao][version] = "3.1"
 
 projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "2.0-beta4"
+projects[rubik][version] = "3.0-beta1"
 
 projects[mothership][version] = "1.1" 
 
