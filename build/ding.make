@@ -221,7 +221,7 @@ projects[ding][download][revision] = "v1.4.0rc1"
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.2"
+projects[ding_campaign][download][revision] = "v1.2.0"
 
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
@@ -231,7 +231,7 @@ projects[ting][download][revision] = "v1.4.0rc1"
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][revision] = "v0.14.1"
+libraries[ting-client][download][revision] = "v0.14.1"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
