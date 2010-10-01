@@ -75,6 +75,7 @@ function ding_profile_modules() {
     'location_phone',
     'location_node',
     'markdown',
+    'menu_block',
     'oembed',
     'oembedcore',
     'optionwidgets',

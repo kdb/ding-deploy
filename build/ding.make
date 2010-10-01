@@ -77,7 +77,7 @@ projects[gmap][subdir] = "contrib"
 projects[gmap][version] = "1.1"
 
 projects[google_analytics][subdir] = "contrib"
-projects[google_analytics][version] = "2.2"
+projects[google_analytics][version] = "3.0"
 
 projects[htmLawed][subdir] = "contrib"
 projects[htmLawed][version] = "2.7"
@@ -98,7 +98,7 @@ projects[imagefield][subdir] = "contrib"
 projects[imagefield][version] = "3.7"
 
 projects[jquery_ui][subdir] = "contrib"
-projects[jquery_ui][version] = "1.3"
+projects[jquery_ui][version] = "1.4"
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
@@ -121,13 +121,16 @@ projects[masquerade][version] = "1.4"
 projects[menu_breadcrumb][subdir] = "contrib"
 projects[menu_breadcrumb][version] = "1.3"
 
+projects[menu_block][subdir] = "contrib"
+projects[menu_block][version] = "2.3"
+
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.6"
 
 projects[office_hours][type] = "module" 
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git" 
-projects[office_hours][download][url] = "http://github.com/mikl/drupal-office_hours.git"
+projects[office_hours][download][url] = "https://github.com/mikl/drupal-office_hours.git"
 projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f4f71e5"
 
 projects[panels][subdir] = "contrib"
@@ -146,7 +149,7 @@ projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "1.2"
+projects[rules][version] = "1.3"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
@@ -189,10 +192,10 @@ projects[wysiwyg][version] = "2.1"
 
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "2.2"
+projects[tao][version] = "3.1"
 
 projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "2.0-beta4"
+projects[rubik][version] = "3.0-beta1"
 
 projects[mothership][version] = "1.1" 
 
@@ -201,7 +204,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme" 
 projects[dynamo][download][type] = "git" 
 projects[dynamo][download][url] = "http://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.0.4"
+projects[dynamo][download][revision] = "v2.0.5rc1"
 
 ; Copenhagen specific
 
@@ -226,27 +229,28 @@ projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_
 
 projects[alma][type] = "module" 
 projects[alma][download][type] = "git" 
-projects[alma][download][url] = "http://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.3.4"
+projects[alma][download][url] = "https://github.com/dingproject/alma.git"
+projects[alma][download][revision] = "v1.4.0rc1"
 
 projects[ding][type] = "module" 
 projects[ding][download][type] = "git" 
-projects[ding][download][url] = "http://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.3.4"
+projects[ding][download][url] = "https://github.com/dingproject/ding.git"
+projects[ding][download][revision] = "v1.4.0rc1"
 
 projects[ding_campaign][type] = "module" 
 projects[ding_campaign][download][type] = "git" 
-projects[ding_campaign][download][url] = "http://github.com/dingproject/ding-campaign.git"
+projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
 projects[ding_campaign][download][revision] = "v1.2.0"
 
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
-projects[ting][download][url] = "http://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.3.4"
+projects[ting][download][url] = "https://github.com/dingproject/ting.git"
+projects[ting][download][revision] = "v1.4.0rc1"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
-libraries[ting-client][download][url] = "http://github.com/dingproject/ting-client.git"
+libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
+libraries[ting-client][download][revision] = "v0.14.1"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"

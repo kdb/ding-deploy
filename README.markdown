@@ -27,6 +27,8 @@ If the installation is to integrate with the library systems access to [Open Sea
 Building a local installation
 -----------------------------
 
+NB: The following guide has been tested on Linux and OSX machines. [Ewan Andreasen has a writeup about how to do this on Windows XP (in Danish)](http://netnote.vejlebib.dk/et-ding-ting-udviklingsmiljoe-pa-windows).
+
 The following utilities should be accessible from the command line:
 
 *  A working version of [Python](http://www.python.org/download/)
