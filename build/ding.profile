@@ -46,7 +46,6 @@ function ding_profile_modules() {
     'views_content',
     'd7backports',
     'date_api',
-    'date_locale',
     'date_popup',
     'date_timezone',
     'date',
