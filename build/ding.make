@@ -189,10 +189,10 @@ projects[wysiwyg][version] = "2.1"
 
 ; Themes
 projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "2.2"
+projects[tao][version] = "3.1"
 
 projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "2.0-beta4"
+projects[rubik][version] = "3.0-beta1"
 
 projects[mothership][version] = "1.1" 
 
