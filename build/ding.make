@@ -2,9 +2,6 @@
 core = 6.x
 projects[] = drupal
 
-; Danish translation
-projects[] = da
-
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
