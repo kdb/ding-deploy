@@ -207,14 +207,12 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v3.0.x"
 
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v2.0.x"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -223,7 +221,6 @@ projects[openruth][download][url] = "https://github.com/dingproject/openruth.git
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v2.0.x"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -232,7 +229,6 @@ projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-ca
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v2.0.x"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
