@@ -69,6 +69,7 @@ projects[insert][version] = "1.0-beta6"
 
 projects[flexifield][subdir] = "contrib"
 projects[flexifield][version] = "1.0-alpha5"
+projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-390480-22.patch"
 
 projects[globalredirect][subdir] = "contrib"
 projects[globalredirect][version] = "1.2"
