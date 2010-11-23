@@ -116,6 +116,7 @@ function _ding_profile_modules() {
     'dibs',
     'ding_admin',
     'ding_base',
+    'ding_borger_api',
     'ding_breadcrumbs',
     'ding_campaign',
     'ding_content',

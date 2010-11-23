@@ -3,4 +3,5 @@ settings.py
 
 # Ignore the product of a make.
 build/ding
-
+build/previous
+build/latest

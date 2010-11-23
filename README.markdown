@@ -32,8 +32,8 @@ NB: The following guide has been tested on Linux and OSX machines. [Ewan Andreas
 The following utilities should be accessible from the command line:
 
 *  A working version of [Python](http://www.python.org/download/)
-*  The latest version of [Drush](http://drupal.org/project/drush_make) and [Drush Make](http://drupal.org/project/drush_make)
-*  A working version of Git ([Installation guide](http://book.git-scm.com/2_installing_git.html))
+*  The latest version of [Drush](http://drupal.org/project/drush_make) and [Drush Make](http://drupal.org/project/drush_make). v2.0-beta7 or later is required for git repository revision support.
+*  A working version of Git ([Installation guide](http://book.git-scm.com/2_installing_git.html)). v1.7 or later is required for https suppport.
 
 Go through the following steps:
 
