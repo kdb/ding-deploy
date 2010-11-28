@@ -212,7 +212,7 @@ projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
 projects[copenhagen][type] = "theme"
 projects[copenhagen][download][type] = "git"
 projects[copenhagen][download][url] = "https://github.com/kdb/copenhagen.git"
-;projects[copenhagen][download][revision] = "v2.0.5"
+projects[copenhagen][download][revision] = "v2.0.5"
 
 projects[kdb][type] = "module"
 projects[kdb][download][type] = "git"
