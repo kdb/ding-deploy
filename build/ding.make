@@ -212,9 +212,20 @@ projects[copenhagen][type] = "theme"
 projects[copenhagen][download][type] = "git"
 projects[copenhagen][download][url] = "https://github.com/kdb/copenhagen.git"
 
+projects[kdb][type] = "module"
+projects[kdb][download][type] = "git"
+projects[kdb][download][url] = "https://github.com/kdb/kdb.git"
+
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
 projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
+
+projects[ding_wysiwyg_node_picker][type] = "module"
+projects[ding_wysiwyg_node_picker][download][type] = "git"
+projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
+
+projects[tinymce_node_picker][subdir] = "contrib"
+projects[tinymce_node_picker][version] = "2.1"
 
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
