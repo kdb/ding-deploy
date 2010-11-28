@@ -210,11 +210,11 @@ projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
 
 projects[copenhagen][type] = "theme"
 projects[copenhagen][download][type] = "git"
-projects[copenhagen][download][url] = "http://github.com/kdb/copenhagen.git"
+projects[copenhagen][download][url] = "https://github.com/kdb/copenhagen.git"
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
-projects[ding_borger_api][download][url] = "http://github.com/dingproject/ding-borger-api.git"
+projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
 
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
