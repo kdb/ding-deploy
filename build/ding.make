@@ -192,11 +192,9 @@ projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
 
 ; Themes
-projects[tao][location] = "http://code.developmentseed.org/fserver"
-projects[tao][version] = "3.1"
+projects[tao][version] = "3.2"
 
-projects[rubik][location] = "http://code.developmentseed.org/fserver"
-projects[rubik][version] = "3.0-beta1"
+projects[rubik][version] = "3.0-beta2"
 
 projects[mothership][version] = "1.1"
 
