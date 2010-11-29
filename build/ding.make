@@ -131,7 +131,7 @@ projects[oembed][version] = "0.6"
 projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
-projects[office_hours][download][url] = "https://github.com/xendk/drupal-office_hours.git"
+projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
 projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL5"
 
 projects[panels][subdir] = "contrib"
