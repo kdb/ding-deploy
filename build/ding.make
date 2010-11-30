@@ -225,7 +225,7 @@ projects[ding][download][revision] = "v1.5.0rc1"
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.3.0"
+projects[ding_campaign][download][revision] = "v1.3.1"
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
