@@ -29,13 +29,13 @@ projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
 projects[cache_actions][subdir] = "contrib"
-projects[cache_actions][version] = "1.0-alpha2"
+projects[cache_actions][version] = "1.0"
 
 projects[cck][subdir] = "contrib"
 projects[cck][version] = "2.8"
 
 projects[comment_notify][subdir] = "contrib"
-projects[comment_notify][version] = "1.4"
+projects[comment_notify][version] = "1.5"
 
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
@@ -44,7 +44,7 @@ projects[ctm][subdir] = "contrib"
 projects[ctm][version] = "1.0"
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.7"
+projects[ctools][version] = "1.8"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.6"
@@ -87,7 +87,7 @@ projects[image_resize_filter][subdir] = "contrib"
 projects[image_resize_filter][version] = "1.9"
 
 projects[imageapi][subdir] = "contrib"
-projects[imageapi][version] = "1.8"
+projects[imageapi][version] = "1.9"
 
 projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2.0-beta10"
@@ -126,7 +126,7 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.3"
 
 projects[oembed][subdir] = "contrib"
-projects[oembed][version] = "0.6"
+projects[oembed][version] = "0.7"
 
 projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
@@ -135,13 +135,13 @@ projects[office_hours][download][url] = "https://github.com/mikl/drupal-office_h
 projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f4f71e5"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.7"
+projects[panels][version] = "3.8"
 
 projects[path_redirect][subdir] = "contrib"
-projects[path_redirect][version] = "1.0-beta7"
+projects[path_redirect][version] = "1.0-rc1"
 
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "2.0-alpha2"
+projects[pathauto][version] = "2.0-alpha3"
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.2"
@@ -171,7 +171,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = "contrib"
-projects[token][version] = "1.14"
+projects[token][version] = "1.15"
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
@@ -183,7 +183,7 @@ projects[views][subdir] = "contrib"
 projects[views][version] = "2.11"
 
 projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1.9"
+projects[views_bulk_operations][version] = "1.10"
 
 projects[webform][subdir] = "contrib"
 projects[webform][version] = "3.2"
