@@ -226,7 +226,7 @@ projects[ding_campaign][download][revision] = "v1.2.0"
 projects[ting][type] = "module" 
 projects[ting][download][type] = "git" 
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.4.0"
+projects[ting][download][revision] = "v1.4.1"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
