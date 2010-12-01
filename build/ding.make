@@ -222,7 +222,7 @@ projects[kdb][download][revision] = "v1.5.0rc1"
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
 projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
-projects[ding_borger_api][download][revision] = "v1.0.0"
+projects[ding_borger_api][download][revision] = "v1.0.1"
 
 projects[ding_wysiwyg_node_picker][type] = "module"
 projects[ding_wysiwyg_node_picker][download][type] = "git"
@@ -283,3 +283,7 @@ libraries[tinymce][download][url] = "http://sunet.dl.sourceforge.net/project/tin
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
 
+libraries[emogrifier][download][type] = "get"
+libraries[emogrifier][download][url] = "http://www.pelagodesign.com/emogrifier/emogrifier.zip"
+libraries[emogrifier][directory_name] = "emogrifier"
+libraries[emogrifier][destination] = "modules/ding_borger_api/ding_borger_api/lib"
