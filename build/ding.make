@@ -136,6 +136,7 @@ projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.8"
+projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc1"
@@ -151,6 +152,7 @@ projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.3"
+projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
