@@ -285,7 +285,4 @@ libraries[emogrifier][download][type] = "get"
 libraries[emogrifier][download][url] = "http://www.pelagodesign.com/emogrifier/emogrifier.zip"
 libraries[emogrifier][directory_name] = "emogrifier"
 libraries[emogrifier][destination] = "modules/ding_borger_api/ding_borger_api/lib"
-; One of these patches should fail depending on drush_makes ability 
-; to extract the emogrifier.zip file
 libraries[emogrifier][patch][] = "https://github.com/downloads/dingproject/ding-borger-api/emogrifier_xml1.patch"
-libraries[emogrifier][patch][] = "https://github.com/downloads/dingproject/ding-borger-api/emogrifier_xml2.patch"
