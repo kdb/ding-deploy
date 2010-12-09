@@ -136,6 +136,7 @@ projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL5"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.8"
+projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc1"
@@ -151,6 +152,7 @@ projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.3"
+projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
@@ -203,7 +205,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.1.2"
+projects[dynamo][download][revision] = "v2.1.3"
 
 ; Copenhagen specific
 
@@ -220,7 +222,7 @@ projects[kdb][download][revision] = "v1.5.0rc1"
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
 projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
-projects[ding_borger_api][download][revision] = "v1.0.1"
+projects[ding_borger_api][download][revision] = "v1.0.2"
 
 projects[ding_wysiwyg_node_picker][type] = "module"
 projects[ding_wysiwyg_node_picker][download][type] = "git"
@@ -253,7 +255,7 @@ projects[alma][download][revision] = "v1.5.0rc2"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.5.0rc2"
+projects[ding][download][revision] = "v1.5.0rc3"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -263,7 +265,7 @@ projects[ding_campaign][download][revision] = "v1.3.1"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.5.0rc2"
+projects[ting][download][revision] = "v1.5.0rc3"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
