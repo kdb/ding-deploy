@@ -22,6 +22,12 @@ env.roledefs = {
     'aabenraa:prod': ['deploy@aabenraa.dbc.dk'],
 }
 
+env.webroot_patterns = {
+    'default': '/data/www/%(project)s.%(role)s',
+    'hiri.dbc.dk': '/data/www/%(project)s.%(role)s.ting.dk',
+    'halla.dbc.dk': '/data/www/%(project)s.%(role)s.ting.dk',
+}
+
 # Simple logging for actions. Use the WARNING level to tune out paramiko
 # noise which is logged as "INFO".
 LOG_FILENAME = '/tmp/deploy.log'
@@ -33,15 +39,18 @@ def _env_settings(project=None):
     if project == None:
         t = env.role.split(':')
         if len(t) == 2:
-            project = t[1]
-
+            env.role = t[1]
+            project = t[0]
     if project == None:
         abort('no project in role and no project specified')
 
     env.project = project
     env.build_path = os.path.join('/home', env.user, 'build')
-    env.webroot = '/data/www/%s.%s.ting.dk' % (project, env.role)
-    exit
+    if env.host in env.webroot_patterns:
+        env.webroot_pattern = env.webroot_patterns[env.host]
+    else:
+        env.webroot_pattern = env.webroot_patterns['default']
+    env.webroot = env.webroot_pattern % {'project': project, 'role': env.role}
 
 def version(project=None):
     'Get the currently deployed version'
@@ -68,7 +77,9 @@ def sync_from_prod(project=None):
         abort('sync_from_prod is not supported for non-stg roles.')
 
     run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
-    run('sudo rsync -avmCF --delete /data/www/%(name)s.prod.ting.dk/files/ /data/www/%(name)s.stg.ting.dk/files/' % {'name': env.project})
+    prodPath = env.webroot_pattern % {'project': project, 'role': 'prod'}
+    stgPath = env.webroot_pattern % {'project': project, 'role': 'stg'}
+    run('sudo rsync -avmCF --delete ' + prodPath + '/files/ ' + stgPath + 'files/')
 
 def deploy(project=None, commit=None):
     """ Deploy a specific version in the specified environment. """
