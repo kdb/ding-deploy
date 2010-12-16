@@ -132,7 +132,7 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
-projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL5"
+projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL6"
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.8"
