@@ -20,6 +20,10 @@ env.roledefs = {
     'metropol:prod': ['deploy@haruna.dbc.dk'],
     'aabenraa:stg': ['deploy@aabenraa.dbc.dk'],
     'aabenraa:prod': ['deploy@aabenraa.dbc.dk'],
+    'kolding:dev': ['deploy@kolding.dbc.dk'],
+    'kolding:stg': ['deploy@kolding.dbc.dk'],
+    'kolding:prod': ['deploy@kolding.dbc.dk'],
+    
 }
 
 env.webroot_patterns = {
