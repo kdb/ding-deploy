@@ -205,7 +205,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.1.3"
+projects[dynamo][download][revision] = "v2.1.4"
 
 ; Copenhagen specific
 
@@ -250,12 +250,12 @@ projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.5.0rc4"
+projects[alma][download][revision] = "v1.5.0rc5"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.5.0rc6"
+projects[ding][download][revision] = "v1.5.0rc7"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
