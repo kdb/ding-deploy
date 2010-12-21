@@ -16,35 +16,56 @@ env.roledefs = {
     'dev': ['kkbdeploy@halla.dbc.dk'],
     'stg': ['kkbdeploy@hiri.dbc.dk'],
     'prod': ['kkbdeploy@hiri.dbc.dk'],
+    'metropol:stg': ['deploy@haruna.dbc.dk'],
+    'metropol:prod': ['deploy@haruna.dbc.dk'],
+    'aabenraa:stg': ['deploy@aabenraa.dbc.dk'],
+    'aabenraa:prod': ['deploy@aabenraa.dbc.dk'],
 }
 
-BUILD_PATH = '/home/kkbdeploy/build'
+env.webroot_patterns = {
+    'default': '/data/www/%(project)s.%(role)s',
+    'hiri.dbc.dk': '/data/www/%(project)s.%(role)s.ting.dk',
+    'halla.dbc.dk': '/data/www/%(project)s.%(role)s.ting.dk',
+}
 
 # Simple logging for actions. Use the WARNING level to tune out paramiko
 # noise which is logged as "INFO".
-LOG_FILENAME = '/var/log/deploy.log'
+LOG_FILENAME = '/tmp/deploy.log'
 logging.basicConfig(filename=LOG_FILENAME,level=logging.WARNING, format="%(asctime)s - %(levelname)s - %(message)s")
 
-def _env_settings(project):
+def _env_settings(project=None):
     """ Set global environment settings base on CLI args. """
     env.role = env.get('roles', ['dev'])[0]
-    env.project = project
-    env.webroot = '/data/www/%s.%s.ting.dk' % (project, env.role)
+    if project == None:
+        t = env.role.split(':')
+        if len(t) == 2:
+            env.role = t[1]
+            project = t[0]
+    if project == None:
+        abort('no project in role and no project specified')
 
-def version(project):
+    env.project = project
+    env.build_path = os.path.join('/home', env.user, 'build')
+    if env.host in env.webroot_patterns:
+        env.webroot_pattern = env.webroot_patterns[env.host]
+    else:
+        env.webroot_pattern = env.webroot_patterns['default']
+    env.webroot = env.webroot_pattern % {'project': project, 'role': env.role}
+
+def version(project=None):
     'Get the currently deployed version'
     _env_settings(project)
     require('user', 'hosts', 'webroot',
         used_for='These variables are used for finding the target deployment environment.',
     )
-    with cd(os.path.join(BUILD_PATH, env.project, 'build')):
+    with cd(os.path.join(env.build_path, env.project, 'build')):
         run('git show | head -10')
 
 def reload_apache():
     'Reload Apache on the remote machine'
     run('sudo /usr/sbin/apache2ctl graceful')
 
-def sync_from_prod(project):
+def sync_from_prod(project=None):
     """
     Sync the staging environment from production.
 
@@ -56,9 +77,11 @@ def sync_from_prod(project):
         abort('sync_from_prod is not supported for non-stg roles.')
 
     run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
-    run('sudo rsync -avmCF --delete /data/www/%(name)s.prod.ting.dk/files/ /data/www/%(name)s.stg.ting.dk/files/' % {'name': env.project})
+    prodPath = env.webroot_pattern % {'project': project, 'role': 'prod'}
+    stgPath = env.webroot_pattern % {'project': project, 'role': 'stg'}
+    run('sudo rsync -avmCF --delete ' + prodPath + '/files/ ' + stgPath + 'files/')
 
-def deploy(project, commit=None):
+def deploy(project=None, commit=None):
     """ Deploy a specific version in the specified environment. """
     version(project)
 
@@ -72,7 +95,7 @@ def deploy(project, commit=None):
     )
 
     make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
-    cwd = os.path.join(BUILD_PATH, env.project, 'build')
+    cwd = os.path.join(env.build_path, env.project, 'build')
     abs_make_path = os.path.join(cwd, make_path)
 
     with cd(cwd):
@@ -91,4 +114,3 @@ def deploy(project, commit=None):
         'user': _get_system_username(),
         'commit': commit[0:7],
     })
-
