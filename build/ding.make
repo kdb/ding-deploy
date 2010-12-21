@@ -217,7 +217,7 @@ projects[copenhagen][download][revision] = "v2.0.5"
 projects[kdb][type] = "module"
 projects[kdb][download][type] = "git"
 projects[kdb][download][url] = "https://github.com/kdb/kdb.git"
-projects[kdb][download][revision] = "v1.5.0rc1"
+projects[kdb][download][revision] = "v1.0.0"
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
