@@ -217,7 +217,7 @@ projects[copenhagen][download][revision] = "v2.0.5"
 projects[kdb][type] = "module"
 projects[kdb][download][type] = "git"
 projects[kdb][download][url] = "https://github.com/kdb/kdb.git"
-projects[kdb][download][revision] = "v1.5.0rc1"
+projects[kdb][download][revision] = "v1.0.0"
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
@@ -250,12 +250,12 @@ projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.5.0rc5"
+projects[alma][download][revision] = "v1.5.0"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.5.0rc7"
+projects[ding][download][revision] = "v1.5.0"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -265,7 +265,7 @@ projects[ding_campaign][download][revision] = "v1.3.1"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.5.0rc5"
+projects[ting][download][revision] = "v1.5.0"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
