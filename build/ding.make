@@ -267,6 +267,12 @@ projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
 projects[ting][download][revision] = "v1.5.1"
 
+projects[trampoline][type] = "module"
+projects[trampoline][download][type] = "git"
+projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
+projects[trampoline][download][revision] = "v1.0"
+
+
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
