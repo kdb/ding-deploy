@@ -76,7 +76,8 @@ sub vcl_recv {
 
   // always cache these urls
   if (req.url ~ "/ting_search_carousel/results" || 
-      req.url ~ "/ting/search/" ||
+      req.url ~ "/ting/search/js" ||
+      req.url ~ "/ting/search/content/js" ||
       req.url ~ "/ting/availability/" ||
       req.url ~ "/office_hours/"
       ) {
