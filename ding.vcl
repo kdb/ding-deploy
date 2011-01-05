@@ -68,7 +68,7 @@ sub vcl_recv {
   }
 
   // ajax-callback (clears the timestamp)
-  if (req.url ~ "/ting/autocomplete") {
+  if (req.url ~ "(/|q=)ting/autocomplete") {
     unset req.http.cookie;
     set req.url = regsub(req.url, "\&timestamp=[0-9]+", "");
     lookup;
@@ -76,10 +76,10 @@ sub vcl_recv {
 
   // always cache these urls
   if (req.url ~ "/ting_search_carousel/results" || 
-      req.url ~ "/ting/search/js" ||
-      req.url ~ "/ting/search/content/js" ||
-      req.url ~ "/ting/availability/" ||
       req.url ~ "/office_hours/"
+      req.url ~ "(/|q=)ting/search/js" ||
+      req.url ~ "(/|q=)/ting/search/content/js" ||
+      req.url ~ "(/|q=)/ting/availability/" ||
       ) {
     unset req.http.cookie;
     lookup;
