@@ -222,7 +222,7 @@ projects[kdb][download][revision] = "v1.0.0"
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
 projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
-projects[ding_borger_api][download][revision] = "v1.0.3"
+projects[ding_borger_api][download][revision] = "v1.0.4"
 
 projects[ding_wysiwyg_node_picker][type] = "module"
 projects[ding_wysiwyg_node_picker][download][type] = "git"
