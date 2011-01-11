@@ -126,7 +126,7 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.3"
 
 projects[oembed][subdir] = "contrib"
-projects[oembed][version] = "0.7"
+projects[oembed][version] = "0.8"
 
 projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
@@ -182,13 +182,13 @@ projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc1"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "2.11"
+projects[views][version] = "2.12"
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.2"
+projects[webform][version] = "3.5"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.1"
