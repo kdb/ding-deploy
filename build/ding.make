@@ -250,12 +250,12 @@ projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.5.2"
+projects[alma][download][revision] = "v1.5.3"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.5.2"
+projects[ding][download][revision] = "v1.5.5"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -265,13 +265,17 @@ projects[ding_campaign][download][revision] = "v1.3.1"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.5.2"
+projects[ting][download][revision] = "v1.5.3"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
 projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
 projects[trampoline][download][revision] = "v1.1"
 
+projects[webtrends][type] = "module"
+projects[webtrends][download][type] = "git"
+projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
+projects[webtrends][download][revision] = "v1.0.0"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
