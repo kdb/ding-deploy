@@ -124,6 +124,8 @@ function _ding_profile_modules() {
     'ding_feature_ref',
     'ding_library',
     'ding_library_map',
+    'ding_library_user',
+    'ding_default_permissions',
     'ding_page',
     'ding_panels',
     'draggable_checkboxes',
