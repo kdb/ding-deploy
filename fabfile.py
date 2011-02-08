@@ -25,6 +25,9 @@ env.roledefs = {
     'kolding:prod': ['deploy@kolding.dbc.dk'],
     'billund:stg': ['deploy@billund.dbc.dk'],
     'billund:prod': ['deploy@billund.dbc.dk'],
+    'roedovre:dev': ['deploy@roedovre.dbc.dk'],
+    'roedovre:stg': ['deploy@roedovre.dbc.dk'],
+    'roedovre:prod': ['deploy@roedovre.dbc.dk'],
 }
 
 env.webroot_patterns = {
