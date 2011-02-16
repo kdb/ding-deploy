@@ -217,7 +217,7 @@ projects[alma][download][revision] = "v1.5.3"
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
 projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
-projects[openruth][download][revision] = "v1.0.4"
+projects[openruth][download][revision] = "v1.0.5"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
