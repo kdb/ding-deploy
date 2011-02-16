@@ -9,7 +9,7 @@ projects[pressflow][download][url] = "http://files.pressflow.org/pressflow-6-cur
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "1.0-beta5"
+projects[admin][version] = "2.0"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -209,29 +209,24 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.1.5"
 
 ; Copenhagen specific
 
 projects[copenhagen][type] = "theme"
 projects[copenhagen][download][type] = "git"
 projects[copenhagen][download][url] = "https://github.com/kdb/copenhagen.git"
-projects[copenhagen][download][revision] = "v2.0.6"
 
 projects[kdb][type] = "module"
 projects[kdb][download][type] = "git"
 projects[kdb][download][url] = "https://github.com/kdb/kdb.git"
-projects[kdb][download][revision] = "v1.0.0"
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
 projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
-projects[ding_borger_api][download][revision] = "v1.0.4"
 
 projects[ding_wysiwyg_node_picker][type] = "module"
 projects[ding_wysiwyg_node_picker][download][type] = "git"
 projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
-projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
 
 projects[tinymce_node_picker][subdir] = "contrib"
 projects[tinymce_node_picker][version] = "2.1"
@@ -254,27 +249,22 @@ projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.5.3"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.5.5"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.3.1"
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.5.3"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
 projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
-projects[trampoline][download][revision] = "v1.1"
 
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
@@ -284,7 +274,6 @@ projects[webtrends][download][revision] = "v1.0.0"
 ; Libraries
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.0.0"
 libraries[ting-client][destination] = "modules/ting/lib"
 
 libraries[jquery_ui][download][type] = "get"
@@ -302,3 +291,4 @@ libraries[emogrifier][download][url] = "http://www.pelagodesign.com/emogrifier/e
 libraries[emogrifier][directory_name] = "emogrifier"
 libraries[emogrifier][destination] = "modules/ding_borger_api/ding_borger_api/lib"
 libraries[emogrifier][patch][] = "https://github.com/downloads/dingproject/ding-borger-api/emogrifier_xml1.patch"
+
