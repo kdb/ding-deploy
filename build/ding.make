@@ -1,4 +1,3 @@
-; $Id: ding.make,v 1.1 2010/05/14 08:28:32 mikl Exp $
 core = 6.x
 
 ; Install pressflow v6.x
@@ -37,7 +36,7 @@ projects[cache_actions][subdir] = "contrib"
 projects[cache_actions][version] = "1.0"
 
 projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.8"
+projects[cck][version] = "2.9"
 
 projects[comment_notify][subdir] = "contrib"
 projects[comment_notify][version] = "1.5"
@@ -52,7 +51,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.6"
+projects[date][version] = "2.7"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][version] = "1.x-dev"
@@ -67,10 +66,10 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "1.0"
 
 projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.7"
+projects[filefield][version] = "3.9"
 
 projects[insert][subdir] = "contrib"
-projects[insert][version] = "1.0-beta6"
+projects[insert][version] = "1.0"
 
 projects[flexifield][subdir] = "contrib"
 projects[flexifield][version] = "1.0-alpha5"
@@ -83,13 +82,13 @@ projects[gmap][subdir] = "contrib"
 projects[gmap][version] = "1.1"
 
 projects[google_analytics][subdir] = "contrib"
-projects[google_analytics][version] = "3.0"
+projects[google_analytics][version] = "3.2"
 
 projects[htmLawed][subdir] = "contrib"
 projects[htmLawed][version] = "2.7"
 
 projects[image_resize_filter][subdir] = "contrib"
-projects[image_resize_filter][version] = "1.9"
+projects[image_resize_filter][version] = "1.12"
 
 projects[imageapi][subdir] = "contrib"
 projects[imageapi][version] = "1.9"
@@ -101,7 +100,7 @@ projects[imagecache_actions][subdir] = "contrib"
 projects[imagecache_actions][version] = "1.7"
 
 projects[imagefield][subdir] = "contrib"
-projects[imagefield][version] = "3.7"
+projects[imagefield][version] = "3.9"
 
 projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.4"
@@ -128,7 +127,7 @@ projects[menu_breadcrumb][subdir] = "contrib"
 projects[menu_breadcrumb][version] = "1.3"
 
 projects[menu_block][subdir] = "contrib"
-projects[menu_block][version] = "2.3"
+projects[menu_block][version] = "2.4"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
@@ -140,30 +139,30 @@ projects[office_hours][download][url] = "https://github.com/dingproject/drupal-o
 projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.8"
+projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[path_redirect][subdir] = "contrib"
-projects[path_redirect][version] = "1.0-rc1"
+projects[path_redirect][version] = "1.0-rc2"
 
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "2.0-alpha3"
 
 projects[potx][subdir] = "contrib"
-projects[potx][version] = "3.2"
+projects[potx][version] = "3.3"
 
 projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "1.3"
+projects[rules][version] = "1.4"
 projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
 
 projects[spamspan][subdir] = "contrib"
-projects[spamspan][version] = "1.4"
+projects[spamspan][version] = "1.6"
 
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
@@ -193,10 +192,10 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.5"
+projects[webform][version] = "3.6"
 
 projects[wysiwyg][subdir] = "contrib"
-projects[wysiwyg][version] = "2.1"
+projects[wysiwyg][version] = "2.3"
 
 ; Themes
 projects[tao][version] = "3.2"
