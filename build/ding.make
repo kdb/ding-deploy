@@ -1,6 +1,11 @@
 ; $Id: ding.make,v 1.1 2010/05/14 08:28:32 mikl Exp $
 core = 6.x
-projects[] = drupal
+
+; Install pressflow v6.x
+
+projects[pressflow][type] = "core"
+projects[pressflow][download][type] = "get"
+projects[pressflow][download][url] = "http://files.pressflow.org/pressflow-6-current.tar.gz"
 
 ; Contrib projects
 
