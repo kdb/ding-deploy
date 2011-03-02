@@ -28,7 +28,9 @@ env.roledefs = {
     'roedovre:dev': ['deploy@roedovre.dbc.dk'],
     'roedovre:stg': ['deploy@roedovre.dbc.dk'],
     'roedovre:prod': ['deploy@roedovre.dbc.dk'],
-}
+    'helsbib:stg': ['deploy@helsingoer.dbc.dk'],
+    'helsbib:prod': ['deploy@helsingoer.dbc.dk'],
+}}
 
 env.webroot_patterns = {
     'default': '/data/www/%(project)s.%(role)s',
