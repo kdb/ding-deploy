@@ -234,6 +234,9 @@ projects[tinymce_node_picker][version] = "2.1"
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
 
+projects[better_messages][subdir] = contrib
+projects[better_messages][version] = 1.13
+
 projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.8"
 
