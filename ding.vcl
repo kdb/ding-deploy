@@ -130,9 +130,6 @@ sub vcl_fetch {
   # Remove Expires from backend, it's not long enough
   unset obj.http.expires;
 
-  /* Set the clients TTL on this object */
-  set obj.http.cache-control = "max-age = 900";
-
   # Cache for this time by default, change it if necessary
   set obj.ttl = 15m;
 
