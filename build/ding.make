@@ -241,7 +241,7 @@ projects[scheduler][subdir] = "contrib"
 projects[scheduler][version] = "1.8"
 
 projects[securepages][subdir] = "contrib"
-projects[securepages][version] = "1.8"
+projects[securepages][version] = "1.9"
 projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_6.x-1.8.patch"
 
 ; Ding modules
