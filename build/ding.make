@@ -54,7 +54,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.7"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][version] = "1.x-dev"
+projects[dibs][version] = "1.0"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -78,14 +78,11 @@ projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-39048
 projects[globalredirect][subdir] = "contrib"
 projects[globalredirect][version] = "1.2"
 
-projects[gmap][subdir] = "contrib"
-projects[gmap][version] = "1.1"
-
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.2"
 
 projects[htmLawed][subdir] = "contrib"
-projects[htmLawed][version] = "2.7"
+projects[htmLawed][version] = "2.10"
 
 projects[image_resize_filter][subdir] = "contrib"
 projects[image_resize_filter][version] = "1.12"
@@ -97,7 +94,7 @@ projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2.0-beta10"
 
 projects[imagecache_actions][subdir] = "contrib"
-projects[imagecache_actions][version] = "1.7"
+projects[imagecache_actions][version] = "1.8"
 
 projects[imagefield][subdir] = "contrib"
 projects[imagefield][version] = "3.9"
@@ -107,9 +104,6 @@ projects[jquery_ui][version] = "1.4"
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
-
-projects[keys][subdir] = "contrib"
-projects[keys][version] = "2.0"
 
 projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
@@ -137,6 +131,9 @@ projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
 projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
+
+projects[openlayers][subdir] = contrib
+projects[openlayers][version] = 2.0-alpha10
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
@@ -192,7 +189,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.6"
+projects[webform][version] = "3.9"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.3"
