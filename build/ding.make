@@ -54,7 +54,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.7"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][version] = "1.x-dev"
+projects[dibs][version] = "1.0"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -85,7 +85,7 @@ projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.2"
 
 projects[htmLawed][subdir] = "contrib"
-projects[htmLawed][version] = "2.7"
+projects[htmLawed][version] = "2.10"
 
 projects[image_resize_filter][subdir] = "contrib"
 projects[image_resize_filter][version] = "1.12"
@@ -97,7 +97,7 @@ projects[imagecache][subdir] = "contrib"
 projects[imagecache][version] = "2.0-beta10"
 
 projects[imagecache_actions][subdir] = "contrib"
-projects[imagecache_actions][version] = "1.7"
+projects[imagecache_actions][version] = "1.8"
 
 projects[imagefield][subdir] = "contrib"
 projects[imagefield][version] = "3.9"
@@ -192,7 +192,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.6"
+projects[webform][version] = "3.9"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.3"
