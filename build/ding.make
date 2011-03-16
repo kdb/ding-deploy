@@ -129,8 +129,8 @@ projects[oembed][version] = "0.8"
 projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
-projects[office_hours][download][url] = "https://github.com/mikl/drupal-office_hours.git"
-projects[office_hours][download][revision] = "9a33296734d534a20a66731de2008cf17f4f71e5"
+projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
+projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-alpha10
@@ -228,6 +228,14 @@ projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-ca
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
+
+projects[trampoline][type] = "module"
+projects[trampoline][download][type] = "git"
+projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
+
+projects[webtrends][type] = "module"
+projects[webtrends][download][type] = "git"
+projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"

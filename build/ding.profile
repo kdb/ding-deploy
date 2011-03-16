@@ -106,7 +106,7 @@ function ding_profile_modules() {
 }
 
 /**
- * Returns an array list of atrium features (and supporting) modules. 
+ * Returns an array list of atrium features (and supporting) modules.
  */
 function _ding_profile_modules() {
   return array(
@@ -124,6 +124,8 @@ function _ding_profile_modules() {
     'ding_feature_ref',
     'ding_library',
     'ding_library_map',
+    'ding_library_user',
+    'ding_default_permissions',
     'ding_page',
     'ding_panels',
     'draggable_checkboxes',
@@ -139,6 +141,7 @@ function _ding_profile_modules() {
     'ting_search_autocomplete',
     'ting_search_carousel',
     'dynamo',
+    'trampoline',
   );
 }
 
@@ -445,7 +448,7 @@ function _ding_configure_first() {
  */
 function _ding_configure_second() {
   global $theme_key;
-  
+
   // Rebuild key tables/caches
   drupal_flush_all_caches();
 
@@ -457,7 +460,7 @@ function _ding_configure_second() {
   // Rebuild our blocks and place them at default positions
   // as they may have lost their position during the install
   //
-  // _block_rehash() uses the global $theme_key variable which has 
+  // _block_rehash() uses the global $theme_key variable which has
   // not been set to dynamo yet so do this manually during the rehash.
   // TODO: Is there a more clean way to achieve this?
   $temp_theme_key = $theme_key;
