@@ -168,7 +168,7 @@ projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
 
 projects[tagadelic][subdir] = "contrib"
-projects[tagadelic][version] = "1.2"
+projects[tagadelic][version] = "1.3"
 
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
