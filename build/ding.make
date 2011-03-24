@@ -5,7 +5,7 @@ projects[] = drupal
 ; Contrib projects
 
 projects[admin][subdir] = "contrib"
-projects[admin][version] = "2.0"
+projects[admin][version] = "1.0-beta5"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
@@ -207,17 +207,50 @@ projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
 projects[dynamo][download][revision] = "v2.1.5"
 
+; Copenhagen specific
+
+projects[copenhagen][type] = "theme"
+projects[copenhagen][download][type] = "git"
+projects[copenhagen][download][url] = "https://github.com/kdb/copenhagen.git"
+projects[copenhagen][download][revision] = "v2.0.5"
+
+projects[kdb][type] = "module"
+projects[kdb][download][type] = "git"
+projects[kdb][download][url] = "https://github.com/kdb/kdb.git"
+projects[kdb][download][revision] = "v1.0.0"
+
+projects[ding_borger_api][type] = "module"
+projects[ding_borger_api][download][type] = "git"
+projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
+projects[ding_borger_api][download][revision] = "v1.0.3"
+
+projects[ding_wysiwyg_node_picker][type] = "module"
+projects[ding_wysiwyg_node_picker][download][type] = "git"
+projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
+projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
+
+projects[tinymce_node_picker][subdir] = "contrib"
+projects[tinymce_node_picker][version] = "2.1"
+
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][version] = "2.2"
+
+projects[memcache][subdir] = "contrib"
+projects[memcache][version] = "1.5"
+
+projects[scheduler][subdir] = "contrib"
+projects[scheduler][version] = "1.7"
+
+projects[securepages][subdir] = "contrib"
+projects[securepages][version] = "1.8"
+projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_6.x-1.8.patch"
+
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
 projects[alma][download][revision] = "v1.5.3"
-
-projects[openruth][type] = "module"
-projects[openruth][download][type] = "git"
-projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
-projects[openruth][download][revision] = "v1.0.4"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
@@ -260,3 +293,8 @@ libraries[tinymce][download][url] = "http://sunet.dl.sourceforge.net/project/tin
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
 
+libraries[emogrifier][download][type] = "get"
+libraries[emogrifier][download][url] = "http://www.pelagodesign.com/emogrifier/emogrifier.zip"
+libraries[emogrifier][directory_name] = "emogrifier"
+libraries[emogrifier][destination] = "modules/ding_borger_api/ding_borger_api/lib"
+libraries[emogrifier][patch][] = "https://github.com/downloads/dingproject/ding-borger-api/emogrifier_xml1.patch"
