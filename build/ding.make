@@ -1,3 +1,4 @@
+api = 2
 core = 6.x
 
 ; Install pressflow v6.x
@@ -168,7 +169,7 @@ projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
 
 projects[tagadelic][subdir] = "contrib"
-projects[tagadelic][version] = "1.2"
+projects[tagadelic][version] = "1.3"
 
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
@@ -268,7 +269,6 @@ projects[trampoline][download][url] = "https://github.com/dingproject/trampoline
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
-projects[webtrends][download][revision] = "v1.0.0"
 
 ; Libraries
 libraries[ting-client][download][type] = "git"
