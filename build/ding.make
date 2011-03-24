@@ -236,14 +236,13 @@ projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "2.2"
 
 projects[memcache][subdir] = "contrib"
-projects[memcache][version] = "1.5"
+projects[memcache][version] = "1.8"
 
 projects[scheduler][subdir] = "contrib"
 projects[scheduler][version] = "1.7"
 
 projects[securepages][subdir] = "contrib"
-projects[securepages][version] = "1.8"
-projects[securepages][patch][] = "http://drupal.org/files/issues/globalbase_url_6.x-1.8.patch"
+projects[securepages][version] = "1.9"
 
 ; Ding modules
 
