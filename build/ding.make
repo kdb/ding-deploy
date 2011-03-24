@@ -135,7 +135,7 @@ projects[office_hours][download][url] = "https://github.com/dingproject/drupal-o
 projects[office_hours][download][tag] = "DRUPAL-6--2-0-UNOFFICIAL7"
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.8"
+projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[path_redirect][subdir] = "contrib"
@@ -167,7 +167,7 @@ projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
 
 projects[tagadelic][subdir] = "contrib"
-projects[tagadelic][version] = "1.2"
+projects[tagadelic][version] = "1.3"
 
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
