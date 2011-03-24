@@ -31,10 +31,10 @@ def parse_args():
                       action="store", dest="mode", default='site',
                       help="what build mode to use. 'site' for full Drupal site, 'profile' for just the installation profile. Default is 'site'.")
     parser.add_option("-v", "--verbose",
-                      action="store_true", dest="verbose", default=True,
-                      help="make lots of noise [default]")
+                      action="store_true", dest="verbose", default=False,
+                      help="make lots of noise")
     parser.add_option("-q", "--quiet",
-                      action="store_false", dest="verbose", default=True,
+                      action="store_true", dest="quiet", default=False,
                       help="don't print status messages to stdout")
 
     return parser.parse_args()
@@ -69,7 +69,7 @@ def make_command(options, make_path):
         command.insert(1, '-d')
     elif options.verbose:
         command.insert(1, '-v')
-    else:
+    elif options.quiet:
         command.insert(1, '-q')
 
     # For developers, keep SCM checkouts.
