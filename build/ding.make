@@ -1,3 +1,4 @@
+api = 2
 core = 6.x
 
 ; Install pressflow v6.x
