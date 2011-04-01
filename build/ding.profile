@@ -22,7 +22,6 @@ function ding_profile_modules() {
 
     // Contrib modules
     'admin',
-    'admin_language',
     'admin_theme',
     'adminrole',
     'advanced_help',
