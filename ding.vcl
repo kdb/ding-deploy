@@ -58,20 +58,20 @@ sub vcl_recv {
   if (req.url ~ "\.(css|html|js)") {
     unset req.http.cookie;
     set req.url = regsub(req.url, "\?.*$", "");
-    lookup;
+    return(lookup);
   }
 
   // images
   if (req.url ~ "\.(gif|jpg|jpeg|bmp|png|tiff|tif|ico|img|tga|wmf)$") {
     unset req.http.cookie;
-    lookup;
+    return(lookup);
   }
 
   // ajax-callback (clears the timestamp)
   if (req.url ~ "(/|q=)ting/autocomplete") {
     unset req.http.cookie;
     set req.url = regsub(req.url, "\&timestamp=[0-9]+", "");
-    lookup;
+    return(lookup);
   }
 
   // always cache these urls
@@ -82,7 +82,7 @@ sub vcl_recv {
       req.url ~ "(/|q=)/ting/availability/"
       ) {
     unset req.http.cookie;
-    lookup;
+    return(lookup);
   }
 
   // Remove a ";" prefix, if present.
