@@ -1,3 +1,5 @@
+# This is the ding.vcl varnish configuration file created for Varnish 2.0.x versions
+
 backend default {
   .host = "127.0.0.1";
   .port = "8042";
