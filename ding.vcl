@@ -8,7 +8,7 @@ backend default {
     .threshold = 2;
     .request =
       "GET /index.php HTTP/1.1"
-      "Host: bibliotek.kk.dk"
+      "Host: YOURHOST.COM"
       "Connection: close"
       "Accept-Encoding: text/html";
   }
@@ -76,10 +76,10 @@ sub vcl_recv {
 
   // always cache these urls
   if (req.url ~ "/ting_search_carousel/results" || 
-      req.url ~ "/office_hours/"
+      req.url ~ "/office_hours/" ||
       req.url ~ "(/|q=)ting/search/js" ||
       req.url ~ "(/|q=)/ting/search/content/js" ||
-      req.url ~ "(/|q=)/ting/availability/" ||
+      req.url ~ "(/|q=)/ting/availability/"
       ) {
     unset req.http.cookie;
     lookup;
