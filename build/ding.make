@@ -80,7 +80,7 @@ projects[globalredirect][subdir] = "contrib"
 projects[globalredirect][version] = "1.2"
 
 projects[google_analytics][subdir] = "contrib"
-projects[google_analytics][version] = "3.2"
+projects[google_analytics][version] = "3.3"
 
 projects[htmLawed][subdir] = "contrib"
 projects[htmLawed][version] = "2.10"
