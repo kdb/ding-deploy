@@ -235,6 +235,9 @@ projects[backup_migrate][version] = "2.4"
 projects[better_messages][subdir] = contrib
 projects[better_messages][version] = 1.13
 
+projects[l10n_update][subdir] = "contrib"
+projects[l10n_update][version] = 1.0-alpha4
+
 projects[memcache][subdir] = "contrib"
 projects[memcache][version] = "1.8"
 
