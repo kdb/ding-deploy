@@ -22,7 +22,6 @@ function ding_profile_modules() {
 
     // Contrib modules
     'admin',
-    'admin_language',
     'admin_theme',
     'adminrole',
     'advanced_help',
@@ -55,8 +54,6 @@ function ding_profile_modules() {
     'features',
     'filefield',
     'globalredirect',
-    'gmap',
-    'gmap_location',
     'googleanalytics',
     'htmLawed',
     'imageapi',
@@ -67,7 +64,6 @@ function ding_profile_modules() {
     'image_resize_filter',
     'insert',
     'jquery_update',
-    'keys',
     'link',
     'location',
     'location_fax',
@@ -77,6 +73,7 @@ function ding_profile_modules() {
     'menu_block',
     'oembed',
     'oembedcore',
+    'openlayers',
     'optionwidgets',
     'page_manager',
     'panels',

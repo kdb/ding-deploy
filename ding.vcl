@@ -1,3 +1,5 @@
+# This is the ding.vcl varnish configuration file created for Varnish 2.0.x versions
+
 backend default {
   .host = "127.0.0.1";
   .port = "8042";
@@ -8,7 +10,7 @@ backend default {
     .threshold = 2;
     .request =
       "GET /index.php HTTP/1.1"
-      "Host: bibliotek.kk.dk"
+      "Host: YOURHOST.COM"
       "Connection: close"
       "Accept-Encoding: text/html";
   }
@@ -58,31 +60,31 @@ sub vcl_recv {
   if (req.url ~ "\.(css|html|js)") {
     unset req.http.cookie;
     set req.url = regsub(req.url, "\?.*$", "");
-    lookup;
+    return(lookup);
   }
 
   // images
   if (req.url ~ "\.(gif|jpg|jpeg|bmp|png|tiff|tif|ico|img|tga|wmf)$") {
     unset req.http.cookie;
-    lookup;
+    return(lookup);
   }
 
   // ajax-callback (clears the timestamp)
   if (req.url ~ "(/|q=)ting/autocomplete") {
     unset req.http.cookie;
     set req.url = regsub(req.url, "\&timestamp=[0-9]+", "");
-    lookup;
+    return(lookup);
   }
 
   // always cache these urls
   if (req.url ~ "/ting_search_carousel/results" || 
-      req.url ~ "/office_hours/"
+      req.url ~ "/office_hours/" ||
       req.url ~ "(/|q=)ting/search/js" ||
       req.url ~ "(/|q=)/ting/search/content/js" ||
-      req.url ~ "(/|q=)/ting/availability/" ||
+      req.url ~ "(/|q=)/ting/availability/"
       ) {
     unset req.http.cookie;
-    lookup;
+    return(lookup);
   }
 
   // Remove a ";" prefix, if present.
