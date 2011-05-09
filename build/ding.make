@@ -55,7 +55,10 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.7"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][version] = "1.0"
+projects[dibs][type] = "module"
+projects[dibs][download][type] = "git"
+projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
+projects[dibs][download][revision] = 6.x-1.x
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -297,7 +300,7 @@ libraries[jquery_ui][directory_name] = "jquery.ui"
 libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 
 libraries[tinymce][download][type] = "get"
-libraries[tinymce][download][url] = "http://sunet.dl.sourceforge.net/project/tinymce/TinyMCE/3.4.2/tinymce_3_4_2.zip"
+libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip"
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
 
