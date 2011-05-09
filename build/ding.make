@@ -55,7 +55,10 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.6"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][version] = "1.0"
+projects[dibs][type] = "module"
+projects[dibs][download][type] = "git"
+projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
+projects[dibs][download][revision] = 6.x-1.x
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
