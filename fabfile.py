@@ -89,7 +89,10 @@ def sync_from_prod(project=None):
     run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
     prodPath = env.webroot_pattern % {'project': project, 'role': 'prod'}
     stgPath = env.webroot_pattern % {'project': project, 'role': 'stg'}
-    run('sudo rsync -avmCF --delete ' + prodPath + '/files/ ' + stgPath + 'files/')
+    run('sudo rsync -avmCF --delete %(prod)s %(stg)s' % {
+        'prod': os.path.join(prodPath, 'files'),
+        'stg': os.path.join(stgPath, 'files')
+    })
 
 def deploy(project=None, commit=None):
     """ Deploy a specific version in the specified environment. """
