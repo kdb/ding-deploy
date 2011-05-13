@@ -30,6 +30,9 @@ projects[ahah_response][version] = "1.2"
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.2"
 
+projects[autoload][subdir] = contrib
+projects[autoload][version] = 2.1
+
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
@@ -126,6 +129,9 @@ projects[menu_breadcrumb][version] = "1.3"
 
 projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
+
+projects[nanosoap][subdir] = contrib
+projects[nanosoap][version] = 6.x-1.x-dev
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
@@ -237,12 +243,10 @@ projects[ding_campaign][download][revision] = "v1.3.2"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.6.0beta1"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
 projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
-projects[trampoline][download][revision] = "v1.2.1"
 
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
@@ -253,7 +257,6 @@ projects[webtrends][download][revision] = "2ec2e7df60f11bf8e84d8c759cee97728d5e0
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.1.0beta1"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
