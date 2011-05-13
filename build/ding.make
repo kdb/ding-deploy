@@ -63,6 +63,9 @@ projects[dibs][download][type] = "git"
 projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
 projects[dibs][download][revision] = 6.x-1.x
 
+projects[diff][subdir] = "contrib"
+projects[diff][version] = "2.1"
+
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
 
@@ -164,6 +167,9 @@ projects[purl][version] = "1.0-beta13"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.4"
 projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
+
+projects[securepages][subdir] = "contrib"
+projects[securepages][version] = "1.9"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
