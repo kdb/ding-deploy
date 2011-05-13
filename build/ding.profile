@@ -49,6 +49,7 @@ function ding_profile_modules() {
     'date_timezone',
     'date',
     'ding_user',
+    'diff',
     'email',
     'environment_indicator',
     'features',

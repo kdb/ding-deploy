@@ -30,6 +30,9 @@ projects[ahah_response][version] = "1.2"
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.2"
 
+projects[autoload][subdir] = contrib
+projects[autoload][version] = 2.1
+
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
@@ -59,6 +62,9 @@ projects[dibs][type] = "module"
 projects[dibs][download][type] = "git"
 projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
 projects[dibs][download][revision] = 6.x-1.x
+
+projects[diff][subdir] = "contrib"
+projects[diff][version] = "2.1"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -127,6 +133,9 @@ projects[menu_breadcrumb][version] = "1.3"
 projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
 
+projects[nanosoap][subdir] = contrib
+projects[nanosoap][version] = 1.x-dev
+
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
 
@@ -158,6 +167,9 @@ projects[purl][version] = "1.0-beta13"
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.4"
 projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
+
+projects[securepages][subdir] = "contrib"
+projects[securepages][version] = "1.9"
 
 projects[similarterms][subdir] = "contrib"
 projects[similarterms][version] = "1.18"
@@ -210,7 +222,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.2.0beta1"
+projects[dynamo][download][revision] = "v2.2.0beta2"
 
 ; Copenhagen specific
 
@@ -256,7 +268,7 @@ projects[securepages][version] = "1.9"
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.6.0beta1"
+projects[alma][download][revision] = "v1.6.0beta2"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -266,7 +278,7 @@ projects[openruth][download][revision] = "v1.0.7"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.6.0beta1"
+projects[ding][download][revision] = "v1.6.0beta2"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -276,12 +288,12 @@ projects[ding_campaign][download][revision] = "v1.3.2"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.6.0beta1"
+projects[ting][download][revision] = "v1.6.0beta2"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
 projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
-projects[trampoline][download][revision] = "v1.2.1"
+projects[trampoline][download][revision] = "v1.2.2"
 
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
@@ -292,7 +304,7 @@ projects[webtrends][download][revision] = "2ec2e7df60f11bf8e84d8c759cee97728d5e0
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.1.0beta1"
+libraries[ting-client][download][revision] = "v1.1.0beta2"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
