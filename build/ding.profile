@@ -73,6 +73,7 @@ function ding_profile_modules() {
     'location_node',
     'markdown',
     'menu_block',
+    'nanosoap',
     'oembed',
     'oembedcore',
     'openlayers',
