@@ -74,6 +74,8 @@ projects[environment_indicator][version] = "1.0"
 
 projects[features][subdir] = "contrib"
 projects[features][version] = "1.0"
+; Patch to fix reverting menu links http://drupal.org/node/860974
+projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
 projects[filefield][subdir] = "contrib"
 projects[filefield][version] = "3.9"
