@@ -207,7 +207,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
 projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.9"
+projects[webform][version] = "3.10"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.3"
