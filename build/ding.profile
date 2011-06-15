@@ -1,5 +1,8 @@
 <?php
-// $Id: ding.profile,v 1.1 2010/05/14 08:28:32 mikl Exp $
+/**
+ * @file
+ * Drupal install profile for Ding.
+ */
 
 /**
  * Implementation of hook_profile_details().
