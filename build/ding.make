@@ -256,8 +256,8 @@ projects[better_messages][version] = 1.13
 projects[l10n_update][subdir] = "contrib"
 projects[l10n_update][version] = 1.0-alpha4
 
-projects[memcache][subdir] = "contrib"
-projects[memcache][version] = "1.8"
+projects[memcache][subdir] = contrib
+projects[memcache][version] = 1.9
 
 projects[scheduler][subdir] = "contrib"
 projects[scheduler][version] = "1.8"
