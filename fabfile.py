@@ -2,7 +2,7 @@
 Ding deploy script.
 
 It uses the Fabric deploying tool. Documentation for Fabric can be found here:
-http://docs.fabfile.org/0.9/
+http://docs.fabfile.org/
 """
 from __future__ import with_statement
 import logging
@@ -45,14 +45,16 @@ logging.basicConfig(filename=LOG_FILENAME,level=logging.WARNING, format="%(ascti
 
 def _env_settings(project=None):
     """ Set global environment settings base on CLI args. """
+
+    # Get the first role set, defaulting to dev.
     env.role = env.get('roles', ['dev'])[0]
-    if project == None:
-        t = env.role.split(':')
-        if len(t) == 2:
-            env.role = t[1]
-            project = t[0]
-    if project == None:
-        abort('no project in role and no project specified')
+
+    # If project was not set, extract it from the role.
+    if not project:
+        try:
+            env.role, project = env.role.split(':')
+        except ValueError:
+            abort('No project in role and no project specified.')
 
     env.project = project
     env.build_path = os.path.join('/home', env.user, 'build')
@@ -127,3 +129,4 @@ def deploy(project=None, commit=None):
         'user': _get_system_username(),
         'commit': commit[0:7],
     })
+

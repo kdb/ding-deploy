@@ -48,8 +48,8 @@ projects[comment_notify][version] = "1.5"
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
 
-projects[ctm][subdir] = "contrib"
-projects[ctm][version] = "1.0"
+projects[ctm][subdir] = contrib
+projects[ctm][version] = 1.1
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
@@ -69,19 +69,19 @@ projects[diff][version] = "2.1"
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
 
-projects[environment_indicator][subdir] = "contrib"
-projects[environment_indicator][version] = "1.0"
+projects[environment_indicator][subdir] = contrib
+projects[environment_indicator][version] = 1.1
 
 projects[features][subdir] = "contrib"
 projects[features][version] = "1.0"
 ; Patch to fix reverting menu links http://drupal.org/node/860974
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
-projects[filefield][subdir] = "contrib"
-projects[filefield][version] = "3.9"
+projects[filefield][subdir] = contrib
+projects[filefield][version] = 3.10
 
-projects[insert][subdir] = "contrib"
-projects[insert][version] = "1.0"
+projects[insert][subdir] = contrib
+projects[insert][version] = 1.1
 
 projects[flexifield][subdir] = "contrib"
 projects[flexifield][version] = "1.0-alpha5"
@@ -99,17 +99,17 @@ projects[htmLawed][version] = "2.10"
 projects[image_resize_filter][subdir] = "contrib"
 projects[image_resize_filter][version] = "1.12"
 
-projects[imageapi][subdir] = "contrib"
-projects[imageapi][version] = "1.9"
+projects[imageapi][subdir] = contrib
+projects[imageapi][version] = 1.10
 
-projects[imagecache][subdir] = "contrib"
-projects[imagecache][version] = "2.0-beta10"
+projects[imagecache][subdir] = contrib
+projects[imagecache][version] = 2.0-beta12
 
 projects[imagecache_actions][subdir] = "contrib"
 projects[imagecache_actions][version] = "1.8"
 
-projects[imagefield][subdir] = "contrib"
-projects[imagefield][version] = "3.9"
+projects[imagefield][subdir] = contrib
+projects[imagefield][version] = 3.10
 
 projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.4"
@@ -148,7 +148,7 @@ projects[office_hours][download][url] = "https://github.com/dingproject/drupal-o
 projects[office_hours][download][tag] = "6.x-2.0-unofficial8"
 
 projects[openlayers][subdir] = contrib
-projects[openlayers][version] = 2.0-alpha10
+projects[openlayers][version] = 2.0-beta1
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
@@ -157,8 +157,8 @@ projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deplo
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
-projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "2.0-alpha3"
+projects[pathauto][subdir] = contrib
+projects[pathauto][version] = 2.0-rc1
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.3"
@@ -191,8 +191,8 @@ projects[tagadelic][version] = "1.3"
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
-projects[token][subdir] = "contrib"
-projects[token][version] = "1.15"
+projects[token][subdir] = contrib
+projects[token][version] = 1.16
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
@@ -206,8 +206,8 @@ projects[views][version] = "2.12"
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.10"
 
-projects[webform][subdir] = "contrib"
-projects[webform][version] = "3.10"
+projects[webform][subdir] = contrib
+projects[webform][version] = 3.11
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.3"
