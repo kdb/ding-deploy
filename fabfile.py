@@ -2,7 +2,7 @@
 Ding deploy script.
 
 It uses the Fabric deploying tool. Documentation for Fabric can be found here:
-http://docs.fabfile.org/0.9/
+http://docs.fabfile.org/
 """
 from __future__ import with_statement
 import logging
@@ -129,3 +129,4 @@ def deploy(project=None, commit=None):
         'user': _get_system_username(),
         'commit': commit[0:7],
     })
+
