@@ -110,10 +110,10 @@ def deploy(project=None, commit=None):
     )
 
     make_path = time.strftime('ding-%Y%m%d%H%M')[:-1]
-    cwd = os.path.join(env.build_path, env.project, 'build')
-    abs_make_path = os.path.join(cwd, make_path)
+    profile_path = os.path.join(env.build_path, env.project)
+    abs_make_path = os.path.join(profile_path, 'build', make_path)
 
-    with cd(cwd):
+    with cd(profile_path):
         # Update git checkout.
         run('git fetch')
         run('git checkout %s' % commit)
