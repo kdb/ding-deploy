@@ -40,11 +40,17 @@ Go through the following steps:
 1. Get a version of the ding-deploy package by either
     *  Cloning the repository from GitHub
     *  Downloading a tagged version which corresponds to a Ding release and unpack it
-2. Open a console and navigate to the `ding-deploy/build` directory
-3. Run `python ding_build [options] [installation path]`. The options include
+2. Open a console and navigate to the `ding-deploy` directory
+3. Run `python ding_build.py [options] [installation path]`.
+
+   If you run `python ding_build.py` without additional parameters, a full
+   site will be built for you in the `ding-deploy/build/ding` folder.
+
+   The options include
     *  `-d`: **Debug**. Required if you want to track the build progress
     *  `-D`: **Developer copy**. Build developer copy, using authenticated Git repositories.
     *  `-m MODE`: **Build mode**. Use 'site' for full Drupal site, 'profile' for just the installation profile. Default is 'site'.
+
 4. Wait. The build process should take ~5 minutes.
 5. *Optional* - download a translation:
     1. Navigate to your installation path
@@ -64,8 +70,19 @@ Go through the following steps:
 Downloading a local installation
 --------------------------------
 
-If you want to get a local installation up and running quickly or do not have access to the developer tools mentioned above you can [download a build of Ding from GitHub](http://github.com/dingproject/ding-deploy/downloads). 
+If you want to get a local installation up and running quickly or do not have access to the developer tools mentioned above you can [download a build of Ding from GitHub](http://github.com/dingproject/ding-deploy/downloads).
 
 If you choose to download a release you can skip straight to step 6 in the walkthrough above.
 
 The list of downloads should contain builds of all our releases since 1.1.1.
+
+Simple developer site
+---------------------
+
+It is also possible to use this Git repository as a standard Drupal
+install profile without our special Python build script.
+
+If you want to take this approach, simply check out this folder in your
+`drupal/profiles` folder and run
+`drush make --no-core --contrib-destination=. ding.make` within it.
+
