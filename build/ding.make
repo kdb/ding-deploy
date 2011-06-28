@@ -158,7 +158,7 @@ projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 2.0-rc1
+projects[pathauto][version] = 2.0-rc2
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.3"
