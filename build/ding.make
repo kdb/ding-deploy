@@ -224,24 +224,24 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.2.0beta3"
+projects[dynamo][download][revision] = "v2.2.0beta4"
 
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.6.0beta3"
+projects[alma][download][revision] = "v1.6.0beta4"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
 projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
-projects[openruth][download][revision] = "v1.0.8"
+projects[openruth][download][revision] = "v1.0.9"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.6.0beta3"
+projects[ding][download][revision] = "v1.6.0beta4"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -251,7 +251,7 @@ projects[ding_campaign][download][revision] = "v1.3.2"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.6.0beta3"
+projects[ting][download][revision] = "v1.6.0beta4"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
@@ -261,13 +261,13 @@ projects[trampoline][download][revision] = "v1.2.3"
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
-projects[webtrends][download][revision] = "2ec2e7df60f11bf8e84d8c759cee97728d5e00c7"
+projects[webtrends][download][revision] = "v1.1.2"
 
 ; Libraries
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.1.0beta3"
+libraries[ting-client][download][revision] = "v1.1.0beta4"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
