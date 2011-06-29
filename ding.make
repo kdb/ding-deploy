@@ -158,7 +158,7 @@ projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 2.0-rc1
+projects[pathauto][version] = 2.0-rc2
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.3"
@@ -224,24 +224,63 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.2.0beta3"
+projects[dynamo][download][revision] = "v2.2.0beta4"
+
+; Copenhagen specific
+
+projects[copenhagen][type] = "theme"
+projects[copenhagen][download][type] = "git"
+projects[copenhagen][download][url] = "https://github.com/kdb/copenhagen.git"
+
+projects[kdb][type] = "module"
+projects[kdb][download][type] = "git"
+projects[kdb][download][url] = "https://github.com/kdb/kdb.git"
+projects[kdb][download][revision] = "v1.1.0"
+
+projects[ding_borger_api][type] = "module"
+projects[ding_borger_api][download][type] = "git"
+projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
+projects[ding_borger_api][download][revision] = "v1.0.4"
+
+projects[ding_wysiwyg_node_picker][type] = "module"
+projects[ding_wysiwyg_node_picker][download][type] = "git"
+projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
+projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
+
+projects[tinymce_node_picker][subdir] = "contrib"
+projects[tinymce_node_picker][version] = "2.1"
+
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][version] = "2.4"
+
+projects[better_messages][subdir] = contrib
+projects[better_messages][version] = 1.13
+
+projects[l10n_update][subdir] = "contrib"
+projects[l10n_update][version] = 1.0-alpha4
+
+projects[memcache][subdir] = contrib
+projects[memcache][version] = 1.9
+
+projects[scheduler][subdir] = "contrib"
+projects[scheduler][version] = "1.8"
 
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.6.0beta3"
+projects[alma][download][revision] = "v1.6.0beta4"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
 projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
-projects[openruth][download][revision] = "v1.0.8"
+projects[openruth][download][revision] = "v1.0.9"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.6.0beta3"
+projects[ding][download][revision] = "v1.6.0beta4"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -251,7 +290,7 @@ projects[ding_campaign][download][revision] = "v1.3.2"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.6.0beta3"
+projects[ting][download][revision] = "v1.6.0beta4"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
@@ -261,13 +300,13 @@ projects[trampoline][download][revision] = "v1.2.3"
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
-projects[webtrends][download][revision] = "2ec2e7df60f11bf8e84d8c759cee97728d5e00c7"
+projects[webtrends][download][revision] = "v1.1.2"
 
 ; Libraries
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.1.0beta3"
+libraries[ting-client][download][revision] = "v1.1.0beta4"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
@@ -278,4 +317,10 @@ libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip"
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
+
+libraries[emogrifier][download][type] = "get"
+libraries[emogrifier][download][url] = "http://www.pelagodesign.com/emogrifier/emogrifier.zip"
+libraries[emogrifier][directory_name] = "emogrifier"
+libraries[emogrifier][destination] = "modules/ding_borger_api/ding_borger_api/lib"
+libraries[emogrifier][patch][] = "https://github.com/downloads/dingproject/ding-borger-api/emogrifier_xml1.patch"
 
