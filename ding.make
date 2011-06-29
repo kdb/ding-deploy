@@ -302,6 +302,29 @@ projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
 projects[webtrends][download][revision] = "v1.1.2"
 
+; Mobile site
+
+projects[ding-mobile][type] = module 
+projects[ding-mobile][download][type] = git 
+projects[ding-mobile][download][url] = https://github.com/aakb/ding-mobile.git 
+projects[ding-mobile][download][revision] = v1.0 
+
+projects[mobile_tools][subdir] = contrib 
+projects[mobile_tools][version] = 2.2 
+
+projects[browscap][subdir] = contrib 
+projects[browscap][version] = 1.1 
+
+projects[alternator][type] = theme 
+projects[alternator][download][type] = git 
+projects[alternator][download][url] = http://github.com/aakb/alternator.git 
+projects[alternator][download][revision] = v1.0 
+
+projects[cph-mobile][type] = theme 
+projects[cph-mobile][download][type] = git 
+projects[cph-mobile][download][url] = http://github.com/kdb/cph-mobile.git 
+projects[cph-mobile][download][revision] = 6dff1c73a50c75710a68564b4f4054df07385e4d 
+
 ; Libraries
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
