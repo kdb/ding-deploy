@@ -280,7 +280,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.6.0beta4"
+projects[ding][download][revision] = a947b787f4c6819cd5ad
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
