@@ -111,8 +111,8 @@ projects[imagecache_actions][version] = "1.8"
 projects[imagefield][subdir] = contrib
 projects[imagefield][version] = 3.10
 
-projects[jquery_ui][subdir] = "contrib"
-projects[jquery_ui][version] = "1.4"
+projects[jquery_ui][subdir] = contrib
+projects[jquery_ui][version] = 1.5
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
@@ -197,8 +197,8 @@ projects[token][version] = 1.16
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
 
-projects[vertical_tabs][subdir] = "contrib"
-projects[vertical_tabs][version] = "1.0-rc1"
+projects[vertical_tabs][subdir] = contrib
+projects[vertical_tabs][version] = 1.0-rc2
 
 projects[views][subdir] = "contrib"
 projects[views][version] = "2.12"
@@ -209,8 +209,8 @@ projects[views_bulk_operations][version] = "1.10"
 projects[webform][subdir] = contrib
 projects[webform][version] = 3.11
 
-projects[wysiwyg][subdir] = "contrib"
-projects[wysiwyg][version] = "2.3"
+projects[wysiwyg][subdir] = contrib
+projects[wysiwyg][version] = 2.4
 
 ; Themes
 projects[tao][version] = "3.2"
@@ -304,26 +304,26 @@ projects[webtrends][download][revision] = "v1.1.2"
 
 ; Mobile site
 
-projects[ding-mobile][type] = module 
-projects[ding-mobile][download][type] = git 
-projects[ding-mobile][download][url] = https://github.com/aakb/ding-mobile.git 
-projects[ding-mobile][download][revision] = v1.0 
+projects[ding-mobile][type] = module
+projects[ding-mobile][download][type] = git
+projects[ding-mobile][download][url] = https://github.com/aakb/ding-mobile.git
+projects[ding-mobile][download][revision] = v1.0
 
-projects[mobile_tools][subdir] = contrib 
-projects[mobile_tools][version] = 2.2 
+projects[mobile_tools][subdir] = contrib
+projects[mobile_tools][version] = 2.3
 
-projects[browscap][subdir] = contrib 
-projects[browscap][version] = 1.1 
+projects[browscap][subdir] = contrib
+projects[browscap][version] = 1.1
 
-projects[alternator][type] = theme 
-projects[alternator][download][type] = git 
-projects[alternator][download][url] = http://github.com/aakb/alternator.git 
-projects[alternator][download][revision] = v1.0 
+projects[alternator][type] = theme
+projects[alternator][download][type] = git
+projects[alternator][download][url] = http://github.com/aakb/alternator.git
+projects[alternator][download][revision] = v1.0
 
-projects[cph-mobile][type] = theme 
-projects[cph-mobile][download][type] = git 
-projects[cph-mobile][download][url] = http://github.com/kdb/cph-mobile.git 
-projects[cph-mobile][download][revision] = 6dff1c73a50c75710a68564b4f4054df07385e4d 
+projects[cph-mobile][type] = theme
+projects[cph-mobile][download][type] = git
+projects[cph-mobile][download][url] = http://github.com/kdb/cph-mobile.git
+projects[cph-mobile][download][revision] = 6dff1c73a50c75710a68564b4f4054df07385e4d
 
 ; Libraries
 libraries[ting-client][destination] = "modules/ting/lib"
