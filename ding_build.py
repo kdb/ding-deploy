@@ -104,16 +104,16 @@ def setup_profile(options, make_path):
 
     shutil.copy('ding.profile', path)
 
-def create_symlinks(options, make_path):
+def create_symlinks(options, folder_name):
     """
     Set up symlinks to latest and previous build.
     """
     if options.symlink_prefix:
-        latest = '%s-latest' % options.symlink_prefix
-        previous = '%s-previous' % options.symlink_prefix
+        latest = 'build/%s-latest' % options.symlink_prefix
+        previous = 'build/%s-previous' % options.symlink_prefix
     else:
-        latest = 'latest'
-        previous = 'previous'
+        latest = 'build/latest'
+        previous = 'build/previous'
 
     # Revome previous symlink, if it exists.
     if os.path.lexists(previous):
@@ -124,17 +124,20 @@ def create_symlinks(options, make_path):
         os.rename(latest, previous)
 
     # Set up a link from our completed build to the new one.
-    os.symlink(make_path, latest)
+    os.symlink(folder_name, latest)
+
 
 def main():
     """ Main function, run when the script is run stand-alone. """
     (options, args) = parse_args()
     configure_logging(options)
 
-    if args:
-        make_path = args[-1]
-    else:
-        make_path = 'ding'
+    try:
+        folder_name = args[-1]
+    except IndexError: 
+        folder_name = 'ding'
+
+    make_path = 'build/%s' % folder_name
 
     logging.info('Starting make for mode "%s" in folder "%s"' % (options.mode, make_path))
     success = start_make(make_command(options, make_path))
@@ -142,7 +145,7 @@ def main():
     if success:
         setup_profile(options, make_path)
         if options.create_symlinks:
-            create_symlinks(options, make_path)
+            create_symlinks(options, folder_name)
     else:
         logging.error('Build FAILED for mode "%s" in folder "%s"' % (options.mode, make_path))
 
