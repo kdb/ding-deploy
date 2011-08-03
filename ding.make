@@ -228,9 +228,10 @@ projects[dynamo][download][revision] = "v2.2.0"
 
 ; Copenhagen specific
 
-projects[copenhagen][type] = "theme"
-projects[copenhagen][download][type] = "git"
-projects[copenhagen][download][url] = "https://github.com/kdb/copenhagen.git"
+projects[copenhagen][type] = theme
+projects[copenhagen][download][type] = git
+projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
+projects[copenhagen][download][revision] = v2.1.1
 
 projects[kdb][type] = "module"
 projects[kdb][download][type] = "git"
