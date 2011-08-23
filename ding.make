@@ -224,7 +224,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = 106e7cd
+projects[dynamo][download][revision] = 6da16ba5a39286eb2fec738f84c881fbfa8cc242
 
 ; Copenhagen specific
 
@@ -291,7 +291,7 @@ projects[ding_campaign][download][revision] = "v1.3.2"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.6.0"
+projects[ting][download][revision] = b5ad119d3225e1d0f33a
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
