@@ -9,6 +9,9 @@ projects[pressflow][download][url] = "http://files.pressflow.org/pressflow-6-cur
 
 ; Contrib projects
 
+projects[addthis][subdir] = "contrib"
+projects[addthis][version] = "3.0-beta2"
+
 projects[admin][subdir] = "contrib"
 projects[admin][version] = "2.0"
 
