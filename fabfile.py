@@ -30,6 +30,9 @@ env.roledefs = {
     'roedovre:prod': ['deploy@roedovre.dbc.dk'],
     'helsbib:stg': ['deploy@helsingoer.dbc.dk'],
     'helsbib:prod': ['deploy@helsingoer.dbc.dk'],
+    'albertslund:dev': ['deploy@albertslund.dbc.dk'],
+    'albertslund:stg': ['deploy@albertslund.dbc.dk'],
+    'albertslund:prod': ['deploy@albertslund.dbc.dk'],
 }
 
 env.webroot_patterns = {
