@@ -55,7 +55,7 @@ def _env_settings(project=None):
     # If project was not set, extract it from the role.
     if not project:
         try:
-            env.role, project = env.role.split(':')
+            project, env.role = env.role.split(':')
         except ValueError:
             abort('No project in role and no project specified.')
 
