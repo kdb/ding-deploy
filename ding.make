@@ -45,8 +45,8 @@ projects[cache_actions][version] = "1.0"
 projects[cck][subdir] = "contrib"
 projects[cck][version] = "2.9"
 
-projects[comment_notify][subdir] = "contrib"
-projects[comment_notify][version] = "1.5"
+projects[comment_notify][subdir] = contrib
+projects[comment_notify][version] = 1.6
 
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
@@ -83,6 +83,9 @@ projects[features][patch][] = "http://drupal.org/files/issues/features.860974.pa
 projects[filefield][subdir] = contrib
 projects[filefield][version] = 3.10
 
+projects[flag][subdir] = contrib
+projects[flag][version] = 2.0-beta6
+
 projects[insert][subdir] = contrib
 projects[insert][version] = 1.1
 
@@ -96,11 +99,11 @@ projects[globalredirect][version] = "1.2"
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
 
-projects[htmLawed][subdir] = "contrib"
-projects[htmLawed][version] = "2.10"
+projects[htmLawed][subdir] = contrib
+projects[htmLawed][version] = 2.11
 
-projects[image_resize_filter][subdir] = "contrib"
-projects[image_resize_filter][version] = "1.12"
+projects[image_resize_filter][subdir] = contrib
+projects[image_resize_filter][version] = 1.13
 
 projects[imageapi][subdir] = contrib
 projects[imageapi][version] = 1.10
@@ -139,7 +142,7 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
 
 projects[nanosoap][subdir] = contrib
-projects[nanosoap][version] = 1.x-dev
+projects[nanosoap][version] = 1.0-beta3
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
@@ -206,11 +209,11 @@ projects[vertical_tabs][version] = 1.0-rc2
 projects[views][subdir] = "contrib"
 projects[views][version] = "2.12"
 
-projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1.10"
+projects[views_bulk_operations][subdir] = contrib
+projects[views_bulk_operations][version] = 1.11
 
 projects[webform][subdir] = contrib
-projects[webform][version] = 3.11
+projects[webform][version] = 3.14
 
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.4
