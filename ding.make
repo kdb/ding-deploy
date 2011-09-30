@@ -300,6 +300,11 @@ projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
 projects[ding_campaign][download][revision] = "v1.3.2"
 
+projects[ding_wayf][type] = module
+projects[ding_wayf][download][type] = git
+projects[ding_wayf][download][url] = https://github.com/dingproject/ding_wayf.git
+projects[ding_wayf][download][revision] = v1.3.2
+
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
