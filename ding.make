@@ -254,6 +254,14 @@ projects[ding_wysiwyg_node_picker][download][type] = "git"
 projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
 projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
 
+projects[ding_eresource][type] = "module"
+projects[ding_eresource][download][type] = "git"
+projects[ding_eresource][download][url] = "https://github.com/kdb/ding-eresource.git"
+
+projects[ding_faq][type] = "module"
+projects[ding_faq][download][type] = "git"
+projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
+
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
 projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabroll.git"
