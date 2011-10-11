@@ -88,7 +88,7 @@ def sync_from_prod(project=None):
     """
     _env_settings(project)
 
-    if env.get('roles') != ['stg']:
+    if env.role != 'stg':
         abort('sync_from_prod is not supported for non-stg roles.')
 
     run('mysqldump drupal6_ding_%s_prod | mysql drupal6_ding_%s_stg' % (env.project, env.project))
