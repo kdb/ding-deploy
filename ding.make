@@ -136,7 +136,7 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
 
 projects[nanosoap][subdir] = contrib
-projects[nanosoap][version] = 1.x-dev
+projects[nanosoap][version] = "1.0-beta3"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
