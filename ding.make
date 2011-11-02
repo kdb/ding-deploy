@@ -256,7 +256,7 @@ projects[ting][download][branch] = "v1.7.0"
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
 projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
-projects[trampoline][download][revision] = "v1.3.0"
+projects[trampoline][download][revision] = "v1.3.1"
 
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
