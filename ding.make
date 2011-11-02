@@ -204,7 +204,7 @@ projects[views][subdir] = "contrib"
 projects[views][version] = "2.12"
 
 projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1.10"
+projects[views_bulk_operations][version] = "1.12"
 
 projects[webform][subdir] = contrib
 projects[webform][version] = 3.11
