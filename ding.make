@@ -241,7 +241,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kasperg/ding.git"
-projects[ding][download][revision] = "1803-fix-cart-multi-reservations"
+projects[ding][download][revision] = "v1.7.0"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
