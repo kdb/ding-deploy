@@ -366,10 +366,8 @@ libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymc
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
 
-libraries[emogrifier][download][type] = "get"
-libraries[emogrifier][download][url] = "http://www.pelagodesign.com/emogrifier/emogrifier.zip"
-libraries[emogrifier][directory_name] = "emogrifier"
-libraries[emogrifier][destination] = "modules/ding_borger_api/ding_borger_api/lib"
-; Patch Emogrifier to return XML instead of HTML output
-libraries[emogrifier][patch][] = "https://github.com/downloads/dingproject/ding-borger-api/emogrifier_xml_2011-08-03.patch"
+libraries[emogrifier][download][type] = git
+libraries[emogrifier][download][url] = git://gist.github.com/1344848.git
+libraries[emogrifier][directory_name] = emogrifier
+libraries[emogrifier][destination] = modules/ding_borger_api/ding_borger_api/lib
 
