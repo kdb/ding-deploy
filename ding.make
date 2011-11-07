@@ -224,7 +224,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/kasperg/dynamo.git"
-projects[dynamo][download][branch] = "1568-ting-information"
+projects[dynamo][download][branch] = "v1.7.0"
 
 ; Ding modules
 
