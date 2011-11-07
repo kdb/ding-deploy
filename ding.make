@@ -52,7 +52,7 @@ projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
 
 projects[ctm][subdir] = contrib
-projects[ctm][version] = 1.1
+projects[ctm][version] = 2.0
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
@@ -164,7 +164,7 @@ projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 2.0-rc2
+projects[pathauto][version] = 2.0
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.3"
@@ -198,7 +198,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.16
+projects[token][version] = 1.17
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
@@ -206,11 +206,11 @@ projects[transliteration][version] = "3.0"
 projects[vertical_tabs][subdir] = contrib
 projects[vertical_tabs][version] = 1.0-rc2
 
-projects[views][subdir] = "contrib"
-projects[views][version] = "2.12"
+projects[views][subdir] = contrib
+projects[views][version] = 2.14
 
 projects[views_bulk_operations][subdir] = contrib
-projects[views_bulk_operations][version] = 1.11
+projects[views_bulk_operations][version] = 1.12
 
 projects[webform][subdir] = contrib
 projects[webform][version] = 3.14
