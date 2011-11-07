@@ -237,12 +237,12 @@ projects[dynamo][download][revision] = 6da16ba5a39286eb2fec738f84c881fbfa8cc242
 projects[copenhagen][type] = theme
 projects[copenhagen][download][type] = git
 projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
-;projects[copenhagen][download][revision] = v2.1.1
+projects[copenhagen][download][revision] = v2.1.2
 
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-;projects[kdb][download][revision] = v1.2.2
+projects[kdb][download][revision] = v1.3.0
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
