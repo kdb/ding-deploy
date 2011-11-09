@@ -361,10 +361,10 @@ libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jqu
 libraries[jquery_ui][directory_name] = "jquery.ui"
 libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 
-libraries[tinymce][download][type] = "get"
-libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip"
-libraries[tinymce][directory_name] = "tinymce"
-libraries[tinymce][destination] = "libraries"
+libraries[tinymce][download][type] = get
+libraries[tinymce][download][url] = https://github.com/tinymce/tinymce/tarball/3.4.6
+libraries[tinymce][directory_name] = tinymce
+libraries[tinymce][destination] = libraries
 
 libraries[emogrifier][download][type] = get
 libraries[emogrifier][download][url] = https://gist.github.com/gists/1344848/download
