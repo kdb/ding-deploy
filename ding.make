@@ -347,7 +347,7 @@ projects[alternator][download][revision] = v1.0
 
 projects[cph-mobile][type] = theme
 projects[cph-mobile][download][type] = git
-projects[cph-mobile][download][url] = http://github.com/kdb/cph-mobile.git
+projects[cph-mobile][download][url] = https://github.com/kdb/cph-mobile.git
 projects[cph-mobile][download][revision] = 6dff1c73a50c75710a68564b4f4054df07385e4d
 
 ; Libraries
@@ -366,8 +366,8 @@ libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymc
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
 
-libraries[emogrifier][download][type] = git
-libraries[emogrifier][download][url] = git://gist.github.com/1344848.git
+libraries[emogrifier][download][type] = get
+libraries[emogrifier][download][url] = https://gist.github.com/gists/1344848/download
 libraries[emogrifier][directory_name] = emogrifier
 libraries[emogrifier][destination] = modules/ding_borger_api/ding_borger_api/lib
 
