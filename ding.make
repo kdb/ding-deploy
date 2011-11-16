@@ -198,7 +198,7 @@ projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.17
+projects[token][version] = 1.18
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
@@ -207,7 +207,7 @@ projects[vertical_tabs][subdir] = contrib
 projects[vertical_tabs][version] = 1.0-rc2
 
 projects[views][subdir] = contrib
-projects[views][version] = 2.14
+projects[views][version] = 2.16
 
 projects[views_bulk_operations][subdir] = contrib
 projects[views_bulk_operations][version] = 1.12
@@ -362,7 +362,7 @@ libraries[jquery_ui][directory_name] = "jquery.ui"
 libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 
 libraries[tinymce][download][type] = get
-libraries[tinymce][download][url] = https://github.com/tinymce/tinymce/tarball/3.4.6
+libraries[tinymce][download][url] = https://github.com/tinymce/tinymce/tarball/3.4.7
 libraries[tinymce][directory_name] = tinymce
 libraries[tinymce][destination] = libraries
 
