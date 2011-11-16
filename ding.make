@@ -160,6 +160,11 @@ projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
+projects[panels_subsites][type] = module
+projects[panels_subsites][download][type] = git
+projects[panels_subsites][download][url] = http://git.drupal.org/project/panels_subsites.git
+projects[panels_subsites][download][branch] = 6.x-1.x
+
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
@@ -300,13 +305,18 @@ projects[openruth][download][revision] = "v1.0.9"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
-projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = fe69406
+projects[ding][download][url] = "https://github.com/kdb/ding.git"
+projects[ding][download][branch] = subsite-refactor
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
 projects[ding_campaign][download][revision] = "v1.3.2"
+
+projects[ding_tema_sites][type] = module
+projects[ding_tema_sites][download][type] = git
+projects[ding_tema_sites][download][url] = https://github.com/kdb/ding_tema_sites.git
+projects[ding_tema_sites][download][branch] = master
 
 projects[ding_wayf][type] = module
 projects[ding_wayf][download][type] = git
