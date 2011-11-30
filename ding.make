@@ -232,10 +232,9 @@ projects[mothership][version] = "1.1"
 
 ; Ding theme
 
-projects[dynamo][type] = "theme"
-projects[dynamo][download][type] = "git"
-projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = 6da16ba5a39286eb2fec738f84c881fbfa8cc242
+projects[dynamo][type] = theme
+projects[dynamo][download][type] = git
+projects[dynamo][download][url] = https://github.com/kdb/dynamo.git
 
 ; Copenhagen specific
 
