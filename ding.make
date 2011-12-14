@@ -305,7 +305,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][branch] = subsite-refactor
+projects[ding][download][revision] = 7278758aef8ed5ef49121d0b39507d24f39dd707
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -315,7 +315,7 @@ projects[ding_campaign][download][revision] = 6a739ff7e8cea7913fca58acc298c3ca0b
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/kdb/ding_tema_sites.git
-projects[ding_tema_sites][download][branch] = master
+projects[ding_tema_sites][download][revision] = 0c269de4ded792d8c7d0fd6af017398228a6ffcf
 
 projects[ding_wayf][type] = module
 projects[ding_wayf][download][type] = git
