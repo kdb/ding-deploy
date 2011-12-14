@@ -235,6 +235,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = theme
 projects[dynamo][download][type] = git
 projects[dynamo][download][url] = https://github.com/kdb/dynamo.git
+projects[dynamo][download][revision] = 9bc5c10f066cb
 
 ; Copenhagen specific
 
