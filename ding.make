@@ -309,7 +309,7 @@ projects[ding][download][revision] = 7278758aef8ed5ef49121d0b39507d24f39dd707
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
-projects[ding_campaign][download][url] = https://github.com/mikl/ding-campaign.git
+projects[ding_campaign][download][url] = https://github.com/mikl/ding_campaign.git
 projects[ding_campaign][download][revision] = 6a739ff7e8cea7913fca58acc298c3ca0b9dbf40
 
 projects[ding_tema_sites][type] = module
