@@ -151,7 +151,7 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
-projects[office_hours][download][tag] = "6.x-2.0-unofficial8"
+projects[office_hours][download][revision] = 48b57f77c63b57e60f332118f65d72498547083e
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
@@ -163,7 +163,7 @@ projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deplo
 projects[panels_subsites][type] = module
 projects[panels_subsites][download][type] = git
 projects[panels_subsites][download][url] = http://git.drupal.org/project/panels_subsites.git
-projects[panels_subsites][download][branch] = 6.x-1.x
+projects[panels_subsites][download][revision] = 8bdfa82
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
@@ -305,7 +305,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = 7278758aef8ed5ef49121d0b39507d24f39dd707
+projects[ding][download][revision] = 18ad0de
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
