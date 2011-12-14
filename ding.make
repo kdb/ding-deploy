@@ -52,7 +52,7 @@ projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
 
 projects[ctm][subdir] = contrib
-projects[ctm][version] = 2.0
+projects[ctm][version] = 2.1
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
