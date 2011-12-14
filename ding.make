@@ -309,8 +309,8 @@ projects[ding][download][branch] = subsite-refactor
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
-projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.3.2"
+projects[ding_campaign][download][url] = https://github.com/mikl/ding-campaign.git
+projects[ding_campaign][download][revision] = 6a739ff7e8cea7913fca58acc298c3ca0b9dbf40
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
