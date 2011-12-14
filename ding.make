@@ -320,6 +320,7 @@ projects[ding_tema_sites][download][branch] = master
 projects[ding_wayf][type] = module
 projects[ding_wayf][download][type] = git
 projects[ding_wayf][download][url] = https://github.com/dingproject/ding_wayf.git
+projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f86
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
