@@ -373,7 +373,7 @@ libraries[jquery_ui][directory_name] = "jquery.ui"
 libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 
 libraries[tinymce][download][type] = get
-libraries[tinymce][download][url] = https://github.com/tinymce/tinymce/tarball/3.4.7
+libraries[tinymce][download][url] = https://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip
 libraries[tinymce][directory_name] = tinymce
 libraries[tinymce][destination] = libraries
 
