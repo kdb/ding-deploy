@@ -241,10 +241,7 @@ projects[mothership][version] = "1.1"
 
 projects[dynamo][type] = theme
 projects[dynamo][download][type] = git
-projects[dynamo][download][url] = https://github.com/dingproject/dynamo.git
-projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/4.diff
-projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/9.diff
-projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/11.diff
+projects[dynamo][download][url] = https://github.com/kdb/dynamo.git
 
 ; Copenhagen specific
 
@@ -314,11 +311,8 @@ projects[openruth][download][revision] = "v1.0.9"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
-projects[ding][download][url] = "https://github.com/dingproject/ding.git"
+projects[ding][download][url] = "https://github.com/kdb/ding.git"
 ;projects[ding][download][revision] = 18ad0de
-projects[ding][patch][] = https://github.com/dingproject/ding/pull/8.diff
-projects[ding][patch][] = https://github.com/dingproject/ding/pull/18.diff
-projects[ding][patch][] = https://github.com/dingproject/ding/pull/23.diff
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
