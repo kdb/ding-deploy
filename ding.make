@@ -156,6 +156,10 @@ projects[office_hours][download][revision] = 48b57f77c63b57e60f332118f65d7249854
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
+projects[opening_hours][type] = module
+projects[opening_hours][download][type] = git
+projects[opening_hours][download][url] = http://git.drupal.org/project/opening_hours.git
+
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
@@ -202,6 +206,9 @@ projects[tagadelic][version] = "1.3"
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
 
+projects[tipsy][subdir] = contrib
+projects[tipsy][version] = 1.1
+
 projects[token][subdir] = contrib
 projects[token][version] = 1.18
 
@@ -234,15 +241,17 @@ projects[mothership][version] = "1.1"
 
 projects[dynamo][type] = theme
 projects[dynamo][download][type] = git
-projects[dynamo][download][url] = https://github.com/kdb/dynamo.git
-projects[dynamo][download][revision] = 9bc5c10f066cb
+projects[dynamo][download][url] = https://github.com/dingproject/dynamo.git
+projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/4.diff
+projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/9.diff
+projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/11.diff
 
 ; Copenhagen specific
 
 projects[copenhagen][type] = theme
 projects[copenhagen][download][type] = git
 projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
-projects[copenhagen][download][revision] = v2.1.2
+;projects[copenhagen][download][revision] = v2.1.2
 
 projects[kdb][type] = module
 projects[kdb][download][type] = git
@@ -305,13 +314,16 @@ projects[openruth][download][revision] = "v1.0.9"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
-projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = 18ad0de
+projects[ding][download][url] = "https://github.com/dingproject/ding.git"
+;projects[ding][download][revision] = 18ad0de
+projects[ding][patch][] = https://github.com/dingproject/ding/pull/8.diff
+projects[ding][patch][] = https://github.com/dingproject/ding/pull/18.diff
+projects[ding][patch][] = https://github.com/dingproject/ding/pull/23.diff
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
-projects[ding_campaign][download][url] = https://github.com/mikl/ding_campaign.git
-projects[ding_campaign][download][revision] = 6a739ff7e8cea7913fca58acc298c3ca0b9dbf40
+projects[ding_campaign][download][url] = https://github.com/dingproject/ding-campaign.git
+;projects[ding_campaign][download][revision] = 6a739ff7e8cea7913fca58acc298c3ca0b9dbf40
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
