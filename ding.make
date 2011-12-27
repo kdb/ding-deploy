@@ -242,6 +242,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = theme
 projects[dynamo][download][type] = git
 projects[dynamo][download][url] = https://github.com/kdb/dynamo.git
+projects[dynamo][download][branch] = opening_hours
 
 ; Copenhagen specific
 
@@ -312,7 +313,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-;projects[ding][download][revision] = 18ad0de
+projects[ding][download][branch] = opening_hours
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
