@@ -89,7 +89,9 @@ sub vcl_recv {
   }
 
   # Reduce the number of User Agent variants so caching will work better
-  if (req.http.user-agent ~ "MSIE") {
+  if (req.http.user-agent ~ "(?i)ipod|iphone|android|opera mini|blackberry|up.browser|up.link|mmp|symbian|smartphone|midp|wap|vodafone|o2|pocket|kindle|mobile|pda|psp|treo"){
+    set req.http.user-agent="iPhone";
+  } else if (req.http.user-agent ~ "MSIE") {
     set req.http.user-agent = "MSIE";
   } else {
     set req.http.user-agent = "Mozilla";

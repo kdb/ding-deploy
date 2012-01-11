@@ -151,7 +151,7 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
-projects[office_hours][download][revision] = 48b57f77c63b57e60f332118f65d72498547083e
+projects[office_hours][download][revision] = "6.x-2.0-unofficial10"
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
@@ -304,7 +304,7 @@ projects[scheduler][version] = "1.8"
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.6.0"
+projects[alma][download][revision] = "v1.7.0beta3"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -318,8 +318,8 @@ projects[ding][download][branch] = opening_hours
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
-projects[ding_campaign][download][url] = https://github.com/dingproject/ding-campaign.git
-;projects[ding_campaign][download][revision] = 6a739ff7e8cea7913fca58acc298c3ca0b9dbf40
+projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
+projects[ding_campaign][download][revision] = "v1.4.0"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
@@ -334,12 +334,12 @@ projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.6.0.1"
+projects[ting][download][revision] = "v1.7.0beta2"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
 projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
-projects[trampoline][download][revision] = "v1.2.3"
+projects[trampoline][download][revision] = "v1.3.1"
 
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
@@ -373,7 +373,8 @@ projects[cph-mobile][download][revision] = 6dff1c73a50c75710a68564b4f4054df07385
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.1.0"
+libraries[ting-client][download][revision] = "v1.2.0beta1"
+
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
