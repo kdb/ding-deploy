@@ -58,7 +58,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][type] = "module"
@@ -76,7 +76,7 @@ projects[environment_indicator][subdir] = contrib
 projects[environment_indicator][version] = 1.1
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.1
+projects[features][version] = 1.2
 ; Patch to fix reverting menu links http://drupal.org/node/860974
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
@@ -94,7 +94,7 @@ projects[flexifield][version] = "1.0-alpha5"
 projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-390480-22.patch"
 
 projects[globalredirect][subdir] = "contrib"
-projects[globalredirect][version] = "1.2"
+projects[globalredirect][version] = "1.4"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
@@ -194,7 +194,7 @@ projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.6"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.0"
+projects[strongarm][version] = "2.1"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
