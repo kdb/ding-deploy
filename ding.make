@@ -275,9 +275,9 @@ projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
 
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
+; Use local fork of ding_tabroll while we wait for changes to be merged.
 projects[ding_tabroll][download][url] = "https://github.com/kdb/ding_tabroll.git"
-; There is currently no tags for ding_tabroll so use a SHA.
-projects[ding_tabroll][download][revision] = "53fd88a8058788045a053f7780e74a94ff1e2e81"
+projects[ding_tabroll][download][branch] = "ding-library-tabroll"
 
 projects[tinymce_node_picker][subdir] = "contrib"
 projects[tinymce_node_picker][version] = "2.1"
