@@ -322,7 +322,7 @@ projects[ding_campaign][download][revision] = "v1.4.0"
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/kdb/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = 0c269de4ded792d8c7d0fd6af017398228a6ffcf
+projects[ding_tema_sites][download][revision] = f9aa4c79dc4
 
 projects[ding_wayf][type] = module
 projects[ding_wayf][download][type] = git
