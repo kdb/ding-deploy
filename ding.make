@@ -241,19 +241,19 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = theme
 projects[dynamo][download][type] = git
 projects[dynamo][download][url] = https://github.com/kdb/dynamo.git
-projects[dynamo][download][revision] = 8734c4a0d1c
+projects[dynamo][download][revision] = 45a4b61dbb
 
 ; Copenhagen specific
 
 projects[copenhagen][type] = theme
 projects[copenhagen][download][type] = git
 projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
-;projects[copenhagen][download][revision] = v2.1.2
+projects[copenhagen][download][revision] = v2.1.3
 
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = v1.3.6
+projects[kdb][download][revision] = e00a7bfe2bff4e9
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
@@ -277,7 +277,7 @@ projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
 ; Use local fork of ding_tabroll while we wait for changes to be merged.
 projects[ding_tabroll][download][url] = "https://github.com/kdb/ding_tabroll.git"
-projects[ding_tabroll][download][branch] = "ding-library-tabroll"
+;projects[ding_tabroll][download][branch] = "ding-library-tabroll"
 
 projects[tinymce_node_picker][subdir] = "contrib"
 projects[tinymce_node_picker][version] = "2.1"
@@ -302,7 +302,7 @@ projects[scheduler][version] = "1.8"
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.7.0beta3"
+projects[alma][download][revision] = "v1.6.0"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -312,7 +312,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = 34270213c4fdb
+projects[ding][download][revision] = 2f3e5400fa79
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -336,7 +336,7 @@ projects[ding_webtrends][download][url] = https://github.com/kdb/ding_webtrends.
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.7.0beta2"
+projects[ting][download][revision] = "v1.6.0.1"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
