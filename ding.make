@@ -160,7 +160,7 @@ projects[opening_hours][subdir] = contrib
 projects[opening_hours][version] = 1.0-beta3
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.9"
+projects[panels][version] = "3.10"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[panels_subsites][type] = module
