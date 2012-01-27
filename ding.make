@@ -241,6 +241,60 @@ projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
 projects[dynamo][download][revision] = "v2.3.0"
 
+; Copenhagen specific
+
+projects[copenhagen][type] = theme
+projects[copenhagen][download][type] = git
+projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
+projects[copenhagen][download][revision] = v2.1.3
+
+projects[kdb][type] = module
+projects[kdb][download][type] = git
+projects[kdb][download][url] = https://github.com/kdb/kdb.git
+projects[kdb][download][revision] = e00a7bfe2bff4e9
+
+projects[ding_borger_api][type] = "module"
+projects[ding_borger_api][download][type] = "git"
+projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
+projects[ding_borger_api][download][revision] = "v1.0.4"
+
+projects[ding_wysiwyg_node_picker][type] = "module"
+projects[ding_wysiwyg_node_picker][download][type] = "git"
+projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
+projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
+
+projects[ding_eresource][type] = "module"
+projects[ding_eresource][download][type] = "git"
+projects[ding_eresource][download][url] = "https://github.com/kdb/ding-eresource.git"
+
+projects[ding_faq][type] = "module"
+projects[ding_faq][download][type] = "git"
+projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
+
+projects[ding_tabroll][type] = "module"
+projects[ding_tabroll][download][type] = "git"
+; Use local fork of ding_tabroll while we wait for changes to be merged.
+projects[ding_tabroll][download][url] = "https://github.com/kdb/ding_tabroll.git"
+;projects[ding_tabroll][download][branch] = "ding-library-tabroll"
+
+projects[tinymce_node_picker][subdir] = "contrib"
+projects[tinymce_node_picker][version] = "2.1"
+
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][version] = "2.4"
+
+projects[better_messages][subdir] = contrib
+projects[better_messages][version] = 1.13
+
+projects[l10n_update][subdir] = contrib
+projects[l10n_update][version] = 1.0-beta1
+
+projects[memcache][subdir] = contrib
+projects[memcache][version] = 1.9
+
+projects[scheduler][subdir] = "contrib"
+projects[scheduler][version] = "1.8"
+
 ; Ding modules
 
 projects[alma][type] = "module"
@@ -268,6 +322,15 @@ projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
 projects[ding_tema_sites][download][revision] = f9aa4c79dc42d
 
+projects[ding_wayf][type] = module
+projects[ding_wayf][download][type] = git
+projects[ding_wayf][download][url] = https://github.com/dingproject/ding_wayf.git
+projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f86
+
+projects[ding_webtrends][type] = module
+projects[ding_webtrends][download][type] = git
+projects[ding_webtrends][download][url] = https://github.com/kdb/ding_webtrends.git
+
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
@@ -282,6 +345,29 @@ projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
 projects[webtrends][download][revision] = "v1.1.2"
+
+; Mobile site
+
+projects[ding-mobile][type] = module
+projects[ding-mobile][download][type] = git
+projects[ding-mobile][download][url] = https://github.com/aakb/ding-mobile.git
+projects[ding-mobile][download][revision] = v1.0
+
+projects[mobile_tools][subdir] = contrib
+projects[mobile_tools][version] = 2.3
+
+projects[browscap][subdir] = contrib
+projects[browscap][version] = 1.1
+
+projects[alternator][type] = theme
+projects[alternator][download][type] = git
+projects[alternator][download][url] = http://github.com/aakb/alternator.git
+projects[alternator][download][revision] = v1.0
+
+projects[cph-mobile][type] = theme
+projects[cph-mobile][download][type] = git
+projects[cph-mobile][download][url] = https://github.com/kdb/cph-mobile.git
+projects[cph-mobile][download][revision] = 6dff1c73a50c75710a68564b4f4054df07385e4d
 
 ; Libraries
 libraries[ting-client][destination] = "modules/ting/lib"
@@ -299,4 +385,9 @@ libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip"
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
+
+libraries[emogrifier][download][type] = get
+libraries[emogrifier][download][url] = https://gist.github.com/gists/1344848/download
+libraries[emogrifier][directory_name] = emogrifier
+libraries[emogrifier][destination] = modules/ding_borger_api/ding_borger_api/lib
 
