@@ -61,10 +61,7 @@ projects[date][subdir] = "contrib"
 projects[date][version] = "2.8"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][type] = "module"
-projects[dibs][download][type] = "git"
-projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
-projects[dibs][download][revision] = 6.x-1.x
+projects[dibs][version] = "1.0"
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.1"
@@ -239,7 +236,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.3.0"
+projects[dynamo][download][revision] = "467dd9a876ae9e7c3b960d633aaf41f43bbdb716"
 
 ; Copenhagen specific
 
@@ -266,10 +263,12 @@ projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
 projects[ding_eresource][type] = "module"
 projects[ding_eresource][download][type] = "git"
 projects[ding_eresource][download][url] = "https://github.com/kdb/ding-eresource.git"
+projects[ding_eresource][download][revision] = "0c93ea396629ad7bb3821c7e07ec6b00f728299f"
 
 projects[ding_faq][type] = "module"
 projects[ding_faq][download][type] = "git"
 projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
+projects[ding_faq][download][revision] = "51f13552ccd8cdbfd09cbd56a96069c72c367254"
 
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
@@ -310,7 +309,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.7.0"
+projects[ding][download][revision] = "73d243ebdae9a550c215651be2ab44fbb9dc47c2"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -330,6 +329,7 @@ projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f
 projects[ding_webtrends][type] = module
 projects[ding_webtrends][download][type] = git
 projects[ding_webtrends][download][url] = https://github.com/kdb/ding_webtrends.git
+projects[ding_webtrends][download][revision] = 7346f977f4ae204063077acdf02d08b4cf523bfc
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
