@@ -263,10 +263,12 @@ projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
 projects[ding_eresource][type] = "module"
 projects[ding_eresource][download][type] = "git"
 projects[ding_eresource][download][url] = "https://github.com/kdb/ding-eresource.git"
+projects[ding_eresource][download][revision] = "0c93ea396629ad7bb3821c7e07ec6b00f728299f"
 
 projects[ding_faq][type] = "module"
 projects[ding_faq][download][type] = "git"
 projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
+projects[ding_faq][download][revision] = "51f13552ccd8cdbfd09cbd56a96069c72c367254"
 
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
@@ -287,7 +289,7 @@ projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = 1.0-beta1
 
 projects[memcache][subdir] = contrib
-projects[memcache][version] = 1.9
+projects[memcache][version] = 1.10
 
 projects[scheduler][subdir] = "contrib"
 projects[scheduler][version] = "1.8"
@@ -307,22 +309,27 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = 18ad0de
+projects[ding][download][revision] = 7a91af4
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = https://github.com/mikl/ding_campaign.git
-projects[ding_campaign][download][revision] = 6a739ff7e8cea7913fca58acc298c3ca0b9dbf40
+projects[ding_campaign][download][revision] = v1.4.0
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/kdb/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = 0c269de4ded792d8c7d0fd6af017398228a6ffcf
+projects[ding_tema_sites][download][revision] = f9aa4c79dc42d
 
 projects[ding_wayf][type] = module
 projects[ding_wayf][download][type] = git
 projects[ding_wayf][download][url] = https://github.com/dingproject/ding_wayf.git
 projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f86
+
+projects[ding_webtrends][type] = module
+projects[ding_webtrends][download][type] = git
+projects[ding_webtrends][download][url] = https://github.com/kdb/ding_webtrends.git
+projects[ding_webtrends][download][revision] = 7346f977f4ae204063077acdf02d08b4cf523bfc
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
