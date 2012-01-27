@@ -154,6 +154,9 @@ projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.9"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
+projects[panels_subsites][subdir] = "contrib"
+projects[panels_subsites][version] = 1.2
+
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
@@ -247,6 +250,11 @@ projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
 projects[ding_campaign][download][revision] = "v1.4.0"
+
+projects[ding_tema_sites][type] = module
+projects[ding_tema_sites][download][type] = git
+projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
+projects[ding_tema_sites][download][revision] = f9aa4c79dc42d
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
