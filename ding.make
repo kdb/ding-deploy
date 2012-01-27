@@ -236,7 +236,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = theme
 projects[dynamo][download][type] = git
 projects[dynamo][download][url] = https://github.com/kdb/dynamo.git
-projects[dynamo][download][revision] = 9bc5c10f066cb
+projects[dynamo][download][revision] = 72ba6fc24dfc0b
 
 ; Copenhagen specific
 
@@ -248,7 +248,7 @@ projects[copenhagen][download][revision] = v2.1.3
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = v1.3.6
+projects[kdb][download][revision] = v1.3.7
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
