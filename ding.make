@@ -58,13 +58,10 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
 
 projects[dibs][subdir] = "contrib"
-projects[dibs][type] = "module"
-projects[dibs][download][type] = "git"
-projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
-projects[dibs][download][revision] = 6.x-1.x
+projects[dibs][version] = "1.0"
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.1"
@@ -76,7 +73,7 @@ projects[environment_indicator][subdir] = contrib
 projects[environment_indicator][version] = 1.1
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.1
+projects[features][version] = 1.2
 ; Patch to fix reverting menu links http://drupal.org/node/860974
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
@@ -94,7 +91,7 @@ projects[flexifield][version] = "1.0-alpha5"
 projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-390480-22.patch"
 
 projects[globalredirect][subdir] = "contrib"
-projects[globalredirect][version] = "1.2"
+projects[globalredirect][version] = "1.4"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
@@ -142,7 +139,7 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
 
 projects[nanosoap][subdir] = contrib
-projects[nanosoap][version] = 1.0-beta3
+projects[nanosoap][version] = "1.0-beta3"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
@@ -151,19 +148,20 @@ projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
 projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
-projects[office_hours][download][revision] = 48b57f77c63b57e60f332118f65d72498547083e
+projects[office_hours][download][revision] = "6.x-2.0-unofficial10"
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
+projects[opening_hours][subdir] = contrib
+projects[opening_hours][version] = 1.0-beta3
+
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.9"
+projects[panels][version] = "3.10"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
-projects[panels_subsites][type] = module
-projects[panels_subsites][download][type] = git
-projects[panels_subsites][download][url] = http://git.drupal.org/project/panels_subsites.git
-projects[panels_subsites][download][revision] = 8bdfa82
+projects[panels_subsites][subdir] = "contrib"
+projects[panels_subsites][version] = 1.2
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
@@ -191,7 +189,7 @@ projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.6"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.0"
+projects[strongarm][version] = "2.1"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
@@ -201,6 +199,9 @@ projects[tagadelic][version] = "1.3"
 
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
+
+projects[tipsy][subdir] = contrib
+projects[tipsy][version] = 1.1
 
 projects[token][subdir] = contrib
 projects[token][version] = 1.18
@@ -214,8 +215,8 @@ projects[vertical_tabs][version] = 1.0-rc2
 projects[views][subdir] = contrib
 projects[views][version] = 2.16
 
-projects[views_bulk_operations][subdir] = contrib
-projects[views_bulk_operations][version] = 1.12
+projects[views_bulk_operations][subdir] = "contrib"
+projects[views_bulk_operations][version] = "1.12"
 
 projects[webform][subdir] = contrib
 projects[webform][version] = 3.15
