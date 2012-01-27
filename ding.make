@@ -290,7 +290,7 @@ projects[l10n_update][subdir] = contrib
 projects[l10n_update][version] = 1.0-beta1
 
 projects[memcache][subdir] = contrib
-projects[memcache][version] = 1.9
+projects[memcache][version] = 1.10
 
 projects[scheduler][subdir] = "contrib"
 projects[scheduler][version] = "1.8"
