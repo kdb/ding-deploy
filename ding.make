@@ -154,7 +154,7 @@ projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-rc1
+projects[opening_hours][version] = 1.0-rc2
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
@@ -313,7 +313,7 @@ projects[ding][download][revision] = 7a91af4
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
-projects[ding_campaign][download][url] = https://github.com/dingproject/ding_campaign.git
+projects[ding_campaign][download][url] = https://github.com/dingproject/ding-campaign.git
 projects[ding_campaign][download][revision] = v1.4.0
 
 projects[ding_tema_sites][type] = module
