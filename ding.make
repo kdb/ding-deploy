@@ -309,7 +309,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = 7a91af4
+projects[ding][download][revision] = a2c62b44981e6d56b
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
