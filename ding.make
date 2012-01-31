@@ -154,7 +154,7 @@ projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-beta3
+projects[opening_hours][version] = 1.0-rc1
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
