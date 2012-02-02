@@ -64,7 +64,7 @@ projects[dibs][subdir] = "contrib"
 projects[dibs][version] = "1.0"
 
 projects[diff][subdir] = "contrib"
-projects[diff][version] = "2.1"
+projects[diff][version] = "2.3"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
