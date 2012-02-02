@@ -265,7 +265,7 @@ projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
 projects[ding_eresource][type] = "module"
 projects[ding_eresource][download][type] = "git"
 projects[ding_eresource][download][url] = "https://github.com/kdb/ding-eresource.git"
-projects[ding_eresource][download][revision] = "6f5acc3217aba6eff6271f28e828fe591d4ed74c"
+projects[ding_eresource][download][revision] = "c4b5ff13e989e1551a80a4d33b9ecad305022f27"
 
 projects[ding_faq][type] = "module"
 projects[ding_faq][download][type] = "git"
