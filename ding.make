@@ -148,7 +148,7 @@ projects[office_hours][download][url] = "https://github.com/dingproject/drupal-o
 projects[office_hours][download][revision] = "6.x-2.0-unofficial10"
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-beta3
+projects[opening_hours][version] = 1.0-rc4
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
@@ -233,7 +233,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.3.0"
+;projects[dynamo][download][revision] = "v2.3.0"
 
 ; Ding modules
 
@@ -250,7 +250,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.7.0"
+;projects[ding][download][revision] = "master"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
