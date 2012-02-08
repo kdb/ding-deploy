@@ -314,7 +314,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = 05bc718
+projects[ding][download][revision] = a5866497b
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
