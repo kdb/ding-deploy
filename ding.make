@@ -257,11 +257,6 @@ projects[ding_borger_api][download][type] = "git"
 projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
 projects[ding_borger_api][download][revision] = "v1.0.4"
 
-projects[ding_wysiwyg_node_picker][type] = "module"
-projects[ding_wysiwyg_node_picker][download][type] = "git"
-projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
-projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
-
 projects[ding_eresource][type] = "module"
 projects[ding_eresource][download][type] = "git"
 projects[ding_eresource][download][url] = "https://github.com/kdb/ding-eresource.git"
@@ -277,6 +272,11 @@ projects[ding_tabroll][download][type] = "git"
 projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabroll.git"
 ; There is currently no tags for ding_tabroll so use a SHA.
 ;projects[ding_tabroll][download][revision] = "11160768c07296fc62bd00fd6bd10c6a8ddc1ef3"
+
+projects[ding_wysiwyg_node_picker][type] = "module"
+projects[ding_wysiwyg_node_picker][download][type] = "git"
+projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
+projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
 
 projects[tinymce_node_picker][subdir] = "contrib"
 projects[tinymce_node_picker][version] = "2.1"
