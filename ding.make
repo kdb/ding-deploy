@@ -267,7 +267,7 @@ projects[ding_faq][download][revision] = "51f13552ccd8cdbfd09cbd56a96069c72c3672
 
 projects[ding_library_hours][type] = "module"
 projects[ding_library_hours][download][type] = "git"
-projects[ding_library_hours][download][url] = "https://github.com/kdb/ding_library_hours.git"
+projects[ding_library_hours][download][url] = "https://github.com/kdb/ding-library-hours.git"
 projects[ding_library_hours][download][revision] = "91dd87cd0d021de7effcc2f4535a31bcd3da93d0"
 
 projects[ding_tabroll][type] = "module"
