@@ -154,9 +154,7 @@ projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][download][type] = git
-projects[opening_hours][download][url] = http://git.drupal.org/project/opening_hours.git
-projects[opening_hours][download][revision] = 3bb870a
+projects[opening_hours][version] = 1.0-rc4
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
