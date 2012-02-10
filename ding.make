@@ -43,7 +43,7 @@ projects[cck][subdir] = "contrib"
 projects[cck][version] = "2.9"
 
 projects[comment_notify][subdir] = "contrib"
-projects[comment_notify][version] = "1.5"
+projects[comment_notify][version] = "1.6"
 
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
@@ -64,7 +64,7 @@ projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
 projects[dibs][download][revision] = 6.x-1.x
 
 projects[diff][subdir] = "contrib"
-projects[diff][version] = "2.1"
+projects[diff][version] = "2.3"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -73,7 +73,7 @@ projects[environment_indicator][subdir] = contrib
 projects[environment_indicator][version] = 1.1
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "1.0"
+projects[features][version] = "1.2"
 ; Patch to fix reverting menu links http://drupal.org/node/860974
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
@@ -88,16 +88,16 @@ projects[flexifield][version] = "1.0-alpha5"
 projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-390480-22.patch"
 
 projects[globalredirect][subdir] = "contrib"
-projects[globalredirect][version] = "1.2"
+projects[globalredirect][version] = "1.4"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
 
 projects[htmLawed][subdir] = "contrib"
-projects[htmLawed][version] = "2.10"
+projects[htmLawed][version] = "2.11"
 
 projects[image_resize_filter][subdir] = "contrib"
-projects[image_resize_filter][version] = "1.12"
+projects[image_resize_filter][version] = "1.13"
 
 projects[imageapi][subdir] = contrib
 projects[imageapi][version] = 1.10
@@ -112,7 +112,7 @@ projects[imagefield][subdir] = contrib
 projects[imagefield][version] = 3.10
 
 projects[jquery_ui][subdir] = "contrib"
-projects[jquery_ui][version] = "1.4"
+projects[jquery_ui][version] = "1.5"
 
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
@@ -148,13 +148,13 @@ projects[office_hours][download][url] = "https://github.com/dingproject/drupal-o
 projects[office_hours][download][revision] = "6.x-2.0-unofficial10"
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-beta3
+projects[opening_hours][version] = 1.0-rc4
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
 projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.9"
+projects[panels][version] = "3.10"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[panels_subsites][subdir] = "contrib"
@@ -164,7 +164,7 @@ projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
 
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 2.0-rc2
+projects[pathauto][version] = 2.0
 
 projects[potx][subdir] = "contrib"
 projects[potx][version] = "3.3"
@@ -186,7 +186,7 @@ projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.6"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.0"
+projects[strongarm][version] = "2.1"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
@@ -201,25 +201,25 @@ projects[tipsy][subdir] = contrib
 projects[tipsy][version] = 1.1
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.16
+projects[token][version] = 1.18
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
 
 projects[vertical_tabs][subdir] = "contrib"
-projects[vertical_tabs][version] = "1.0-rc1"
+projects[vertical_tabs][version] = "1.0-rc2"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "2.14"
+projects[views][version] = "2.16"
 
 projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1.12"
+projects[views_bulk_operations][version] = "1.13"
 
 projects[webform][subdir] = contrib
 projects[webform][version] = 3.11
 
 projects[wysiwyg][subdir] = "contrib"
-projects[wysiwyg][version] = "2.3"
+projects[wysiwyg][version] = "2.4"
 
 ; Themes
 projects[tao][version] = "3.2"
@@ -233,7 +233,7 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.3.0"
+;projects[dynamo][download][revision] = "v2.3.0"
 
 ; Ding modules
 
@@ -250,7 +250,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.7.0"
+;projects[ding][download][revision] = "master"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
