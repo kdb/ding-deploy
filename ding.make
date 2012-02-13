@@ -272,7 +272,7 @@ projects[ding_library_hours][download][revision] = "91dd87cd0d021de7effcc2f4535a
 
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
-projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabroll.git"
+projects[ding_tabroll][download][url] = "https://github.com/kdb/ding_tabroll.git"
 ; There is currently no tags for ding_tabroll so use a SHA.
 projects[ding_tabroll][download][revision] = "e11ed51240d9d84b4c9cd365bb3f207e3bbe42a1"
 
