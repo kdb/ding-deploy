@@ -274,7 +274,7 @@ projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
 projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabroll.git"
 ; There is currently no tags for ding_tabroll so use a SHA.
-;projects[ding_tabroll][download][revision] = "11160768c07296fc62bd00fd6bd10c6a8ddc1ef3"
+projects[ding_tabroll][download][revision] = "e11ed51240d9d84b4c9cd365bb3f207e3bbe42a1"
 
 projects[ding_wysiwyg_node_picker][type] = "module"
 projects[ding_wysiwyg_node_picker][download][type] = "git"
