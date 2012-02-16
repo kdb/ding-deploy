@@ -64,7 +64,7 @@ projects[dibs][subdir] = "contrib"
 projects[dibs][version] = "1.0"
 
 projects[diff][subdir] = "contrib"
-projects[diff][version] = "2.1"
+projects[diff][version] = "2.3"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -154,7 +154,7 @@ projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-beta3
+projects[opening_hours][version] = 1.0-rc4
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
@@ -248,33 +248,38 @@ projects[copenhagen][download][revision] = v2.1.3
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = e00a7bfe2bff4e9
+projects[kdb][download][revision] = v1.3.7
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
 projects[ding_borger_api][download][url] = "https://github.com/dingproject/ding-borger-api.git"
 projects[ding_borger_api][download][revision] = "v1.0.4"
 
-projects[ding_wysiwyg_node_picker][type] = "module"
-projects[ding_wysiwyg_node_picker][download][type] = "git"
-projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
-projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
-
 projects[ding_eresource][type] = "module"
 projects[ding_eresource][download][type] = "git"
 projects[ding_eresource][download][url] = "https://github.com/kdb/ding-eresource.git"
-projects[ding_eresource][download][revision] = "0c93ea396629ad7bb3821c7e07ec6b00f728299f"
+projects[ding_eresource][download][revision] = "c4b5ff13e989e1551a80a4d33b9ecad305022f27"
 
 projects[ding_faq][type] = "module"
 projects[ding_faq][download][type] = "git"
 projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
 projects[ding_faq][download][revision] = "51f13552ccd8cdbfd09cbd56a96069c72c367254"
 
+projects[ding_library_hours][type] = "module"
+projects[ding_library_hours][download][type] = "git"
+projects[ding_library_hours][download][url] = "https://github.com/kdb/ding-library-hours.git"
+projects[ding_library_hours][download][revision] = "91dd87cd0d021de7effcc2f4535a31bcd3da93d0"
+
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
-; Use local fork of ding_tabroll while we wait for changes to be merged.
 projects[ding_tabroll][download][url] = "https://github.com/kdb/ding_tabroll.git"
-;projects[ding_tabroll][download][branch] = "ding-library-tabroll"
+; There is currently no tags for ding_tabroll so use a SHA.
+projects[ding_tabroll][download][revision] = "e11ed51240d9d84b4c9cd365bb3f207e3bbe42a1"
+
+projects[ding_wysiwyg_node_picker][type] = "module"
+projects[ding_wysiwyg_node_picker][download][type] = "git"
+projects[ding_wysiwyg_node_picker][download][url] = "https://github.com/dingproject/ding-wysiwyg-node-picker.git"
+projects[ding_wysiwyg_node_picker][download][revision] = "v1.0.0"
 
 projects[tinymce_node_picker][subdir] = "contrib"
 projects[tinymce_node_picker][version] = "2.1"
@@ -308,8 +313,8 @@ projects[openruth][download][revision] = "v1.0.9"
 
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
-projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "73d243ebdae9a550c215651be2ab44fbb9dc47c2"
+projects[ding][download][url] = "https://github.com/kdb/ding.git"
+projects[ding][download][revision] = "7435a7a6be039eb62a6409e95e1c14284206d5b5"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
