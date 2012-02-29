@@ -154,7 +154,7 @@ projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-rc4
+projects[opening_hours][version] = 1.0-rc5
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
@@ -216,10 +216,10 @@ projects[views][subdir] = contrib
 projects[views][version] = 2.16
 
 projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1.12"
+projects[views_bulk_operations][version] = "1.13"
 
 projects[webform][subdir] = contrib
-projects[webform][version] = 3.15
+projects[webform][version] = 3.16
 
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.4
@@ -291,7 +291,7 @@ projects[better_messages][subdir] = contrib
 projects[better_messages][version] = 1.13
 
 projects[l10n_update][subdir] = contrib
-projects[l10n_update][version] = 1.0-beta1
+projects[l10n_update][version] = 1.0-beta3
 
 projects[memcache][subdir] = contrib
 projects[memcache][version] = 1.10
@@ -362,7 +362,7 @@ projects[mobile_tools][subdir] = contrib
 projects[mobile_tools][version] = 2.3
 
 projects[browscap][subdir] = contrib
-projects[browscap][version] = 1.1
+projects[browscap][version] = 1.4
 
 projects[alternator][type] = theme
 projects[alternator][download][type] = git
