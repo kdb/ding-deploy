@@ -335,7 +335,7 @@ projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f
 projects[ding_webtrends][type] = module
 projects[ding_webtrends][download][type] = git
 projects[ding_webtrends][download][url] = https://github.com/kdb/ding_webtrends.git
-projects[ding_webtrends][download][revision] = 7346f977f4ae204063077acdf02d08b4cf523bfc
+projects[ding_webtrends][download][revision] = v1.0.0-rc.1
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
