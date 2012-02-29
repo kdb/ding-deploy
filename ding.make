@@ -378,7 +378,7 @@ projects[cph-mobile][download][revision] = 6dff1c73a50c75710a68564b4f4054df07385
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.2.0"
+libraries[ting-client][download][revision] = "74933be39048da9ea0b8da6744f317758d81e612"
 
 
 libraries[jquery_ui][download][type] = "get"
