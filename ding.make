@@ -367,8 +367,8 @@ projects[browscap][version] = 1.4
 
 projects[alternator][type] = theme
 projects[alternator][download][type] = git
-projects[alternator][download][url] = http://github.com/aakb/alternator.git
-projects[alternator][download][revision] = v1.0
+projects[alternator][download][url] = http://github.com/kdb/alternator.git
+projects[alternator][download][revision] = 02fc92c
 
 projects[cph-mobile][type] = theme
 projects[cph-mobile][download][type] = git
