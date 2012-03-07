@@ -244,12 +244,12 @@ projects[dynamo][download][revision] = "467dd9a876ae9e7c3b960d633aaf41f43bbdb716
 projects[copenhagen][type] = theme
 projects[copenhagen][download][type] = git
 projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
-projects[copenhagen][download][revision] = v2.1.4
+projects[copenhagen][download][revision] = v2.1.5
 
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = v1.3.7
+projects[kdb][download][revision] = v1.3.8
 
 projects[ding_borger_api][type] = "module"
 projects[ding_borger_api][download][type] = "git"
@@ -264,7 +264,7 @@ projects[ding_eresource][download][revision] = "c4b5ff13e989e1551a80a4d33b9ecad3
 projects[ding_faq][type] = "module"
 projects[ding_faq][download][type] = "git"
 projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
-projects[ding_faq][download][revision] = "51f13552ccd8cdbfd09cbd56a96069c72c367254"
+projects[ding_faq][download][revision] = "v1.0.0-beta.1"
 
 projects[ding_library_hours][type] = "module"
 projects[ding_library_hours][download][type] = "git"
