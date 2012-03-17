@@ -244,7 +244,7 @@ projects[dynamo][download][revision] = "467dd9a876ae9e7c3b960d633aaf41f43bbdb716
 projects[copenhagen][type] = theme
 projects[copenhagen][download][type] = git
 projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
-projects[copenhagen][download][revision] = v2.1.5
+projects[copenhagen][download][revision] = v2.1.6
 
 projects[kdb][type] = module
 projects[kdb][download][type] = git
@@ -264,12 +264,12 @@ projects[ding_eresource][download][revision] = "c4b5ff13e989e1551a80a4d33b9ecad3
 projects[ding_faq][type] = "module"
 projects[ding_faq][download][type] = "git"
 projects[ding_faq][download][url] = "https://github.com/kdb/ding-faq.git"
-projects[ding_faq][download][revision] = "v1.0.0-beta.1"
+projects[ding_faq][download][revision] = "v1.0.0-beta.2"
 
 projects[ding_library_hours][type] = "module"
 projects[ding_library_hours][download][type] = "git"
 projects[ding_library_hours][download][url] = "https://github.com/kdb/ding-library-hours.git"
-projects[ding_library_hours][download][revision] = "91dd87cd0d021de7effcc2f4535a31bcd3da93d0"
+projects[ding_library_hours][download][revision] = "v1.0.0-beta.1"
 
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
@@ -335,7 +335,7 @@ projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f
 projects[ding_webtrends][type] = module
 projects[ding_webtrends][download][type] = git
 projects[ding_webtrends][download][url] = https://github.com/kdb/ding_webtrends.git
-projects[ding_webtrends][download][revision] = v1.0.0-rc.1
+projects[ding_webtrends][download][revision] = v1.0.0-rc.2
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
