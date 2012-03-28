@@ -244,7 +244,7 @@ projects[dynamo][download][revision] = "467dd9a876ae9e7c3b960d633aaf41f43bbdb716
 projects[copenhagen][type] = theme
 projects[copenhagen][download][type] = git
 projects[copenhagen][download][url] = https://github.com/kdb/copenhagen.git
-projects[copenhagen][download][revision] = v2.1.5
+projects[copenhagen][download][revision] = v2.2.0
 
 projects[kdb][type] = module
 projects[kdb][download][type] = git
@@ -315,7 +315,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = "0d43d24"
+projects[ding][download][revision] = "fe32d0d"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
