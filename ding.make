@@ -317,4 +317,4 @@ libraries[emogrifier][destination] = modules/ding_borger_api/ding_borger_api/lib
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = e0949b9
+projects[kdb][download][revision] = cc1f32f
