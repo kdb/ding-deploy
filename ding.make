@@ -269,7 +269,7 @@ projects[ding_faq][download][revision] = "v1.0.0-beta.3"
 projects[ding_library_hours][type] = "module"
 projects[ding_library_hours][download][type] = "git"
 projects[ding_library_hours][download][url] = "https://github.com/kdb/ding-library-hours.git"
-projects[ding_library_hours][download][revision] = "v1.0.0-beta.2"
+projects[ding_library_hours][download][revision] = "v1.0.0"
 
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
