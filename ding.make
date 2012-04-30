@@ -178,7 +178,7 @@ projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
 projects[rules][version] = "1.4"
-projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
+"projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
 
 projects[securepages][subdir] = "contrib"
 projects[securepages][version] = "1.9"
@@ -317,4 +317,4 @@ libraries[emogrifier][destination] = modules/ding_borger_api/ding_borger_api/lib
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = v1.3.10
+projects[kdb][download][revision] = v1.4.0
