@@ -11,6 +11,7 @@ projects[pressflow][download][url] = "http://files.pressflow.org/pressflow-6-cur
 
 projects[admin][subdir] = "contrib"
 projects[admin][version] = "2.0"
+projects[admin][patch][] = "http://drupal.org/files/0001-Issue-969916-by-Agileware-Breadcrumb-error-in-jquery.patch"
 
 projects[admin_language][subdir] = "contrib"
 projects[admin_language][version] = "1.4"
