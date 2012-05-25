@@ -56,7 +56,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.8"
+projects[date][version] = "2.9"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][type] = "module"
@@ -95,7 +95,7 @@ projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
 
 projects[htmLawed][subdir] = "contrib"
-projects[htmLawed][version] = "2.11"
+projects[htmLawed][version] = "2.12"
 
 projects[image_resize_filter][subdir] = "contrib"
 projects[image_resize_filter][version] = "1.13"
@@ -104,7 +104,7 @@ projects[imageapi][subdir] = contrib
 projects[imageapi][version] = 1.10
 
 projects[imagecache][subdir] = contrib
-projects[imagecache][version] = 2.0-beta12
+projects[imagecache][version] = 2.0-rc1
 
 projects[imagecache_actions][subdir] = "contrib"
 projects[imagecache_actions][version] = "1.8"
@@ -137,7 +137,7 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
 
 projects[nanosoap][subdir] = contrib
-projects[nanosoap][version] = "1.0-beta3"
+projects[nanosoap][version] = "1.0"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
@@ -159,7 +159,7 @@ projects[panels][version] = "3.10"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[panels_subsites][subdir] = "contrib"
-projects[panels_subsites][version] = 1.2
+projects[panels_subsites][version] = 1.3
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
@@ -234,14 +234,14 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-;projects[dynamo][download][revision] = "v2.3.0"
+projects[dynamo][download][revision] = "v2.4.0-rc1"
 
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.7.0"
+projects[alma][download][revision] = "v1.8.0-rc1"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -251,22 +251,22 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-;projects[ding][download][revision] = "master"
+projects[ding][download][revision] = "v1.8.0-rc1"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.4.0"
+projects[ding_campaign][download][revision] = "v1.5.0-rc1"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = f9aa4c79dc42d
+projects[ding_tema_sites][download][revision] = "v1.8.0-rc1"
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.7.0"
+projects[ting][download][revision] = "v1.8.0-rc1"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
