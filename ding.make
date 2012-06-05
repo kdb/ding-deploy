@@ -261,7 +261,12 @@ projects[ding_campaign][download][revision] = "v1.5.0-rc2"
 projects[ding_mobile][type] = "module"
 projects[ding_mobile][download][type] = "git"
 projects[ding_mobile][download][url] = "https://github.com/dingproject/ding-mobile.git"
-;projects[ding-mobile][download][revision] = "v1.8.0-rc2"
+projects[ding_mobile][download][revision] = "v1.1.0-rc1"
+
+projects[ding_redia_feed][type] = "module"
+projects[ding_redia_feed][download][type] = "git"
+projects[ding_redia_feed][download][url] = "https://github.com/dingproject/ding_redia_feed.git"
+projects[ding_redia_feed][download][revision] = "v1.1.0-rc1"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
