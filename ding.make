@@ -205,7 +205,7 @@ projects[token][subdir] = contrib
 projects[token][version] = 1.18
 
 projects[transliteration][subdir] = "contrib"
-projects[transliteration][version] = "3.0"
+projects[transliteration][version] = "3.1"
 
 projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc2"
@@ -234,14 +234,14 @@ projects[mothership][version] = "1.1"
 projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
-projects[dynamo][download][revision] = "v2.4.0-rc1"
+projects[dynamo][download][revision] = "v2.4.0-rc2"
 
 ; Ding modules
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.8.0-rc1"
+projects[alma][download][revision] = "v1.8.0-rc2"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -251,22 +251,27 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.8.0-rc1"
+projects[ding][download][revision] = "v1.8.0-rc2"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.5.0-rc1"
+projects[ding_campaign][download][revision] = "v1.5.0-rc2"
+
+projects[ding_mobile][type] = "module"
+projects[ding_mobile][download][type] = "git"
+projects[ding_mobile][download][url] = "https://github.com/dingproject/ding-mobile.git"
+;projects[ding-mobile][download][revision] = "v1.8.0-rc2"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = "v1.8.0-rc1"
+projects[ding_tema_sites][download][revision] = "v1.8.0-rc2"
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.8.0-rc1"
+projects[ting][download][revision] = "v1.8.0-rc2"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
@@ -283,7 +288,6 @@ libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
 libraries[ting-client][download][revision] = "v1.2.0"
-
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
