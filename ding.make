@@ -282,8 +282,7 @@ projects[ding_webtrends][download][revision] = v1.0.0-rc.2
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/kdb/ting.git"
-projects[ting][download][revision] = "3a346b05c69bce"
-projects[ting][patches][] = https://github.com/dingproject/ting/pull/38.diff
+projects[ting][download][revision] = "fd18018"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
