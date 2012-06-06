@@ -62,7 +62,7 @@ projects[dibs][subdir] = "contrib"
 projects[dibs][type] = "module"
 projects[dibs][download][type] = "git"
 projects[dibs][download][url] = http://git.drupal.org/project/dibs.git
-projects[dibs][download][revision] = 6.x-1.x
+projects[dibs][download][revision] = 1898dd0f
 
 projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.3"
