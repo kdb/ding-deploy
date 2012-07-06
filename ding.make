@@ -329,6 +329,11 @@ projects[ding_wayf][download][type] = git
 projects[ding_wayf][download][url] = https://github.com/dingproject/ding_wayf.git
 projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f86
 
+projects[ding_wayfinder][type] = module
+projects[ding_wayfinder][download][type] = git
+projects[ding_wayfinder][download][url] = https://github.com/kdb/ding_wayfinder.git
+projects[ding_wayfinder][download][revision] = 105a3b51bad68029894f8b00642ae4c0b3f20716
+
 projects[ding_webtrends][type] = module
 projects[ding_webtrends][download][type] = git
 projects[ding_webtrends][download][url] = https://github.com/kdb/ding_webtrends.git
