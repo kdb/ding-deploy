@@ -246,8 +246,10 @@ projects[dynamo][download][revision] = "467dd9a876ae9e7c3b960d633aaf41f43bbdb716
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
-projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.7.0"
+; Use forked version until https://github.com/dingproject/alma/pull/10
+; is merged upstream.
+projects[alma][download][url] = "https://github.com/kdb/alma.git"
+projects[alma][download][revision] = a073a4e850b0986579cb472e50adb3145c1c6134
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
