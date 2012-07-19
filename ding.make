@@ -158,7 +158,7 @@ projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-rc5
+projects[opening_hours][version] = 1.2-beta1
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
@@ -322,4 +322,4 @@ libraries[emogrifier][destination] = modules/ding_borger_api/ding_borger_api/lib
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = 6924366
+projects[kdb][download][revision] = 3347918
