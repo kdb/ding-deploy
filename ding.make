@@ -56,7 +56,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.9"
+projects[date][version] = "2.10"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][type] = "module"
@@ -89,7 +89,7 @@ projects[flexifield][version] = "1.0-alpha5"
 projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-390480-22.patch"
 
 projects[globalredirect][subdir] = "contrib"
-projects[globalredirect][version] = "1.4"
+projects[globalredirect][version] = "1.5"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
@@ -187,7 +187,7 @@ projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.6"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.1"
+projects[strongarm][version] = "2.2"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
@@ -205,7 +205,7 @@ projects[token][subdir] = contrib
 projects[token][version] = 1.18
 
 projects[transliteration][subdir] = "contrib"
-projects[transliteration][version] = "3.0"
+projects[transliteration][version] = "3.1"
 
 projects[vertical_tabs][subdir] = "contrib"
 projects[vertical_tabs][version] = "1.0-rc2"
@@ -217,7 +217,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.13"
 
 projects[webform][subdir] = contrib
-projects[webform][version] = 3.17
+projects[webform][version] = 3.18
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.4"
