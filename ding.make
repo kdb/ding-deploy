@@ -159,7 +159,7 @@ projects[panels][version] = "3.10"
 projects[panels][patch][] = "https://github.com/downloads/dingproject/ding-deploy/panels_legacy_mode_disabling.patch"
 
 projects[panels_subsites][subdir] = "contrib"
-projects[panels_subsites][version] = 1.2
+projects[panels_subsites][version] = 1.3
 
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc2"
@@ -252,7 +252,7 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/kdb/ding.git"
-projects[ding][download][revision] = "fe32d0d"
+projects[ding][download][revision] = "1c20859"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -262,12 +262,12 @@ projects[ding_campaign][download][revision] = "v1.4.0"
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = f9aa4c79dc42d
+projects[ding_tema_sites][download][revision] = v1.8.0-rc2
 
 projects[ding_wayf][type] = module
 projects[ding_wayf][download][type] = git
 projects[ding_wayf][download][url] = https://github.com/dingproject/ding_wayf.git
-projects[ding_wayf][download][revision] = 289c8f4908588106b83b287a38ac7ada97925f86
+projects[ding_wayf][download][revision] = 4eaf964
 
 projects[ding_webtrends][type] = module
 projects[ding_webtrends][download][type] = git
