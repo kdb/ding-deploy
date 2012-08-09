@@ -41,7 +41,7 @@ projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
 projects[cache_actions][subdir] = "contrib"
-projects[cache_actions][version] = "1.0"
+projects[cache_actions][version] = "2.0"
 
 projects[cck][subdir] = "contrib"
 projects[cck][version] = "2.9"
@@ -56,10 +56,10 @@ projects[ctm][subdir] = contrib
 projects[ctm][version] = 2.1
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.8"
+projects[ctools][version] = "1.9"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.8"
+projects[date][version] = "2.9"
 
 projects[dibs][subdir] = "contrib"
 projects[dibs][type] = "module"
@@ -85,7 +85,7 @@ projects[filefield][subdir] = contrib
 projects[filefield][version] = 3.10
 
 projects[flag][subdir] = contrib
-projects[flag][version] = 2.0-beta6
+projects[flag][version] = 2.0-beta8
 
 projects[insert][subdir] = contrib
 projects[insert][version] = 1.1
@@ -95,13 +95,13 @@ projects[flexifield][version] = "1.0-alpha5"
 projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-390480-22.patch"
 
 projects[globalredirect][subdir] = "contrib"
-projects[globalredirect][version] = "1.4"
+projects[globalredirect][version] = "1.5"
 
 projects[google_analytics][subdir] = "contrib"
 projects[google_analytics][version] = "3.3"
 
 projects[htmLawed][subdir] = contrib
-projects[htmLawed][version] = 2.11
+projects[htmLawed][version] = 2.12
 
 projects[image_resize_filter][subdir] = contrib
 projects[image_resize_filter][version] = 1.13
@@ -110,7 +110,7 @@ projects[imageapi][subdir] = contrib
 projects[imageapi][version] = 1.10
 
 projects[imagecache][subdir] = contrib
-projects[imagecache][version] = 2.0-beta12
+projects[imagecache][version] = 2.0-rc1
 
 projects[imagecache_actions][subdir] = "contrib"
 projects[imagecache_actions][version] = "1.8"
@@ -128,7 +128,7 @@ projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
 
 projects[location][subdir] = "contrib"
-projects[location][version] = "3.1"
+projects[location][version] = "3.2"
 
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
@@ -143,16 +143,10 @@ projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
 
 projects[nanosoap][subdir] = contrib
-projects[nanosoap][version] = "1.0-beta3"
+projects[nanosoap][version] = "1.0"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
-
-projects[office_hours][type] = "module"
-projects[office_hours][subdir] = "contrib"
-projects[office_hours][download][type] = "git"
-projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
-projects[office_hours][download][revision] = "6.x-2.0-unofficial10"
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
@@ -180,8 +174,7 @@ projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "1.4"
-"projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
+projects[rules][version] = "1.5"
 
 projects[securepages][subdir] = "contrib"
 projects[securepages][version] = "1.9"
@@ -193,7 +186,7 @@ projects[spamspan][subdir] = "contrib"
 projects[spamspan][version] = "1.6"
 
 projects[strongarm][subdir] = "contrib"
-projects[strongarm][version] = "2.1"
+projects[strongarm][version] = "2.2"
 
 projects[suggestedterms][subdir] = "contrib"
 projects[suggestedterms][version] = "1.3"
@@ -211,7 +204,7 @@ projects[token][subdir] = contrib
 projects[token][version] = 1.18
 
 projects[transliteration][subdir] = "contrib"
-projects[transliteration][version] = "3.0"
+projects[transliteration][version] = "3.1"
 
 projects[vertical_tabs][subdir] = contrib
 projects[vertical_tabs][version] = 1.0-rc2
@@ -223,7 +216,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.13"
 
 projects[webform][subdir] = contrib
-projects[webform][version] = 3.17
+projects[webform][version] = 3.18
 
 projects[wysiwyg][subdir] = contrib
 projects[wysiwyg][version] = 2.4
