@@ -53,7 +53,7 @@ projects[ctm][subdir] = contrib
 projects[ctm][version] = 2.1
 
 projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.8"
+projects[ctools][version] = "1.9"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.9"
@@ -122,7 +122,7 @@ projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
 
 projects[location][subdir] = "contrib"
-projects[location][version] = "3.1"
+projects[location][version] = "3.2"
 
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
@@ -174,7 +174,7 @@ projects[purl][subdir] = "contrib"
 projects[purl][version] = "1.0-beta13"
 
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "1.4"
+projects[rules][version] = "1.5"
 projects[rules][patch][] = "https://github.com/downloads/dingproject/ding-deploy/rules_dont_clear_cache_on_form_alter.patch"
 
 projects[securepages][subdir] = "contrib"
