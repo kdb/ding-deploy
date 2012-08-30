@@ -136,6 +136,7 @@ projects[menu_breadcrumb][version] = "1.3"
 projects[menu_block][subdir] = "contrib"
 projects[menu_block][version] = "2.4"
 projects[menu_block][patch][] = http://drupal.org/files/menu_block_illegal_choice_in_parent-1203646-6.patch
+projects[menu_block][patch][] = http://revealit.dk/static/2012-08-31-menu_block-default-fallback.patch
 
 projects[nanosoap][subdir] = contrib
 projects[nanosoap][version] = "1.0"
