@@ -150,7 +150,7 @@ projects[office_hours][download][url] = "https://github.com/dingproject/drupal-o
 projects[office_hours][download][revision] = "6.x-2.0-unofficial10"
 
 projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.1
+projects[opening_hours][version] = 1.2-beta2
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
