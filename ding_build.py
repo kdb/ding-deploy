@@ -58,9 +58,9 @@ def make_command(options, make_path):
     """ Generate the make command based on current options. """
     # Set command based on mode.
     if options.mode == 'site':
-        command = ['drush.php', 'make', '--contrib-destination=profiles/ding', 'ding.make', make_path]
+        command = ['drush', 'make', '--contrib-destination=profiles/ding', 'ding.make', make_path]
     elif options.mode == 'profile':
-        command = ['drush.php', 'make', '--no-core', '--contrib-destination=.', 'ding.make', make_path]
+        command = ['drush', 'make', '--no-core', '--contrib-destination=.', 'ding.make', make_path]
     else:
         sys.exit('Unknown mode "%s", aborting.' % options.mode)
 
