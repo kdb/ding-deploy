@@ -48,6 +48,7 @@ projects[comment_notify][version] = "1.6"
 
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
+projects[content_profile][patch][] = http://drupal.org/files/content_profile-776384-2.patch
 
 projects[ctm][subdir] = contrib
 projects[ctm][version] = 2.1
