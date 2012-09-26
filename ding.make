@@ -324,4 +324,4 @@ libraries[tinymce][destination] = "libraries"
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = 3e8a980
+projects[kdb][download][revision] = 120eb19
