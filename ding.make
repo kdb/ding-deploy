@@ -217,6 +217,7 @@ projects[vertical_tabs][version] = "1.0-rc2"
 
 projects[views][subdir] = "contrib"
 projects[views][version] = "2.16"
+projects[views][patch][] = http://drupal.org/files/views_cache_key-1802056-1.patch
 
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.13"
