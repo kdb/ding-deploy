@@ -294,6 +294,7 @@ projects[ting][patch][] = https://github.com/dingproject/ting/pull/42.diff
 projects[ting][patch][] = https://github.com/dingproject/ting/pull/44.diff
 projects[ting][patch][] = https://github.com/dingproject/ting/pull/46.diff
 projects[ting][patch][] = https://github.com/dingproject/ting/pull/48.diff
+projects[ting][patch][] = https://github.com/dingproject/ting/pull/49.diff
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
