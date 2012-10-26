@@ -48,7 +48,7 @@ projects[comment_notify][version] = "1.6"
 
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
-projects[content_profile][patch][] = http://drupal.org/files/content_profile-776384-2.patch
+;projects[content_profile][patch][] = http://drupal.org/files/content_profile-776384-2.patch
 
 projects[ctm][subdir] = contrib
 projects[ctm][version] = 2.1
@@ -327,4 +327,4 @@ libraries[tinymce][destination] = "libraries"
 projects[kdb][type] = module
 projects[kdb][download][type] = git
 projects[kdb][download][url] = https://github.com/kdb/kdb.git
-projects[kdb][download][revision] = 1bd7971
+projects[kdb][download][revision] = 547758e
