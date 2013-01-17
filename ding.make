@@ -241,6 +241,7 @@ projects[dynamo][type] = "theme"
 projects[dynamo][download][type] = "git"
 projects[dynamo][download][url] = "https://github.com/dingproject/dynamo.git"
 projects[dynamo][download][revision] = "v2.4.0-rc2"
+projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/15.patch
 
 ; Ding modules
 
