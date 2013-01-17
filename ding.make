@@ -69,7 +69,7 @@ projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.3"
 
 projects[email][subdir] = "contrib"
-projects[email][version] = "1.3"
+projects[email][version] = "1.4"
 
 projects[environment_indicator][subdir] = contrib
 projects[environment_indicator][version] = 1.1
@@ -82,9 +82,6 @@ projects[features][patch][] = "http://drupal.org/files/issues/features.860974.pa
 projects[filefield][subdir] = contrib
 projects[filefield][version] = 3.10
 
-projects[insert][subdir] = contrib
-projects[insert][version] = 1.1
-
 projects[flexifield][subdir] = "contrib"
 projects[flexifield][version] = "1.0-alpha5"
 projects[flexifield][patch][] = "http://drupal.org/files/issues/flexifield-390480-22.patch"
@@ -93,7 +90,7 @@ projects[globalredirect][subdir] = "contrib"
 projects[globalredirect][version] = "1.5"
 
 projects[google_analytics][subdir] = "contrib"
-projects[google_analytics][version] = "3.3"
+projects[google_analytics][version] = "3.4"
 
 projects[htmLawed][subdir] = "contrib"
 projects[htmLawed][version] = "2.12"
@@ -108,10 +105,13 @@ projects[imagecache][subdir] = contrib
 projects[imagecache][version] = 2.0-rc1
 
 projects[imagecache_actions][subdir] = "contrib"
-projects[imagecache_actions][version] = "1.8"
+projects[imagecache_actions][version] = "1.9"
 
 projects[imagefield][subdir] = contrib
 projects[imagefield][version] = 3.10
+
+projects[insert][subdir] = contrib
+projects[insert][version] = 1.2
 
 projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.5"
@@ -126,7 +126,7 @@ projects[location][subdir] = "contrib"
 projects[location][version] = "3.2"
 
 projects[markdown][subdir] = "contrib"
-projects[markdown][version] = "1.2"
+projects[markdown][version] = "1.3"
 
 projects[masquerade][subdir] = "contrib"
 projects[masquerade][version] = "1.4"
@@ -207,7 +207,7 @@ projects[tipsy][subdir] = contrib
 projects[tipsy][version] = 1.1
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.18
+projects[token][version] = 1.19
 
 projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.1"
