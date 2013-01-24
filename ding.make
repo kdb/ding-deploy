@@ -248,9 +248,8 @@ projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/15.patch
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.8.0-rc2"
-projects[alma][patch][] = https://github.com/dingproject/alma/pull/9.patch
-projects[alma][patch][] = https://github.com/dingproject/alma/pull/10.patch
+projects[alma][download][revision] = "6b05c09"
+projects[alma][patch][] = https://github.com/dingproject/alma/pull/11.patch
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
