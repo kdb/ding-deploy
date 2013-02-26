@@ -69,7 +69,7 @@ projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.3"
 
 projects[email][subdir] = "contrib"
-projects[email][version] = "1.4"
+projects[email][version] = "1.5"
 
 projects[environment_indicator][subdir] = contrib
 projects[environment_indicator][version] = 1.1
@@ -120,7 +120,7 @@ projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
 
 projects[link][subdir] = "contrib"
-projects[link][version] = "2.9"
+projects[link][version] = "2.10"
 
 projects[location][subdir] = "contrib"
 projects[location][version] = "3.2"
@@ -195,7 +195,7 @@ projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.2"
 
 projects[suggestedterms][subdir] = "contrib"
-projects[suggestedterms][version] = "1.3"
+projects[suggestedterms][version] = "1.4"
 
 projects[tagadelic][subdir] = "contrib"
 projects[tagadelic][version] = "1.3"
@@ -220,7 +220,7 @@ projects[views][version] = "2.16"
 projects[views][patch][] = http://drupal.org/files/views_cache_key-1802056-1.patch
 
 projects[views_bulk_operations][subdir] = "contrib"
-projects[views_bulk_operations][version] = "1.13"
+projects[views_bulk_operations][version] = "1.14"
 
 projects[webform][subdir] = contrib
 projects[webform][version] = 3.18
