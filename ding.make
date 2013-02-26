@@ -69,7 +69,7 @@ projects[diff][subdir] = "contrib"
 projects[diff][version] = "2.3"
 
 projects[email][subdir] = "contrib"
-projects[email][version] = "1.5"
+projects[email][version] = "1.4"
 
 projects[environment_indicator][subdir] = contrib
 projects[environment_indicator][version] = 1.1
