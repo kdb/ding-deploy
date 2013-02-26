@@ -280,9 +280,8 @@ projects[ding_redia_feed][download][revision] = "v1.1.0-rc1"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
-projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = "v1.8.0-rc2"
-projects[ding_tema_sites][patch][] = https://github.com/dingproject/ding_tema_sites/pull/1.patch
+projects[ding_tema_sites][download][url] = https://github.com/kdb/ding_tema_sites.git
+projects[ding_tema_sites][download][revision] = "f4343bf4b5e8afdc192c50ba8d132a8593889b78"
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
