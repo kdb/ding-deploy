@@ -292,6 +292,7 @@ projects[ting][patch][] = https://github.com/dingproject/ting/pull/44.patch
 projects[ting][patch][] = https://github.com/dingproject/ting/pull/46.patch
 projects[ting][patch][] = https://github.com/dingproject/ting/pull/48.patch
 projects[ting][patch][] = https://github.com/dingproject/ting/pull/49.patch
+projects[ting][patch][] = https://github.com/dingproject/ting/pull/50.patch
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
