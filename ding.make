@@ -286,13 +286,8 @@ projects[ding_tema_sites][download][revision] = 366ed34
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.8.0-rc2"
-projects[ting][patch][] = https://github.com/dingproject/ting/pull/42.patch
-projects[ting][patch][] = https://github.com/dingproject/ting/pull/44.patch
-projects[ting][patch][] = https://github.com/dingproject/ting/pull/46.patch
-projects[ting][patch][] = https://github.com/dingproject/ting/pull/48.patch
-projects[ting][patch][] = https://github.com/dingproject/ting/pull/49.patch
-projects[ting][patch][] = https://github.com/dingproject/ting/pull/50.patch
+projects[ting][download][revision] = 21f7eb4
+projects[ting][patch][] = https://github.com/dingproject/ting/pull/52.patch
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
