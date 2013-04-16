@@ -260,8 +260,9 @@ projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
 projects[ding][download][revision] = "8c89e6e"
-projects[ding][patch][] = "https://github.com/dingproject/ding/pull/31.patch"
-projects[ding][patch][] = "https://github.com/dingproject/ding/pull/38.patch"
+projects[ding][patch][] = https://github.com/dingproject/ding/pull/31.patch
+projects[ding][patch][] = https://github.com/dingproject/ding/pull/38.patch
+projects[ding][patch][] = https://github.com/dingproject/ding/pull/41.patch
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -281,7 +282,7 @@ projects[ding_redia_feed][download][revision] = "v1.1.0-rc1"
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/kdb/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = 366ed34
+projects[ding_tema_sites][download][revision] = cd96902
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
