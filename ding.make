@@ -157,7 +157,7 @@ projects[opening_hours][download][url] = http://git.drupal.org/project/opening_h
 projects[opening_hours][download][revision] = 6.x-1.3-beta1
 
 projects[openlayers][subdir] = contrib
-projects[openlayers][version] = 2.0-beta1
+projects[openlayers][version] = 2.0-beta3
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
