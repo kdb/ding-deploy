@@ -125,7 +125,7 @@ def deploy(project=None, commit=None):
         logging.info('Starting build in %s' % abs_make_path)
         run('./ding_build.py -lL %s -m profile %s' % (env.role, make_path))
 
-    run('curl -s http://localhost/apc_clear_cache.php')
+    run('curl -s http://localhost:8080/apc_clear_cache.php')
 
     logging.warning('%(site)s | %(user)s | %(commit)s' % {
         'site': env.webroot.split('/')[-1],
