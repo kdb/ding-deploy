@@ -158,6 +158,7 @@ projects[opening_hours][download][revision] = 6.x-1.3-beta1
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta3
+projects[openlayers][patch][] = https://drupal.org/files/2013-08-08-google-maps-fix.patch
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
@@ -263,6 +264,7 @@ projects[ding][download][revision] = "8c89e6e"
 projects[ding][patch][] = https://github.com/dingproject/ding/pull/31.patch
 projects[ding][patch][] = https://github.com/dingproject/ding/pull/38.patch
 projects[ding][patch][] = https://github.com/dingproject/ding/pull/41.patch
+projects[ding][patch][] = https://github.com/dingproject/ding/pull/42.patch
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
@@ -310,6 +312,9 @@ libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
 libraries[jquery_ui][directory_name] = "jquery.ui"
 libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
+
+libraries[openlayers][download][type] = get
+libraries[openlayers][download][url] = http://openlayers.org/download/OpenLayers-2.10.tar.gz
 
 libraries[tinymce][download][type] = "get"
 libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymce/tinymce_3.4.2.zip"
