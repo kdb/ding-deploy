@@ -158,7 +158,7 @@ projects[opening_hours][download][revision] = 6.x-1.3-beta1
 
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta3
-projects[openlayers][patch][] = https://drupal.org/files/2013-08-08-google-maps-fix.patch
+projects[openlayers][patch][] = http://drupal.org/files/2013-08-08-google-maps-fix.patch
 
 projects[panels][subdir] = "contrib"
 projects[panels][version] = "3.10"
