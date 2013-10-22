@@ -277,7 +277,7 @@ projects[ding_mobile][download][url] = "https://github.com/dingproject/ding-mobi
 projects[ding_mobile][download][revision] = "v1.1.0-rc1"
 ; Download alternator using https. Otherwise builds fail.
 ; This may be fixable by updating to a more recent version of git.
-projects[ding_mobile][patch][] https://github.com/dingproject/ding-mobile/pull/6.patch
+projects[ding_mobile][patch][] = https://github.com/dingproject/ding-mobile/pull/6.patch
 
 projects[ding_redia_feed][type] = "module"
 projects[ding_redia_feed][download][type] = "git"
