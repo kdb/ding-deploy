@@ -301,8 +301,8 @@ projects[scheduler][version] = "1.8"
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
-projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.6.0"
+projects[alma][download][url] = "https://github.com/kdb/alma.git"
+projects[alma][download][revision] = "b8d91cb6b2f6704f0eba5e628a312c1d2b6b8832"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
@@ -397,4 +397,3 @@ libraries[emogrifier][download][type] = get
 libraries[emogrifier][download][url] = https://gist.github.com/gists/1344848/download
 libraries[emogrifier][directory_name] = emogrifier
 libraries[emogrifier][destination] = modules/ding_borger_api/ding_borger_api/lib
-
