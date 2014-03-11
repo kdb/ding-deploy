@@ -1,0 +1,16 @@
+diff --git a/menu_block.module b/menu_block.module
+index 3925cdd..486da40 100644
+--- a/menu_block.module
++++ b/menu_block.module
+@@ -275,6 +275,11 @@ function menu_tree_build($config) {
+     if (!empty($patterns[$config['menu_name']])) {
+       $config['menu_name'] = $patterns[$config['menu_name']];
+     }
++    // If no match was found, fall back to the first candidate.
++    // This is a changed behavior form the standard behavior of menu_block.
++    else {
++      $config['menu_name'] = array_shift(array_keys($menu_order));
++    }
+     $config['parent_mlid'] = 0;
+
+     // If no menu link was found, don't display the block.
