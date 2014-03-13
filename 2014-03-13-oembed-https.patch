@@ -1,0 +1,26 @@
+diff --git a/oembedcore.module b/oembedcore.module
+index a28921a..e2511ff 100644
+--- a/oembedcore.module
++++ b/oembedcore.module
+@@ -336,6 +336,14 @@ function oembedcore_oembed_fetch($provider, $url, $matches, $attributes = array(
+     $attributes = array_merge($_oembed_default_attributes, $attributes);
+   }
+   $attributes['url'] = $url;
++
++  // If we're running under SSL, add a parameter to request a SSL resource. This
++  // is not ideal, as in filters the result might be cached, but I'll do as a
++  // quick fix.
++  if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
++    $attributes['scheme'] = 'https';
++  }
++
+   $query = http_build_query($attributes, NULL, '&');
+ 
+   $source = isset($provider['callback']) ? $provider['callback'] : $provider['endpoint'];
+@@ -577,4 +585,4 @@ function oembedcore_provider_list() {
+     $return[$provider->name] = $provider->name;
+   }
+   return $return;
+-}
+\ No newline at end of file
++}

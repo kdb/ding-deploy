@@ -143,6 +143,7 @@ projects[nanosoap][version] = "1.0"
 
 projects[oembed][subdir] = "contrib"
 projects[oembed][version] = "0.8"
+projects[oembed][patch][] = https://raw.github.com/kdb/ding-deploy/master/2014-03-13-oembed-https.patch
 
 projects[office_hours][type] = "module"
 projects[office_hours][subdir] = "contrib"
