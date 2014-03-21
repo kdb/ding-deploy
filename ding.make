@@ -248,7 +248,7 @@ projects[dynamo][patch][] = https://github.com/dingproject/dynamo/pull/15.patch
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
 projects[alma][download][url] = "https://github.com/kdb/alma.git"
-// Temporaryly disable suspensions.
+; Temporaryly disable suspensions.
 projects[alma][download][revision] = "2272a6e25c0cb3e964c5c5dd904ec298a1434219"
 projects[alma][patch][] = https://github.com/dingproject/alma/pull/11.patch
 
